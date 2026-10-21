@@ -34,8 +34,16 @@ if ($changes) {
 $remotes = git remote
 if (-not ($remotes -contains "origin")) { git remote add origin "https://github.com/$user/$repo.git" }
 
-Write-Host "正在推送到 https://github.com/$user/$repo ...（第一次会弹出浏览器让你登录 GitHub）" -ForegroundColor Cyan
+# 优先使用 Git Credential Manager（浏览器登录）；没有的话会要求输入用户名 + 令牌
+if (-not (git config --global credential.helper)) { git config --global credential.helper manager 2>$null }
+
+Write-Host "正在推送到 https://github.com/$user/$repo ..." -ForegroundColor Cyan
+Write-Host "如果要求输入 Password：请粘贴 GitHub 个人访问令牌（ghp_ 开头），不是登录密码；粘贴时屏幕不显示是正常的。" -ForegroundColor Yellow
 git push -u origin main
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "推送失败。请到 https://github.com/settings/tokens/new 生成令牌（勾选 repo 和 workflow），然后重新运行本脚本。" -ForegroundColor Red
+    exit 1
+}
 
 $tag = Read-Host "要发布一个可下载的 APK 版本吗？输入版本号如 v1.2（直接回车跳过）"
 if ($tag) {
