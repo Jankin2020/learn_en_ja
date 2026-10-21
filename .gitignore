@@ -1,0 +1,13 @@
+# build output
+build/
+*.apk
+*.part
+# signing key: keep it locally / in GitHub Secrets, never commit it
+*.keystore
+*.jks
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
