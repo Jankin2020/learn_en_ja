@@ -1,0 +1,132 @@
+{
+ "id": "en_travel",
+ "name": "英语 · 旅行",
+ "lang": "en",
+ "version": 1,
+ "desc": "Immigration, car rental, restaurants, lost luggage, directions, hotel issues",
+ "scenarios": [
+  {
+   "lang": "en",
+   "icon": "🛂",
+   "title": "入境检查",
+   "sub": "Passport control",
+   "role": "You are an immigration officer at a US airport. Ask the purpose of the visit, length of stay, accommodation, return ticket and what the learner does for work.",
+   "opener": "Good afternoon. Passport, please. What's the purpose of your visit?"
+  },
+  {
+   "lang": "en",
+   "icon": "🚗",
+   "title": "租车",
+   "sub": "Renting a car",
+   "role": "You are a car rental agent. Confirm the reservation, check the driver's license, offer insurance and upgrades, and explain fuel and return rules.",
+   "opener": "Hi! Do you have a reservation with us?"
+  },
+  {
+   "lang": "en",
+   "icon": "🍽",
+   "title": "餐厅投诉",
+   "sub": "A problem at a restaurant",
+   "role": "You are a waiter. The learner's order has a problem (wrong dish, cold food or long wait). Apologize and offer solutions.",
+   "opener": "Hi, how is everything tasting so far?"
+  },
+  {
+   "lang": "en",
+   "icon": "🧳",
+   "title": "行李丢失",
+   "sub": "Lost luggage",
+   "role": "You are a baggage service agent at the airport. The learner's suitcase did not arrive. Ask for the baggage tag, a description of the bag, and where to deliver it.",
+   "opener": "Hello, how can I help you?"
+  },
+  {
+   "lang": "en",
+   "icon": "🗺",
+   "title": "问路",
+   "sub": "Asking for directions",
+   "role": "You are a friendly local on the street in London. Give the learner directions, suggest transport and nearby places to eat.",
+   "opener": "Sure, where are you trying to go?"
+  },
+  {
+   "lang": "en",
+   "icon": "🏨",
+   "title": "酒店报修",
+   "sub": "Hotel room problem",
+   "role": "You are a hotel front-desk agent answering a call from the learner's room. Something in the room is not working. Apologize, ask details and offer a fix or a room change.",
+   "opener": "Front desk, this is Emma speaking. How may I help you?"
+  }
+ ],
+ "sentences": [
+  {
+   "lang": "en",
+   "level": 1,
+   "text": "I'm here on vacation for a week.",
+   "zh": "我来这里度假一周。"
+  },
+  {
+   "lang": "en",
+   "level": 2,
+   "text": "I'll be staying at a hotel downtown.",
+   "zh": "我会住在市中心的一家酒店。"
+  },
+  {
+   "lang": "en",
+   "level": 2,
+   "text": "Does the price include insurance?",
+   "zh": "这个价格包含保险吗？"
+  },
+  {
+   "lang": "en",
+   "level": 3,
+   "text": "I'm afraid this isn't what I ordered.",
+   "zh": "恐怕这不是我点的。"
+  },
+  {
+   "lang": "en",
+   "level": 3,
+   "text": "Could we get the check, please?",
+   "zh": "可以给我们结账吗？"
+  },
+  {
+   "lang": "en",
+   "level": 3,
+   "text": "My suitcase didn't come out on the carousel.",
+   "zh": "我的行李箱没有从转盘上出来。"
+  },
+  {
+   "lang": "en",
+   "level": 2,
+   "text": "How do I get to the nearest subway station?",
+   "zh": "最近的地铁站怎么走？"
+  },
+  {
+   "lang": "en",
+   "level": 3,
+   "text": "Is it within walking distance?",
+   "zh": "走路能到吗？"
+  },
+  {
+   "lang": "en",
+   "level": 2,
+   "text": "The air conditioning in my room isn't working.",
+   "zh": "我房间的空调坏了。"
+  },
+  {
+   "lang": "en",
+   "level": 2,
+   "text": "Is breakfast included?",
+   "zh": "包含早餐吗？"
+  },
+  {
+   "lang": "en",
+   "level": 4,
+   "text": "Would it be possible to get a late checkout?",
+   "zh": "可以晚一点退房吗？"
+  },
+  {
+   "lang": "en",
+   "level": 3,
+   "text": "Could you recommend somewhere to eat around here?",
+   "zh": "你能推荐一下附近吃饭的地方吗？"
+  }
+ ],
+ "updated": "2026-10-21"
+}

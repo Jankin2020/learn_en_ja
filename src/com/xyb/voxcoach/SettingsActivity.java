@@ -21,7 +21,6 @@ public class SettingsActivity extends Activity {
 
     private EditText base, key, model;
     private TextView testResult;
-    private EditText packUrl;
 
     private static final String[][] PRESETS = {
             {"DeepSeek", "https://api.deepseek.com/v1", "deepseek-chat"},
@@ -172,58 +171,16 @@ public class SettingsActivity extends Activity {
         vc.addView(openVoice);
         body.addView(vc, UI.matchWrap(this, 0, 0, 0, 12));
 
-        // ---------------- content packs
+        // ---------------- content library
         LinearLayout cp = UI.card(this);
-        cp.addView(UI.text(this, "📦 内容更新（内容包）", 16, UI.TEXT, true));
-        cp.addView(UI.text(this, "内置题库随 App 版本更新；额外的句子、对立词、对话场景可以用 JSON 内容包导入。填一个链接（如 Gitee / GitHub raw 地址）以后点「更新」即可拉取新版，也可以从手机文件导入。格式见项目里的 README 和 content_packs/ 示例。",
-                12, UI.SUB, false), UI.matchWrap(this, 0, 4, 0, 8));
-        packUrl = UI.input(this, "https://…/my_pack.json");
-        packUrl.setSingleLine(true);
-        packUrl.setText(Store.packUrl(this));
-        cp.addView(packUrl, UI.matchWrap(this, 0, 0, 0, 8));
-        LinearLayout pr3 = UI.hbox(this);
-        TextView dl = UI.button(this, "⬇ 从链接更新", true);
-        dl.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { downloadPack(); } });
-        TextView imp = UI.button(this, "📂 从文件导入", false);
-        imp.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                try {
-                    Intent i = new Intent(Intent.ACTION_OPEN_DOCUMENT);
-                    i.addCategory(Intent.CATEGORY_OPENABLE);
-                    i.setType("*/*");
-                    startActivityForResult(i, 41);
-                } catch (Exception e) { UI.toast(SettingsActivity.this, "无法打开文件选择器"); }
-            }
+        cp.addView(UI.text(this, "📦 内容库（场景包）", 16, UI.TEXT, true));
+        cp.addView(UI.text(this, "已安装 " + Store.packs(this).size() + " 个内容包 · " + (Store.autoUpdatePacks(this) ? "自动更新已开启" : "自动更新已关闭"),
+                13, UI.SUB, false), UI.matchWrap(this, 0, 6, 0, 8));
+        TextView openPacks = UI.button(this, "打开内容库 · 安装 / 更新场景包 ›", false);
+        openPacks.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) { startActivity(new Intent(SettingsActivity.this, PacksActivity.class)); }
         });
-        pr3.addView(dl, UI.lpw(this, 1, 3));
-        pr3.addView(imp, UI.lpw(this, 1, 3));
-        cp.addView(pr3, UI.matchWrap(this, -3, 0, -3, 4));
-        List<org.json.JSONObject> packs = Store.packs(this);
-        if (packs.isEmpty()) cp.addView(UI.text(this, "尚未安装内容包", 12, UI.HINT, false), UI.matchWrap(this, 0, 6, 0, 0));
-        for (final org.json.JSONObject p : packs) {
-            LinearLayout r = UI.hbox(this);
-            r.setBackground(UI.round(this, UI.BG, 12));
-            int pd = UI.dp(this, 10);
-            r.setPadding(pd, pd, pd, pd);
-            int ns = p.optJSONArray("sentences") == null ? 0 : p.optJSONArray("sentences").length();
-            int np = p.optJSONArray("pairs") == null ? 0 : p.optJSONArray("pairs").length();
-            int nc = p.optJSONArray("scenarios") == null ? 0 : p.optJSONArray("scenarios").length();
-            r.addView(UI.text(this, p.optString("name", p.optString("id")) + "  v" + p.optInt("version", 1)
-                    + "\n句子 " + ns + " · 对立词 " + np + " · 场景 " + nc, 13, UI.TEXT, false),
-                    new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1));
-            TextView del = UI.text(this, "删除", 13, UI.RED, true);
-            del.setPadding(pd, pd, 0, pd);
-            del.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    new AlertDialog.Builder(SettingsActivity.this).setMessage("删除内容包「" + p.optString("name") + "」？")
-                            .setPositiveButton("删除", new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface d, int w) { Store.removePack(SettingsActivity.this, p.optString("id")); build(); }
-                            }).setNegativeButton("取消", null).show();
-                }
-            });
-            r.addView(del);
-            cp.addView(r, UI.matchWrap(this, 0, 6, 0, 0));
-        }
+        cp.addView(openPacks);
         body.addView(cp, UI.matchWrap(this, 0, 0, 0, 12));
 
         // ---------------- data
@@ -268,53 +225,6 @@ public class SettingsActivity extends Activity {
         return wrap;
     }
 
-    private void downloadPack() {
-        final String url = packUrl.getText().toString().trim();
-        if (!url.startsWith("http")) { UI.toast(this, "请填写 http(s) 开头的内容包链接"); return; }
-        Store.setPackUrl(this, url);
-        UI.toast(this, "下载中…");
-        final android.os.Handler h = new android.os.Handler();
-        new Thread(new Runnable() {
-            public void run() {
-                String msg;
-                try {
-                    java.net.HttpURLConnection con = (java.net.HttpURLConnection) new java.net.URL(url).openConnection();
-                    con.setConnectTimeout(15000);
-                    con.setReadTimeout(30000);
-                    int code = con.getResponseCode();
-                    if (code >= 400) throw new Exception("HTTP " + code);
-                    String text = CloudAudio.readString(con.getInputStream());
-                    con.disconnect();
-                    msg = Store.installPacks(SettingsActivity.this, text);
-                } catch (Exception e) {
-                    msg = "❌ 更新失败：" + (e.getMessage() != null ? e.getMessage() : e.toString());
-                }
-                final String fm = msg;
-                h.post(new Runnable() {
-                    public void run() {
-                        if (isFinishing() || isDestroyed()) return;
-                        new AlertDialog.Builder(SettingsActivity.this).setTitle("内容更新").setMessage(fm).setPositiveButton("好", null).show();
-                        build();
-                    }
-                });
-            }
-        }).start();
-    }
-
-    @Override
-    protected void onActivityResult(int req, int res, Intent data) {
-        super.onActivityResult(req, res, data);
-        if (req != 41 || res != RESULT_OK || data == null || data.getData() == null) return;
-        String msg;
-        try {
-            msg = Store.installPacks(this, CloudAudio.readString(getContentResolver().openInputStream(data.getData())));
-        } catch (Exception e) {
-            msg = "❌ 导入失败：" + e.getMessage();
-        }
-        new AlertDialog.Builder(this).setTitle("导入内容包").setMessage(msg).setPositiveButton("好", null).show();
-        build();
-    }
-
     private void saveApi() {
         Store.setApi(this, base.getText().toString(), key.getText().toString(), model.getText().toString());
     }
@@ -341,6 +251,5 @@ public class SettingsActivity extends Activity {
     protected void onPause() {
         super.onPause();
         saveApi();
-        if (packUrl != null) Store.setPackUrl(this, packUrl.getText().toString());
     }
 }

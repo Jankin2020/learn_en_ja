@@ -24,9 +24,30 @@ public class MainActivity extends Activity {
         UI.ensureMicSilently(this);
     }
 
+    private static boolean packCheckStarted;
+
+    /** Once a day: silently update installed content packs from the subscribed catalog. */
+    private void autoUpdatePacks() {
+        if (packCheckStarted || !Store.onboarded(this) || !Store.autoUpdatePacks(this)) return;
+        if (Store.day(0).equals(Store.lastPackCheck(this))) return;
+        packCheckStarted = true;
+        final android.content.Context app = getApplicationContext();
+        new Thread(new Runnable() {
+            public void run() {
+                final String msg = PackSync.autoUpdate(app);
+                if (msg != null) {
+                    new android.os.Handler(android.os.Looper.getMainLooper()).post(new Runnable() {
+                        public void run() { UI.toast(app, msg); }
+                    });
+                }
+            }
+        }).start();
+    }
+
     @Override
     protected void onResume() {
         super.onResume();
+        autoUpdatePacks();
         if (!Store.onboarded(this)) buildOnboarding();
         else buildHome();
     }

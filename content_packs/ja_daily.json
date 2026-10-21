@@ -1,0 +1,154 @@
+{
+ "id": "ja_daily",
+ "name": "日语 · 日常办事",
+ "lang": "ja",
+ "version": 1,
+ "desc": "看病、租房、区役所、美容院、邮局、办手机卡",
+ "scenarios": [
+  {
+   "lang": "ja",
+   "icon": "🏥",
+   "title": "医院看病",
+   "sub": "病院の受付と診察",
+   "role": "You are a receptionist and then a doctor at a small clinic in Tokyo. The learner is a first-time patient with a cold. Ask for the health insurance card, symptoms, how long, allergies, then explain how to take the medicine.",
+   "opener": "こんにちは。初診の方ですか？保険証をお願いします。"
+  },
+  {
+   "lang": "ja",
+   "icon": "🏠",
+   "title": "找房子",
+   "sub": "不動産屋で部屋探し",
+   "role": "You are a real-estate agent in Tokyo. The learner wants to rent a one-room apartment. Ask about budget, area, distance from the station, move-in date, and explain 敷金・礼金・管理費.",
+   "opener": "いらっしゃいませ。本日はお部屋探しですか？ご希望のエリアはありますか？"
+  },
+  {
+   "lang": "ja",
+   "icon": "🏛",
+   "title": "区役所办手续",
+   "sub": "区役所で転入届",
+   "role": "You are a clerk at a Tokyo ward office. The learner just moved in and needs to submit a moving-in notification (転入届), update their residence card address and join National Health Insurance. Ask for documents step by step.",
+   "opener": "こんにちは。本日はどのようなご用件でしょうか。"
+  },
+  {
+   "lang": "ja",
+   "icon": "💇",
+   "title": "美容院",
+   "sub": "美容院で髪を切る",
+   "role": "You are a hairdresser in Tokyo. Ask how the learner wants their hair cut (length, bangs, layers, color) and make light small talk.",
+   "opener": "こんにちは。今日はどのようにしましょうか？"
+  },
+  {
+   "lang": "ja",
+   "icon": "📦",
+   "title": "邮局寄包裹",
+   "sub": "郵便局で荷物を送る",
+   "role": "You are a clerk at a Japanese post office. The learner wants to send a parcel abroad. Ask about destination, contents, EMS or airmail, and explain the customs form.",
+   "opener": "いらっしゃいませ。お荷物の発送ですか？"
+  },
+  {
+   "lang": "ja",
+   "icon": "📱",
+   "title": "办手机卡",
+   "sub": "携帯ショップで契約",
+   "role": "You are a staff member at a mobile phone shop in Japan. Help the learner sign up for a new SIM plan: data amount, monthly price, ID documents, payment method.",
+   "opener": "いらっしゃいませ。本日は新規のご契約でしょうか？"
+  }
+ ],
+ "sentences": [
+  {
+   "lang": "ja",
+   "level": 2,
+   "text": "{熱|ねつ}があって、{喉|のど}が{痛|いた}いです。",
+   "zh": "我发烧了，嗓子疼。"
+  },
+  {
+   "lang": "ja",
+   "level": 2,
+   "text": "{保険証|ほけんしょう}を{忘|わす}れてしまいました。",
+   "zh": "我忘带保险证了。"
+  },
+  {
+   "lang": "ja",
+   "level": 1,
+   "text": "{予約|よやく}は{要|い}りますか。",
+   "zh": "需要预约吗？"
+  },
+  {
+   "lang": "ja",
+   "level": 2,
+   "text": "{駅|えき}から{歩|ある}いて{何分|なんぷん}ですか。",
+   "zh": "从车站走路要几分钟？"
+  },
+  {
+   "lang": "ja",
+   "level": 3,
+   "text": "{家賃|やちん}は{管理費|かんりひ}{込|こ}みでいくらですか。",
+   "zh": "房租含管理费是多少？"
+  },
+  {
+   "lang": "ja",
+   "level": 3,
+   "text": "{敷金|しききん}と{礼金|れいきん}はかかりますか。",
+   "zh": "需要押金和礼金吗？"
+  },
+  {
+   "lang": "ja",
+   "level": 3,
+   "text": "{転入届|てんにゅうとど}けを{出|だ}したいんですが。",
+   "zh": "我想办理迁入登记。"
+  },
+  {
+   "lang": "ja",
+   "level": 2,
+   "text": "{書類|しょるい}はこれで{全部|ぜんぶ}ですか。",
+   "zh": "资料就这些吗？"
+  },
+  {
+   "lang": "ja",
+   "level": 3,
+   "text": "{前髪|まえがみ}は{眉|まゆ}にかかるくらいでお{願|ねが}いします。",
+   "zh": "刘海请剪到刚好盖住眉毛。"
+  },
+  {
+   "lang": "ja",
+   "level": 2,
+   "text": "この{荷物|にもつ}を{中国|ちゅうごく}に{送|おく}りたいです。",
+   "zh": "我想把这个包裹寄到中国。"
+  },
+  {
+   "lang": "ja",
+   "level": 2,
+   "text": "{月々|つきづき}の{料金|りょうきん}はいくらになりますか。",
+   "zh": "每个月的费用是多少？"
+  },
+  {
+   "lang": "ja",
+   "level": 3,
+   "text": "この{薬|くすり}は{一日|いちにち}{三回|さんかい}、{食後|しょくご}に{飲|の}んでください。",
+   "zh": "这个药一天三次，饭后服用。"
+  }
+ ],
+ "pairs": [
+  {
+   "lang": "ja",
+   "cat": "长音",
+   "a": "主人 しゅじん",
+   "a_say": "しゅじん",
+   "a_zh": "丈夫",
+   "b": "囚人 しゅうじん",
+   "b_say": "しゅうじん",
+   "b_zh": "囚犯"
+  },
+  {
+   "lang": "ja",
+   "cat": "促音",
+   "a": "位置 いち",
+   "a_say": "いち",
+   "a_zh": "位置",
+   "b": "一致 いっち",
+   "b_say": "いっち",
+   "b_zh": "一致"
+  }
+ ],
+ "updated": "2026-10-21"
+}

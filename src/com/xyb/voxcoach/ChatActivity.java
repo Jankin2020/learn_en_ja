@@ -78,12 +78,17 @@ public class ChatActivity extends Activity {
         body.addView(UI.text(this, "选一个场景，用" + (ja ? "日语" : "英语") + "开口聊。AI 会按你的水平（"
                 + Content.levelName(lang, Store.level(this, lang)) + "）回复，并纠正你的每一句话。", 13, UI.SUB, false), UI.matchWrap(this, 2, 4, 2, 12));
         LinearLayout add = UI.hbox(this);
-        TextView mine = UI.button(this, "＋ 自定义场景", false);
+        TextView mine = UI.button(this, "＋ 自定义", false);
         mine.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { customDialog(); } });
-        TextView aiGen = UI.button(this, "✨ AI 生成场景", false);
+        TextView aiGen = UI.button(this, "✨ AI 生成", false);
         aiGen.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { aiScenarioDialog(); } });
+        TextView lib = UI.button(this, "📦 场景库", false);
+        lib.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) { startActivity(new Intent(ChatActivity.this, PacksActivity.class)); }
+        });
         add.addView(mine, UI.lpw(this, 1, 3));
         add.addView(aiGen, UI.lpw(this, 1, 3));
+        add.addView(lib, UI.lpw(this, 0.9f, 3));
         body.addView(add, UI.matchWrap(this, -3, 0, -3, 10));
         for (final Content.Scenario s : Store.scenarios(this, lang)) {
             LinearLayout row = UI.hbox(this);
@@ -117,7 +122,7 @@ public class ChatActivity extends Activity {
             }
             body.addView(row, UI.matchWrap(this, 0, 0, 0, 10));
         }
-        body.addView(UI.text(this, "长按「我的」场景可删除；内容包场景可在 设置 → 内容更新 中管理。", 11, UI.HINT, false), UI.matchWrap(this, 2, 2, 2, 0));
+        body.addView(UI.text(this, "长按「我的」场景可删除；更多场景在「📦 场景库」里一键安装和更新。", 11, UI.HINT, false), UI.matchWrap(this, 2, 2, 2, 0));
     }
 
     private EditText dlgField(LinearLayout box, String label, String hint, boolean multi) {

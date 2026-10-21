@@ -1,0 +1,132 @@
+{
+ "id": "en_business",
+ "name": "英语 · 职场商务",
+ "lang": "en",
+ "version": 1,
+ "desc": "Stand-up, client calls, presenting numbers, deadlines, feedback, networking",
+ "scenarios": [
+  {
+   "lang": "en",
+   "icon": "🌅",
+   "title": "站会汇报",
+   "sub": "Daily stand-up",
+   "role": "You are a scrum master at an international e-commerce tech company running the daily stand-up. Ask what the learner did yesterday, what they will do today and whether anything is blocking them. Keep it brisk and friendly.",
+   "opener": "Morning everyone! Let's go around. What did you work on yesterday?"
+  },
+  {
+   "lang": "en",
+   "icon": "📞",
+   "title": "客户来电",
+   "sub": "Handling a client call",
+   "role": "You are Sarah from Bloom Cosmetics, a client whose online store runs on the learner's platform. The store has been slow since yesterday and checkout sometimes fails. You are a bit frustrated but polite; you want an explanation and a timeline.",
+   "opener": "Hi, this is Sarah from Bloom Cosmetics. Our online store has been really slow since yesterday. Can you help?"
+  },
+  {
+   "lang": "en",
+   "icon": "📊",
+   "title": "汇报数据",
+   "sub": "Presenting monthly results",
+   "role": "You are the learner's manager in a monthly review meeting. Ask the learner to walk you through last month's e-commerce metrics (sales, conversion rate, traffic) and ask follow-up questions about causes and next steps.",
+   "opener": "Thanks for joining. Could you walk us through last month's numbers?"
+  },
+  {
+   "lang": "en",
+   "icon": "⏱",
+   "title": "谈截止日期",
+   "sub": "Negotiating a deadline",
+   "role": "You are a product manager who wants the new checkout page launched by the end of this month. The learner thinks it's too tight. Negotiate scope, timeline and resources.",
+   "opener": "So, can we launch the new checkout page by the end of this month?"
+  },
+  {
+   "lang": "en",
+   "icon": "💬",
+   "title": "一对一面谈",
+   "sub": "One-on-one with your manager",
+   "role": "You are the learner's supportive manager in a one-on-one. Ask how things are going, give some specific feedback, and discuss career goals.",
+   "opener": "Thanks for making time for our one-on-one. How do you feel things are going lately?"
+  },
+  {
+   "lang": "en",
+   "icon": "🤝",
+   "title": "社交破冰",
+   "sub": "Networking at an event",
+   "role": "You are Alex, a marketing manager at a tech meetup. Make small talk with the learner: introductions, what they do, industry trends, and exchange contacts.",
+   "opener": "Hi, I don't think we've met. I'm Alex. I work in marketing at a retail startup."
+  }
+ ],
+ "sentences": [
+  {
+   "lang": "en",
+   "level": 2,
+   "text": "Thanks for the update.",
+   "zh": "谢谢你的进展更新。"
+  },
+  {
+   "lang": "en",
+   "level": 2,
+   "text": "Sorry, could you repeat the last part?",
+   "zh": "不好意思，最后那部分能再说一遍吗？"
+  },
+  {
+   "lang": "en",
+   "level": 2,
+   "text": "Yesterday I fixed the login bug and started on the search page.",
+   "zh": "昨天我修好了登录的 bug，开始做搜索页。"
+  },
+  {
+   "lang": "en",
+   "level": 3,
+   "text": "I'm blocked until I get access to the payment API.",
+   "zh": "在拿到支付接口的权限之前，我的工作卡住了。"
+  },
+  {
+   "lang": "en",
+   "level": 3,
+   "text": "Our conversion rate went up by fifteen percent last month.",
+   "zh": "上个月我们的转化率提升了百分之十五。"
+  },
+  {
+   "lang": "en",
+   "level": 3,
+   "text": "Could you share your screen so we can all take a look?",
+   "zh": "你能共享一下屏幕让大家一起看看吗？"
+  },
+  {
+   "lang": "en",
+   "level": 3,
+   "text": "Let me look into it and get back to you by the end of the day.",
+   "zh": "我查一下，今天下班前回复你。"
+  },
+  {
+   "lang": "en",
+   "level": 3,
+   "text": "We've identified the cause and we're working on a fix.",
+   "zh": "我们已经找到原因，正在修复。"
+  },
+  {
+   "lang": "en",
+   "level": 4,
+   "text": "I'd suggest we push the launch back by a week to run more tests.",
+   "zh": "我建议上线推迟一周，多做些测试。"
+  },
+  {
+   "lang": "en",
+   "level": 4,
+   "text": "That's a fair point, but I'm concerned about the timeline.",
+   "zh": "这点说得有道理，但我担心时间安排。"
+  },
+  {
+   "lang": "en",
+   "level": 4,
+   "text": "Just to make sure we're on the same page, the deadline is Friday, right?",
+   "zh": "确认一下我们理解一致：截止日期是周五，对吧？"
+  },
+  {
+   "lang": "en",
+   "level": 4,
+   "text": "I'd appreciate some feedback on how I handled the client meeting.",
+   "zh": "希望你能就我处理客户会议的方式给些反馈。"
+  }
+ ],
+ "updated": "2026-10-21"
+}

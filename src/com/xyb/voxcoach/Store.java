@@ -106,7 +106,19 @@ public final class Store {
 
     // ------------------------------------------------------------------ content packs & custom scenarios
 
-    public static String packUrl(Context c) { return sp(c).getString("pack_url", ""); }
+    public static String packUrl(Context c) {
+        String u = sp(c).getString("pack_url", "");
+        return u.length() > 0 ? u : PackSync.JSDELIVR;
+    }
+    public static boolean autoUpdatePacks(Context c) { return sp(c).getBoolean("pack_auto", true); }
+    public static void setAutoUpdatePacks(Context c, boolean b) { sp(c).edit().putBoolean("pack_auto", b).apply(); }
+    public static String lastPackCheck(Context c) { return sp(c).getString("pack_check_day", ""); }
+    public static void setLastPackCheck(Context c, String d) { sp(c).edit().putString("pack_check_day", d).apply(); }
+    /** installed version of a pack, or -1 */
+    public static int installedVersion(Context c, String id) {
+        for (JSONObject p : packs(c)) if (id.equals(p.optString("id"))) return p.optInt("version", 1);
+        return -1;
+    }
     public static void setPackUrl(Context c, String u) { sp(c).edit().putString("pack_url", u.trim()).apply(); }
 
     public static List<JSONObject> packs(Context c) {
@@ -173,7 +185,10 @@ public final class Store {
             for (int i = 0; i < a.length(); i++) {
                 JSONObject o = a.optJSONObject(i);
                 if (o == null || !lang.equals(o.optString("lang", "en")) || o.optString("text").trim().length() == 0) continue;
-                out.add(new Content.Sentence(lang, "pk_" + p.optString("id") + "_" + i, Math.max(1, Math.min(4, o.optInt("level", 1))),
+                // stable id (survives pack updates that reorder sentences) so scores stay attached
+                String sid = o.optString("id", "");
+                if (sid.length() == 0) sid = Integer.toHexString(o.optString("text").trim().hashCode());
+                out.add(new Content.Sentence(lang, "pk_" + p.optString("id") + "_" + sid, Math.max(1, Math.min(4, o.optInt("level", 1))),
                         o.optString("text").trim(), o.optString("zh", "")));
             }
         }

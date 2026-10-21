@@ -1,0 +1,84 @@
+{
+ "catalog": "VoxCoach 内容库",
+ "updated": "2026-10-21",
+ "packs": [
+  {
+   "id": "ja_daily",
+   "name": "日语 · 日常办事",
+   "lang": "ja",
+   "version": 1,
+   "desc": "看病、租房、区役所、美容院、邮局、办手机卡",
+   "url": "ja_daily.json",
+   "counts": {
+    "scenarios": 6,
+    "sentences": 12,
+    "pairs": 2
+   }
+  },
+  {
+   "id": "ja_business",
+   "name": "日语 · 职场商务",
+   "lang": "ja",
+   "version": 1,
+   "desc": "早会汇报、客户电话、向上司报告、开会发言、拜访客户、聚餐",
+   "url": "ja_business.json",
+   "counts": {
+    "scenarios": 6,
+    "sentences": 14,
+    "pairs": 0
+   }
+  },
+  {
+   "id": "ja_travel",
+   "name": "日语 · 旅行",
+   "lang": "ja",
+   "version": 1,
+   "desc": "买新干线票、温泉旅馆、居酒屋、游客咨询、打车、丢东西",
+   "url": "ja_travel.json",
+   "counts": {
+    "scenarios": 6,
+    "sentences": 12,
+    "pairs": 0
+   }
+  },
+  {
+   "id": "en_daily",
+   "name": "英语 · 日常生活",
+   "lang": "en",
+   "version": 1,
+   "desc": "Doctor, bank, renting, pharmacy, returns, gym",
+   "url": "en_daily.json",
+   "counts": {
+    "scenarios": 6,
+    "sentences": 12,
+    "pairs": 2
+   }
+  },
+  {
+   "id": "en_business",
+   "name": "英语 · 职场商务",
+   "lang": "en",
+   "version": 1,
+   "desc": "Stand-up, client calls, presenting numbers, deadlines, feedback, networking",
+   "url": "en_business.json",
+   "counts": {
+    "scenarios": 6,
+    "sentences": 12,
+    "pairs": 0
+   }
+  },
+  {
+   "id": "en_travel",
+   "name": "英语 · 旅行",
+   "lang": "en",
+   "version": 1,
+   "desc": "Immigration, car rental, restaurants, lost luggage, directions, hotel issues",
+   "url": "en_travel.json",
+   "counts": {
+    "scenarios": 6,
+    "sentences": 12,
+    "pairs": 0
+   }
+  }
+ ]
+}

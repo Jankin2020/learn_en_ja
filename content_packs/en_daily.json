@@ -1,0 +1,150 @@
+{
+ "id": "en_daily",
+ "name": "英语 · 日常生活",
+ "lang": "en",
+ "version": 1,
+ "desc": "Doctor, bank, renting, pharmacy, returns, gym",
+ "scenarios": [
+  {
+   "lang": "en",
+   "icon": "🏥",
+   "title": "看医生",
+   "sub": "At the doctor's",
+   "role": "You are a family doctor. The learner feels sick. Ask about symptoms, how long, allergies and medication, then give simple advice.",
+   "opener": "Hi, come on in. What seems to be the problem today?"
+  },
+  {
+   "lang": "en",
+   "icon": "🏦",
+   "title": "银行开户",
+   "sub": "Opening a bank account",
+   "role": "You are a bank clerk helping the learner open a new account. Ask for ID and address, explain account types, fees and online banking.",
+   "opener": "Good afternoon! How can I help you today?"
+  },
+  {
+   "lang": "en",
+   "icon": "🏠",
+   "title": "租房看房",
+   "sub": "Renting an apartment",
+   "role": "You are a landlord showing an apartment. Answer questions about rent, utilities, deposit, lease length and pets; ask about the learner's job and move-in date.",
+   "opener": "Hi, you must be here to see the apartment. Come on in!"
+  },
+  {
+   "lang": "en",
+   "icon": "💊",
+   "title": "药店买药",
+   "sub": "At the pharmacy",
+   "role": "You are a pharmacist. The learner needs something for a cold or allergies. Ask about symptoms and other medications, and explain dosage.",
+   "opener": "Hi there! Are you picking up a prescription, or can I help you find something?"
+  },
+  {
+   "lang": "en",
+   "icon": "🛍",
+   "title": "退换货",
+   "sub": "Returning an item",
+   "role": "You are a customer service assistant at a clothing store. The learner wants to return or exchange an item. Ask for the receipt, the reason, and offer refund, exchange or store credit.",
+   "opener": "Hi! What can I help you with today?"
+  },
+  {
+   "lang": "en",
+   "icon": "🏋️",
+   "title": "健身房办卡",
+   "sub": "Joining a gym",
+   "role": "You are a front-desk staff member at a gym. Explain membership plans, contract terms, classes and opening hours; answer the learner's questions.",
+   "opener": "Welcome! Are you interested in becoming a member?"
+  }
+ ],
+ "sentences": [
+  {
+   "lang": "en",
+   "level": 1,
+   "text": "How often should I take this medicine?",
+   "zh": "这个药多久吃一次？"
+  },
+  {
+   "lang": "en",
+   "level": 2,
+   "text": "I've had a sore throat since yesterday.",
+   "zh": "我从昨天开始嗓子疼。"
+  },
+  {
+   "lang": "en",
+   "level": 3,
+   "text": "I'm allergic to penicillin.",
+   "zh": "我对青霉素过敏。"
+  },
+  {
+   "lang": "en",
+   "level": 2,
+   "text": "I'd like to open a savings account.",
+   "zh": "我想开一个储蓄账户。"
+  },
+  {
+   "lang": "en",
+   "level": 3,
+   "text": "Is there a monthly fee for this account?",
+   "zh": "这个账户有月费吗？"
+  },
+  {
+   "lang": "en",
+   "level": 3,
+   "text": "Are utilities included in the rent?",
+   "zh": "房租包含水电煤吗？"
+  },
+  {
+   "lang": "en",
+   "level": 2,
+   "text": "When is the rent due each month?",
+   "zh": "每个月房租几号交？"
+  },
+  {
+   "lang": "en",
+   "level": 4,
+   "text": "I'd like to sign a one-year lease with the option to renew.",
+   "zh": "我想签一年租约，并保留续约的选择权。"
+  },
+  {
+   "lang": "en",
+   "level": 2,
+   "text": "Do I need a prescription for this?",
+   "zh": "买这个需要处方吗？"
+  },
+  {
+   "lang": "en",
+   "level": 2,
+   "text": "I'd like to return this. It doesn't fit.",
+   "zh": "我想退这个，尺码不合适。"
+  },
+  {
+   "lang": "en",
+   "level": 3,
+   "text": "Could I get a refund instead of store credit?",
+   "zh": "可以退款而不是换成购物余额吗？"
+  },
+  {
+   "lang": "en",
+   "level": 3,
+   "text": "Is it possible to cancel the membership at any time?",
+   "zh": "会员可以随时取消吗？"
+  }
+ ],
+ "pairs": [
+  {
+   "lang": "en",
+   "cat": "L/R",
+   "a": "lead",
+   "a_zh": "带领",
+   "b": "read",
+   "b_zh": "读"
+  },
+  {
+   "lang": "en",
+   "cat": "TH 音",
+   "a": "thick",
+   "a_zh": "厚的",
+   "b": "sick",
+   "b_zh": "生病的"
+  }
+ ],
+ "updated": "2026-10-21"
+}

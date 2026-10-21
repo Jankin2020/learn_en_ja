@@ -1,0 +1,132 @@
+{
+ "id": "ja_travel",
+ "name": "日语 · 旅行",
+ "lang": "ja",
+ "version": 1,
+ "desc": "买新干线票、温泉旅馆、居酒屋、游客咨询、打车、丢东西",
+ "scenarios": [
+  {
+   "lang": "ja",
+   "icon": "🚄",
+   "title": "买新干线票",
+   "sub": "みどりの窓口で切符を買う",
+   "role": "You are a JR ticket office clerk. The learner wants Shinkansen tickets. Ask destination, date, time, number of people, reserved or non-reserved seat, window or aisle.",
+   "opener": "次の方どうぞ。どちらまでですか？"
+  },
+  {
+   "lang": "ja",
+   "icon": "♨️",
+   "title": "温泉旅馆",
+   "sub": "温泉旅館のチェックイン",
+   "role": "You are the okami (hostess) of a traditional onsen ryokan. Check the learner in, explain dinner and breakfast times, the large bath hours and how to wear a yukata.",
+   "opener": "ようこそお越しくださいました。お名前を頂戴できますか？"
+  },
+  {
+   "lang": "ja",
+   "icon": "🏮",
+   "title": "居酒屋点单",
+   "sub": "居酒屋で注文",
+   "role": "You are a lively izakaya staff member. Take drink and food orders, recommend dishes, and handle the bill at the end.",
+   "opener": "いらっしゃいませ！お飲み物は何になさいますか？"
+  },
+  {
+   "lang": "ja",
+   "icon": "🗺",
+   "title": "游客咨询处",
+   "sub": "観光案内所で相談",
+   "role": "You are a staff member at a tourist information center in Kyoto. Recommend sightseeing spots, explain how to get there by bus or train, and suggest a one-day plan.",
+   "opener": "こんにちは。どちらへ行かれる予定ですか？"
+  },
+  {
+   "lang": "ja",
+   "icon": "🚕",
+   "title": "打车",
+   "sub": "タクシーに乗る",
+   "role": "You are a Tokyo taxi driver. Ask the destination, confirm the route, make small talk, and handle payment.",
+   "opener": "どちらまで行かれますか？"
+  },
+  {
+   "lang": "ja",
+   "icon": "🔎",
+   "title": "丢了东西",
+   "sub": "交番で落とし物の相談",
+   "role": "You are a police officer at a koban (police box). The learner lost something. Ask what, where and when it was lost, what it looks like, and their contact details.",
+   "opener": "どうしましたか？何か落とされましたか？"
+  }
+ ],
+ "sentences": [
+  {
+   "lang": "ja",
+   "level": 1,
+   "text": "{京都|きょうと}まで{大人|おとな}{二枚|にまい}お{願|ねが}いします。",
+   "zh": "到京都，两张成人票。"
+  },
+  {
+   "lang": "ja",
+   "level": 2,
+   "text": "{窓側|まどがわ}の{席|せき}は{空|あ}いていますか。",
+   "zh": "靠窗的座位还有吗？"
+  },
+  {
+   "lang": "ja",
+   "level": 2,
+   "text": "{夕食|ゆうしょく}は{何時|なんじ}からですか。",
+   "zh": "晚饭几点开始？"
+  },
+  {
+   "lang": "ja",
+   "level": 3,
+   "text": "{大浴場|だいよくじょう}は{何時|なんじ}まで{利用|りよう}できますか。",
+   "zh": "大浴场可以用到几点？"
+  },
+  {
+   "lang": "ja",
+   "level": 1,
+   "text": "とりあえず{生|なま}ビールを{二|ふた}つください。",
+   "zh": "先来两杯生啤。"
+  },
+  {
+   "lang": "ja",
+   "level": 2,
+   "text": "おすすめは{何|なん}ですか。",
+   "zh": "有什么推荐的？"
+  },
+  {
+   "lang": "ja",
+   "level": 1,
+   "text": "お{会計|かいけい}お{願|ねが}いします。",
+   "zh": "请结账。"
+  },
+  {
+   "lang": "ja",
+   "level": 2,
+   "text": "カードで{払|はら}えますか。",
+   "zh": "可以刷卡吗？"
+  },
+  {
+   "lang": "ja",
+   "level": 2,
+   "text": "この{住所|じゅうしょ}までお{願|ねが}いします。",
+   "zh": "请到这个地址。"
+  },
+  {
+   "lang": "ja",
+   "level": 2,
+   "text": "{一番|いちばん}{近|ちか}いコンビニはどこですか。",
+   "zh": "最近的便利店在哪里？"
+  },
+  {
+   "lang": "ja",
+   "level": 2,
+   "text": "{写真|しゃしん}を{撮|と}ってもいいですか。",
+   "zh": "可以拍照吗？"
+  },
+  {
+   "lang": "ja",
+   "level": 3,
+   "text": "{財布|さいふ}を{電車|でんしゃ}に{忘|わす}れてしまいました。",
+   "zh": "我把钱包忘在电车上了。"
+  }
+ ],
+ "updated": "2026-10-21"
+}

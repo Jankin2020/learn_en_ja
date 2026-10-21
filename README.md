@@ -1,6 +1,6 @@
 # VoxCoach：英语 / 日语 AI 口语陪练（Android）
 
-直接安装 `VoxCoach.apk` 即可使用（Android 6.0 及以上）。当前版本：1.2。
+直接安装 `VoxCoach.apk` 即可使用（Android 6.0 及以上）。当前版本：1.3。
 
 ## 功能
 
@@ -52,27 +52,50 @@ App 内入口：首页「语音环境」或 设置 → 语音环境。
    - 复制「密钥 1」和区域（如 `japaneast`），填进 App。
    - 把「语音合成」切到「微软 Azure」，点任意音色即可试听。
 
-## 内容更新（内容包）
+## 内容库（场景包）
 
-内置题库随 App 版本更新。另外可以随时导入 JSON「内容包」，扩充句子、对立词和对话场景：
+场景包放在仓库的 `content_packs/` 目录里，`index.json` 是目录：
 
-- 设置 → 内容更新：填一个链接（Gitee 或 GitHub 的 raw 地址都行）。以后内容包更新了，点「从链接更新」即可，同一个 `id` 会被覆盖为新版本。
-- 也可以「从文件导入」手机里的 .json 文件。
-- 对话页可以「＋ 自定义场景」，也可以「✨ AI 生成场景」，一句话描述就行。
-- 对话结束后的点评里，推荐表达可以加入跟读题库。
+| 文件 | 内容 |
+|---|---|
+| `ja_daily.json` | 日语 · 日常办事：看病、租房、区役所、美容院、邮局、办手机卡 |
+| `ja_business.json` | 日语 · 职场商务：早会汇报、客户来电、向上司报告、会议发言、拜访客户、聚餐 |
+| `ja_travel.json` | 日语 · 旅行：新干线、温泉旅馆、居酒屋、游客咨询、打车、交番报失 |
+| `en_daily.json` | 英语 · 日常：看医生、银行、租房、药店、退换货、健身房 |
+| `en_business.json` | 英语 · 职场：站会、客户电话、汇报数据、谈截止日期、一对一、社交 |
+| `en_travel.json` | 英语 · 旅行：入境、租车、餐厅投诉、行李丢失、问路、酒店报修 |
 
-格式见 `content_packs/sample_pack.json`：
+每个包有 6 个对话场景和 12～14 句跟读句。
+
+**在 App 里安装和更新**
+
+入口：对话页的「📦 场景库」，或 设置 → 内容库。
+
+- 打开后会自动读取目录，每个包可以单独「安装 / 更新」，也可以点「全部安装/更新」。
+- 默认开启「每天自动更新」：每天第一次打开 App 时，已安装的包如果有新版本，会自动升级。
+- 默认地址是国内镜像：`https://cdn.jsdelivr.net/gh/Jankin2020/learn_en_ja@main/content_packs/index.json`
+
+**发布新内容或修改内容**
+
+1. 新增包：在 `content_packs/` 放一个新的 `xxx.json`，再在 `index.json` 的 `packs` 里加一条：`{"id","name","lang","version","desc","url":"xxx.json"}`。
+2. 修改已有的包：改完内容后，把**包文件和 `index.json` 里的 `version` 都加 1**。App 是靠这个数字判断有没有更新的。
+3. 运行 `push_to_github.ps1` 推送到 GitHub。
+4. jsDelivr 镜像最多缓存 12 小时。想马上生效，就在浏览器打开下面的地址刷新缓存：
+   `https://purge.jsdelivr.net/gh/Jankin2020/learn_en_ja@main/content_packs/index.json`
+   改过哪个包，就把地址最后的文件名换成那个包再刷一次。
+
+包文件格式（日语句子里含汉字的词写成 `{漢字|かな}`，评分才能精确到每个假名）：
 
 ```json
 {
-  "id": "唯一ID（更新时保持不变）", "name": "显示名称", "version": 2,
-  "sentences": [{"lang": "ja", "level": 1-4, "text": "{漢字|かな}の注音形式", "zh": "翻译"}],
-  "pairs":     [{"lang": "en", "cat": "L/R", "a": "lead", "a_zh": "带领", "b": "read", "b_zh": "读"}],
-  "scenarios": [{"lang": "ja", "icon": "🏥", "title": "中文标题", "sub": "副标题", "role": "给 AI 的角色说明", "opener": "AI 的第一句"}]
+  "id": "ja_daily", "name": "日语 · 日常办事", "lang": "ja", "version": 2, "desc": "简介",
+  "scenarios": [{"lang": "ja", "icon": "🏥", "title": "中文标题", "sub": "副标题", "role": "给 AI 的角色说明（英文或中文）", "opener": "AI 的第一句"}],
+  "sentences": [{"lang": "ja", "level": 2, "text": "{熱|ねつ}があります。", "zh": "我发烧了。"}],
+  "pairs":     [{"lang": "ja", "cat": "长音", "a": "主人 しゅじん", "a_say": "しゅじん", "a_zh": "丈夫", "b": "囚人 しゅうじん", "b_say": "しゅうじん", "b_zh": "囚犯"}]
 }
 ```
 
-日语句子里含汉字的词要写成 `{漢字|かな}`，评分才能精确到每个假名。
+想要新的场景包，直接告诉 Claude 主题即可，比如「日语 · 电商客服」，生成后放进这个目录再推送。
 
 ## 评分原理与局限
 
@@ -102,10 +125,7 @@ sudo apt install openjdk-17-jdk android-sdk-platform-23 aapt dalvik-exchange zip
    - 到仓库的 Settings → Secrets and variables → Actions → New repository secret，名字填 `KEYSTORE_BASE64`，内容粘贴。
 5. 以后每次推送，Actions 都会自动构建 APK。推送 `v1.3` 这样的标签，会自动发布到 Releases 页，手机上直接下载安装。脚本最后一步可以帮你打标签。
 
-内容包也可以放在这个仓库里，然后在 App 里订阅：
 
-- 国内直连（jsDelivr，有几小时缓存）：`https://cdn.jsdelivr.net/gh/Jankin2020/learn_en_ja@main/content_packs/sample_pack.json`
-- 原始地址（需要代理）：`https://raw.githubusercontent.com/Jankin2020/learn_en_ja/main/content_packs/sample_pack.json`
 
 源码结构（`src/com/xyb/voxcoach/`）：
 

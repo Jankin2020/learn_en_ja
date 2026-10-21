@@ -1,0 +1,144 @@
+{
+ "id": "ja_business",
+ "name": "日语 · 职场商务",
+ "lang": "ja",
+ "version": 1,
+ "desc": "早会汇报、客户电话、向上司报告、开会发言、拜访客户、聚餐",
+ "scenarios": [
+  {
+   "lang": "ja",
+   "icon": "🌅",
+   "title": "早会汇报",
+   "sub": "朝会で進捗報告",
+   "role": "You are the team leader of a development team at a Japanese e-commerce SaaS company, running the morning stand-up (朝会). Ask the learner for yesterday's progress, today's plan and any blockers. Use polite business Japanese.",
+   "opener": "おはようございます。では、昨日の進捗を報告してもらえますか？"
+  },
+  {
+   "lang": "ja",
+   "icon": "☎️",
+   "title": "客户来电",
+   "sub": "取引先との電話",
+   "role": "You are 田中 from 株式会社さくら, a client who runs an online store on the learner's company's platform. You call because the store's checkout page shows an error. Use proper business phone Japanese; the learner should take a message or promise a follow-up.",
+   "opener": "お世話になっております。株式会社さくらの田中と申します。担当の方はいらっしゃいますか？"
+  },
+  {
+   "lang": "ja",
+   "icon": "🙇",
+   "title": "向上司报告",
+   "sub": "上司に報告・相談",
+   "role": "You are the learner's Japanese manager. The learner comes to report a problem or ask for advice. Ask clarifying questions (what happened, impact, cause, next steps) in natural office Japanese.",
+   "opener": "どうしました？何かありましたか？"
+  },
+  {
+   "lang": "ja",
+   "icon": "📊",
+   "title": "会议发言",
+   "sub": "会議で意見を述べる",
+   "role": "You are facilitating a project meeting at a Japanese IT company about whether to release a new feature next month. Ask the learner for their opinion, push back politely and ask for reasons.",
+   "opener": "それでは、この件について皆さんのご意見をお聞かせください。"
+  },
+  {
+   "lang": "ja",
+   "icon": "🤝",
+   "title": "拜访客户",
+   "sub": "初めての訪問・名刺交換",
+   "role": "You are a manager at a client company receiving the learner for a first business visit. Exchange greetings and business cards, make small talk, then ask about their proposal.",
+   "opener": "本日はお忙しいところお越しいただき、ありがとうございます。"
+  },
+  {
+   "lang": "ja",
+   "icon": "🍻",
+   "title": "公司聚餐",
+   "sub": "飲み会での雑談",
+   "role": "You are a friendly Japanese colleague at a casual company drinking party (飲み会). Chat about work, hobbies, food and the learner's life in Japan, using casual but polite Japanese.",
+   "opener": "お疲れさまです！乾杯しましょう。最近、仕事はどうですか？"
+  }
+ ],
+ "sentences": [
+  {
+   "lang": "ja",
+   "level": 2,
+   "text": "{昨日|きのう}の{作業|さぎょう}は{予定|よてい}{通|どお}り{終|お}わりました。",
+   "zh": "昨天的工作按计划完成了。"
+  },
+  {
+   "lang": "ja",
+   "level": 3,
+   "text": "{仕様|しよう}について{確認|かくにん}したい{点|てん}があります。",
+   "zh": "关于规格有想确认的地方。"
+  },
+  {
+   "lang": "ja",
+   "level": 3,
+   "text": "{本番|ほんばん}{環境|かんきょう}で{不具合|ふぐあい}が{発生|はっせい}しています。",
+   "zh": "正式环境出现了故障。"
+  },
+  {
+   "lang": "ja",
+   "level": 4,
+   "text": "{原因|げんいん}を{調査|ちょうさ}して、{本日中|ほんじつちゅう}にご{報告|ほうこく}いたします。",
+   "zh": "我们会调查原因，今天之内向您报告。"
+  },
+  {
+   "lang": "ja",
+   "level": 3,
+   "text": "{来週|らいしゅう}の{金曜日|きんようび}までに{対応|たいおう}できると{思|おも}います。",
+   "zh": "我想下周五之前可以处理好。"
+  },
+  {
+   "lang": "ja",
+   "level": 3,
+   "text": "{申|もう}し{訳|わけ}ございません、{今|いま}{席|せき}を{外|はず}しております。",
+   "zh": "非常抱歉，他现在不在座位上。"
+  },
+  {
+   "lang": "ja",
+   "level": 3,
+   "text": "{折|お}り{返|かえ}しお{電話|でんわ}いたしましょうか。",
+   "zh": "需要给您回电话吗？"
+  },
+  {
+   "lang": "ja",
+   "level": 4,
+   "text": "{恐|おそ}れ{入|い}りますが、もう{一度|いちど}お{名前|なまえ}をお{伺|うかが}いしてもよろしいでしょうか。",
+   "zh": "不好意思，能再请教一下您的名字吗？"
+  },
+  {
+   "lang": "ja",
+   "level": 4,
+   "text": "その{件|けん}については、{社内|しゃない}で{検討|けんとう}させてください。",
+   "zh": "那件事请让我们在公司内部研究一下。"
+  },
+  {
+   "lang": "ja",
+   "level": 3,
+   "text": "{売上|うりあげ}は{先月|せんげつ}より{二割|にわり}{増|ふ}えました。",
+   "zh": "销售额比上个月增加了两成。"
+  },
+  {
+   "lang": "ja",
+   "level": 4,
+   "text": "{差|さ}し{支|つか}えなければ、{資料|しりょう}を{共有|きょうゆう}していただけますか。",
+   "zh": "方便的话，能共享一下资料吗？"
+  },
+  {
+   "lang": "ja",
+   "level": 2,
+   "text": "{少々|しょうしょう}お{待|ま}ちください。",
+   "zh": "请稍等。"
+  },
+  {
+   "lang": "ja",
+   "level": 2,
+   "text": "お{先|さき}に{失礼|しつれい}します。",
+   "zh": "我先走了。"
+  },
+  {
+   "lang": "ja",
+   "level": 1,
+   "text": "お{疲|つか}れさまでした。",
+   "zh": "辛苦了。"
+  }
+ ],
+ "updated": "2026-10-21"
+}
