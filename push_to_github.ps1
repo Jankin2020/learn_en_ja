@@ -37,11 +37,27 @@ if (-not ($remotes -contains "origin")) { git remote add origin "https://github.
 # 优先使用 Git Credential Manager（浏览器登录）；没有的话会要求输入用户名 + 令牌
 if (-not (git config --global credential.helper)) { git config --global credential.helper manager 2>$null }
 
+# 国内直连 github.com 经常被重置：如果系统开着代理而 git 没配，就让 git 访问 GitHub 时走同一个代理
+if (-not (git config --global --get http.https://github.com.proxy) -and -not (git config --global --get http.proxy)) {
+    $ie = Get-ItemProperty 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings' -ErrorAction SilentlyContinue
+    if ($ie -and $ie.ProxyEnable -eq 1 -and $ie.ProxyServer) {
+        $ps = [string]$ie.ProxyServer
+        if ($ps -match 'https=([^;]+)') { $ps = $Matches[1] } elseif ($ps -match 'http=([^;]+)') { $ps = $Matches[1] }
+        if ($ps -notmatch '^[a-z]+://') { $ps = "http://$ps" }
+        git config --global http.https://github.com.proxy $ps
+        Write-Host "检测到系统代理 $ps，已让 git 访问 GitHub 时使用它" -ForegroundColor Cyan
+    } else {
+        Write-Host "提示：没检测到系统代理。如果推送连不上 GitHub，请先打开代理软件（Clash / v2rayN 等）的「系统代理」再运行。" -ForegroundColor Yellow
+    }
+}
+
 Write-Host "正在推送到 https://github.com/$user/$repo ..." -ForegroundColor Cyan
 Write-Host "如果要求输入 Password：请粘贴 GitHub 个人访问令牌（ghp_ 开头），不是登录密码；粘贴时屏幕不显示是正常的。" -ForegroundColor Yellow
 git push -u origin main
 if ($LASTEXITCODE -ne 0) {
-    Write-Host "推送失败。请到 https://github.com/settings/tokens/new 生成令牌（勾选 repo 和 workflow），然后重新运行本脚本。" -ForegroundColor Red
+    Write-Host "推送失败。看上面的英文报错：" -ForegroundColor Red
+    Write-Host "  · Connection was reset / Couldn't connect / timed out → 网络问题：打开代理的系统代理，或手动设置：git config --global http.https://github.com.proxy http://127.0.0.1:端口" -ForegroundColor Red
+    Write-Host "  · Authentication failed / Invalid username or token → 令牌问题：到 https://github.com/settings/tokens/new 重新生成（勾选 repo 和 workflow）" -ForegroundColor Red
     exit 1
 }
 
