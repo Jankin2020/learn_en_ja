@@ -161,7 +161,7 @@ public class SettingsActivity extends Activity {
         // ---------------- voice
         LinearLayout vc = UI.card(this);
         vc.addView(UI.text(this, "🔊 语音环境", 16, UI.TEXT, true));
-        String tm = "azure".equals(Store.ttsMode(this)) ? "微软 Azure · " + Store.azureVoice(this, Store.lang(this)) : "cloud".equals(Store.ttsMode(this)) ? "在线 TTS" : (Speaker.engine(this) == null ? "系统默认引擎" : Speaker.engine(this));
+        String tm = "bundled".equals(Store.ttsMode(this)) ? "内置离线音（" + AudioBank.assetCount(this) + " 条录音）" : "azure".equals(Store.ttsMode(this)) ? "微软 Azure · " + Store.azureVoice(this, Store.lang(this)) : "cloud".equals(Store.ttsMode(this)) ? "在线 TTS" : (Speaker.engine(this) == null ? "系统默认引擎" : Speaker.engine(this));
         String am = "cloud".equals(Store.asrMode(this)) ? "在线识别" : (Rec.available(this) ? "系统识别" : "❌ 不可用");
         vc.addView(UI.text(this, "合成：" + tm + "\n识别：" + am, 13, UI.SUB, false), UI.matchWrap(this, 0, 6, 0, 8));
         TextView openVoice = UI.button(this, "语音引擎 / 日语语音包 / 在线语音 ›", false);

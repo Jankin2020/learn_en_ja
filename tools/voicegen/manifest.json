@@ -1,0 +1,6323 @@
+[
+{
+"key": "0105fc360f88ebd5c967674a3ab3ec59",
+"lang": "en",
+"text": "Is it possible to cancel the membership at any time?",
+"synth": "Is it possible to cancel the membership at any time?",
+"kind": "sentence"
+},
+{
+"key": "02271292f8c9f241855b554281be2fae",
+"lang": "en",
+"text": "I'll be staying at a hotel downtown.",
+"synth": "I'll be staying at a hotel downtown.",
+"kind": "sentence"
+},
+{
+"key": "0292d9d309d58821489171f4d3a924e7",
+"lang": "en",
+"text": "We've identified the cause and we're working on a fix.",
+"synth": "We've identified the cause and we're working on a fix.",
+"kind": "sentence"
+},
+{
+"key": "04834270a7824f450f80bb78a50c61c6",
+"lang": "en",
+"text": "I'd rather stay in tonight and watch a movie.",
+"synth": "I'd rather stay in tonight and watch a movie.",
+"kind": "sentence"
+},
+{
+"key": "05dbecb3701311cbeb802ef52b067771",
+"lang": "en",
+"text": "Is there a monthly fee for this account?",
+"synth": "Is there a monthly fee for this account?",
+"kind": "sentence"
+},
+{
+"key": "09102b69838d344372f340403d98fefc",
+"lang": "en",
+"text": "It's worth trying at least once.",
+"synth": "It's worth trying at least once.",
+"kind": "sentence"
+},
+{
+"key": "09ee4caa02c80c6b56fc299f8876d968",
+"lang": "en",
+"text": "How much is this jacket?",
+"synth": "How much is this jacket?",
+"kind": "sentence"
+},
+{
+"key": "0c1b345306225bdf1247f806ba2144ea",
+"lang": "en",
+"text": "Is breakfast included?",
+"synth": "Is breakfast included?",
+"kind": "sentence"
+},
+{
+"key": "1011e2e2d917d55da471d3d8308379b8",
+"lang": "en",
+"text": "Do you mind if I open the window?",
+"synth": "Do you mind if I open the window?",
+"kind": "sentence"
+},
+{
+"key": "122cd7673331cd51405487bc2dd6a9bb",
+"lang": "en",
+"text": "We need to prioritize the features that matter most to our users.",
+"synth": "We need to prioritize the features that matter most to our users.",
+"kind": "sentence"
+},
+{
+"key": "1c3309030e9d46e2c86fcf8f331c6b6a",
+"lang": "en",
+"text": "I'm afraid I can't make it tomorrow.",
+"synth": "I'm afraid I can't make it tomorrow.",
+"kind": "sentence"
+},
+{
+"key": "1cf4bc830ac87d158b5e1a280269a37e",
+"lang": "en",
+"text": "Excuse me, where is the restroom?",
+"synth": "Excuse me, where is the restroom?",
+"kind": "sentence"
+},
+{
+"key": "24ed34ef43515f8b2abced235fd58005",
+"lang": "en",
+"text": "Thanks for making time for our one-on-one. How do you feel things are going lately?",
+"synth": "Thanks for making time for our one-on-one. How do you feel things are going lately?",
+"kind": "sentence"
+},
+{
+"key": "2680d2a7e3af923ff16f7f543888800a",
+"lang": "en",
+"text": "Yesterday I fixed the login bug and started on the search page.",
+"synth": "Yesterday I fixed the login bug and started on the search page.",
+"kind": "sentence"
+},
+{
+"key": "2a35a88288b2e36edaf1796568c8e48c",
+"lang": "en",
+"text": "Hi! What can I help you with today?",
+"synth": "Hi! What can I help you with today?",
+"kind": "sentence"
+},
+{
+"key": "2ce3c97cf93a3d27d53b610ace84ca27",
+"lang": "en",
+"text": "The weather is really nice today.",
+"synth": "The weather is really nice today.",
+"kind": "sentence"
+},
+{
+"key": "2debf6fb3881579d0f6033d4a1d93833",
+"lang": "en",
+"text": "That's a fair point, but I'm concerned about the timeline.",
+"synth": "That's a fair point, but I'm concerned about the timeline.",
+"kind": "sentence"
+},
+{
+"key": "3928d2082bebfa5143f87cb805fc92b6",
+"lang": "en",
+"text": "I'd like to open a savings account.",
+"synth": "I'd like to open a savings account.",
+"kind": "sentence"
+},
+{
+"key": "3cc4cf2828f07c834fc3a054688c71bf",
+"lang": "en",
+"text": "The air conditioning in my room isn't working.",
+"synth": "The air conditioning in my room isn't working.",
+"kind": "sentence"
+},
+{
+"key": "3ec0536fdcb929fcc587af84cdf434d8",
+"lang": "en",
+"text": "How do I get to the nearest subway station?",
+"synth": "How do I get to the nearest subway station?",
+"kind": "sentence"
+},
+{
+"key": "3f3e67abf36fc332b428c95a2bde04de",
+"lang": "en",
+"text": "The project ran over budget, but the results were worth it.",
+"synth": "The project ran over budget, but the results were worth it.",
+"kind": "sentence"
+},
+{
+"key": "41f4b90afcaea5dbe0d47bda3308cb74",
+"lang": "en",
+"text": "How often should I take this medicine?",
+"synth": "How often should I take this medicine?",
+"kind": "sentence"
+},
+{
+"key": "42882f53a3dd58c017fed35845641f11",
+"lang": "en",
+"text": "Could you speak a little more slowly?",
+"synth": "Could you speak a little more slowly?",
+"kind": "sentence"
+},
+{
+"key": "42b144c9a71672a276bb3ccd719ba29c",
+"lang": "en",
+"text": "Hi! What would you like to talk about today?",
+"synth": "Hi! What would you like to talk about today?",
+"kind": "sentence"
+},
+{
+"key": "445a08f61c41aec54697b7d0f016d74f",
+"lang": "en",
+"text": "Good afternoon. Passport, please. What's the purpose of your visit?",
+"synth": "Good afternoon. Passport, please. What's the purpose of your visit?",
+"kind": "sentence"
+},
+{
+"key": "458b6d2a89aef433af2f5fe60791a816",
+"lang": "en",
+"text": "Would you be open to rescheduling the call for later this week?",
+"synth": "Would you be open to rescheduling the call for later this week?",
+"kind": "sentence"
+},
+{
+"key": "47968024adc3e4b2191718a9cc709289",
+"lang": "en",
+"text": "Hello, how can I help you?",
+"synth": "Hello, how can I help you?",
+"kind": "sentence"
+},
+{
+"key": "4867d6a1273fcab671d30a08fa586601",
+"lang": "en",
+"text": "Do I need a prescription for this?",
+"synth": "Do I need a prescription for this?",
+"kind": "sentence"
+},
+{
+"key": "4ad448cfdaf8dc2a074c4f955f2332d5",
+"lang": "en",
+"text": "I'm looking forward to seeing you next week.",
+"synth": "I'm looking forward to seeing you next week.",
+"kind": "sentence"
+},
+{
+"key": "4b2d27a2c2698828ea61e905daa6de21",
+"lang": "en",
+"text": "Let me look into it and get back to you by the end of the day.",
+"synth": "Let me look into it and get back to you by the end of the day.",
+"kind": "sentence"
+},
+{
+"key": "52f88ee76a030aa3c1daa96b72440b89",
+"lang": "en",
+"text": "It takes about ten minutes to walk there.",
+"synth": "It takes about ten minutes to walk there.",
+"kind": "sentence"
+},
+{
+"key": "5326a402a90d03e783e02ee71145cb88",
+"lang": "en",
+"text": "Sure, where are you trying to go?",
+"synth": "Sure, where are you trying to go?",
+"kind": "sentence"
+},
+{
+"key": "535a58f735c469262e4e67008111fd02",
+"lang": "en",
+"text": "Hi, you must be here to see the apartment. Come on in!",
+"synth": "Hi, you must be here to see the apartment. Come on in!",
+"kind": "sentence"
+},
+{
+"key": "53c7e8106cadab3edbc8529524848f4d",
+"lang": "en",
+"text": "Hello! Nice to meet you.",
+"synth": "Hello! Nice to meet you.",
+"kind": "sentence"
+},
+{
+"key": "55238154c57bb0c5c73662425570c7e3",
+"lang": "en",
+"text": "I'm here on vacation for a week.",
+"synth": "I'm here on vacation for a week.",
+"kind": "sentence"
+},
+{
+"key": "5b4c1c9e3570268b854d0824a767f78e",
+"lang": "en",
+"text": "Hi, I don't think we've met. I'm Alex. I work in marketing at a retail startup.",
+"synth": "Hi, I don't think we've met. I'm Alex. I work in marketing at a retail startup.",
+"kind": "sentence"
+},
+{
+"key": "5c7e41ff6ee14b700896b564c67b71cb",
+"lang": "en",
+"text": "What time is it now?",
+"synth": "What time is it now?",
+"kind": "sentence"
+},
+{
+"key": "6237c9576a51d58b39c8532d7d6044c3",
+"lang": "en",
+"text": "Let's grab some lunch together.",
+"synth": "Let's grab some lunch together.",
+"kind": "sentence"
+},
+{
+"key": "63b366903dc0ebf4e89d2f9d169b8cfb",
+"lang": "en",
+"text": "Thanks for the update.",
+"synth": "Thanks for the update.",
+"kind": "sentence"
+},
+{
+"key": "68ba09111f1fad9f8a2fa97c02145bb9",
+"lang": "en",
+"text": "Just to make sure we're on the same page, the deadline is Friday, right?",
+"synth": "Just to make sure we're on the same page, the deadline is Friday, right?",
+"kind": "sentence"
+},
+{
+"key": "690a418910f4efeac706ecbe6e0da490",
+"lang": "en",
+"text": "If I had more time, I would travel around the world.",
+"synth": "If I had more time, I would travel around the world.",
+"kind": "sentence"
+},
+{
+"key": "69999969967d4710325cdd69a2cbe275",
+"lang": "en",
+"text": "I really appreciate you taking the time to help me.",
+"synth": "I really appreciate you taking the time to help me.",
+"kind": "sentence"
+},
+{
+"key": "6f4253e05fd9fa4c5ea1edb3a0b10b8f",
+"lang": "en",
+"text": "Could you share your screen so we can all take a look?",
+"synth": "Could you share your screen so we can all take a look?",
+"kind": "sentence"
+},
+{
+"key": "71b8272cb2fdab0ecc5ee8a187054d90",
+"lang": "en",
+"text": "When is the rent due each month?",
+"synth": "When is the rent due each month?",
+"kind": "sentence"
+},
+{
+"key": "73229ce0cd3b6b9ec78cf0d6d5d01fae",
+"lang": "en",
+"text": "Can I have a glass of water, please?",
+"synth": "Can I have a glass of water, please?",
+"kind": "sentence"
+},
+{
+"key": "74778ac271f8315876c12399d9540dc6",
+"lang": "en",
+"text": "Could you walk me through the main points of the report?",
+"synth": "Could you walk me through the main points of the report?",
+"kind": "sentence"
+},
+{
+"key": "76438271426d7c802562e9f8f390b22a",
+"lang": "en",
+"text": "Could you say that again, please?",
+"synth": "Could you say that again, please?",
+"kind": "sentence"
+},
+{
+"key": "77f056dce68c9c677cda0fadcf4bdc4f",
+"lang": "en",
+"text": "I'd appreciate some feedback on how I handled the client meeting.",
+"synth": "I'd appreciate some feedback on how I handled the client meeting.",
+"kind": "sentence"
+},
+{
+"key": "78871c9ab7e7271fb4ba28c5875d4ded",
+"lang": "en",
+"text": "Let's take a step back and look at the bigger picture.",
+"synth": "Let's take a step back and look at the bigger picture.",
+"kind": "sentence"
+},
+{
+"key": "79de8ae17175f82166472ea977d8fce2",
+"lang": "en",
+"text": "I'm afraid this isn't what I ordered.",
+"synth": "I'm afraid this isn't what I ordered.",
+"kind": "sentence"
+},
+{
+"key": "7ebc51cda69eb4333f75a83f0eb880e7",
+"lang": "en",
+"text": "Could you recommend somewhere to eat around here?",
+"synth": "Could you recommend somewhere to eat around here?",
+"kind": "sentence"
+},
+{
+"key": "8097d42fb89d69dac3c0e8fdae7d741a",
+"lang": "en",
+"text": "The thing is, I'm not really sure what he meant.",
+"synth": "The thing is, I'm not really sure what he meant.",
+"kind": "sentence"
+},
+{
+"key": "834469a7c445ac0439617507f5f78363",
+"lang": "en",
+"text": "Thanks for coming in today. Could you start by telling me a little about yourself?",
+"synth": "Thanks for coming in today. Could you start by telling me a little about yourself?",
+"kind": "sentence"
+},
+{
+"key": "880c840701f0fb04794212b165b29622",
+"lang": "en",
+"text": "I was stuck in traffic, so I missed the beginning of the meeting.",
+"synth": "I was stuck in traffic, so I missed the beginning of the meeting.",
+"kind": "sentence"
+},
+{
+"key": "89b6534078e4ca146f0949abf3909479",
+"lang": "en",
+"text": "Front desk, this is Emma speaking. How may I help you?",
+"synth": "Front desk, this is Emma speaking. How may I help you?",
+"kind": "sentence"
+},
+{
+"key": "908752e49390d14b1c043afbfdfa2c74",
+"lang": "en",
+"text": "Morning everyone! Let's go around. What did you work on yesterday?",
+"synth": "Morning everyone! Let's go around. What did you work on yesterday?",
+"kind": "sentence"
+},
+{
+"key": "90a56501b8fbb28334745f9bdaa0f88a",
+"lang": "en",
+"text": "Good afternoon! How can I help you today?",
+"synth": "Good afternoon! How can I help you today?",
+"kind": "sentence"
+},
+{
+"key": "98be828f1f2180661c2fc41378ae4529",
+"lang": "en",
+"text": "Can you recommend a good restaurant nearby?",
+"synth": "Can you recommend a good restaurant nearby?",
+"kind": "sentence"
+},
+{
+"key": "9af08add37007dafb6d2afdfbc085893",
+"lang": "en",
+"text": "I've had a sore throat since yesterday.",
+"synth": "I've had a sore throat since yesterday.",
+"kind": "sentence"
+},
+{
+"key": "9afeef44696803008c35f9d1181e7338",
+"lang": "en",
+"text": "I'm from China, and I work in Tokyo.",
+"synth": "I'm from China, and I work in Tokyo.",
+"kind": "sentence"
+},
+{
+"key": "9c0cbc52e28bced197f47b28bcf26822",
+"lang": "en",
+"text": "I'm leaning towards the second option, to be honest.",
+"synth": "I'm leaning towards the second option, to be honest.",
+"kind": "sentence"
+},
+{
+"key": "9da12c7c1fccd35747ebc99871764b7e",
+"lang": "en",
+"text": "I'd like to return this. It doesn't fit.",
+"synth": "I'd like to return this. It doesn't fit.",
+"kind": "sentence"
+},
+{
+"key": "9e78a73e466e70627cef49012a33d7db",
+"lang": "en",
+"text": "Hi, how is everything tasting so far?",
+"synth": "Hi, how is everything tasting so far?",
+"kind": "sentence"
+},
+{
+"key": "a0512ce04921084f26a0bee3f83ce9d2",
+"lang": "en",
+"text": "Our conversion rate went up by fifteen percent last month.",
+"synth": "Our conversion rate went up by fifteen percent last month.",
+"kind": "sentence"
+},
+{
+"key": "a2a6269ea0fee57f2a76368d516f90c1",
+"lang": "en",
+"text": "I'd like to sign a one-year lease with the option to renew.",
+"synth": "I'd like to sign a one-year lease with the option to renew.",
+"kind": "sentence"
+},
+{
+"key": "a6a86bc0d38acee1bf13a93336b4a5c2",
+"lang": "en",
+"text": "Hi! Do you have a reservation with us?",
+"synth": "Hi! Do you have a reservation with us?",
+"kind": "sentence"
+},
+{
+"key": "a77be648b09b77c069f69d4785263f49",
+"lang": "en",
+"text": "Hi there! What can I get for you today?",
+"synth": "Hi there! What can I get for you today?",
+"kind": "sentence"
+},
+{
+"key": "a8480f865bedf603db9a311dfd8cf2c8",
+"lang": "en",
+"text": "Does the price include insurance?",
+"synth": "Does the price include insurance?",
+"kind": "sentence"
+},
+{
+"key": "a99f84640946903f32c7f82d071ffcce",
+"lang": "en",
+"text": "Sorry, could you repeat the last part?",
+"synth": "Sorry, could you repeat the last part?",
+"kind": "sentence"
+},
+{
+"key": "aaed5cf480a9d70ea0208c0cead105d5",
+"lang": "en",
+"text": "So, can we launch the new checkout page by the end of this month?",
+"synth": "So, can we launch the new checkout page by the end of this month?",
+"kind": "sentence"
+},
+{
+"key": "ac22f898ed2a7c9fa1580d934f91d7f6",
+"lang": "en",
+"text": "I'd like a large coffee, please.",
+"synth": "I'd like a large coffee, please.",
+"kind": "sentence"
+},
+{
+"key": "acf42c38305a51ce93da4edfa96205b9",
+"lang": "en",
+"text": "Would it be possible to change my reservation to Friday?",
+"synth": "Would it be possible to change my reservation to Friday?",
+"kind": "sentence"
+},
+{
+"key": "ae593d04f42fe600ed47e2fc263b2c79",
+"lang": "en",
+"text": "Where is the nearest station?",
+"synth": "Where is the nearest station?",
+"kind": "sentence"
+},
+{
+"key": "af7d5a4436249ef9e618ffc4b7adcdff",
+"lang": "en",
+"text": "Hi there! Are you picking up a prescription, or can I help you find something?",
+"synth": "Hi there! Are you picking up a prescription, or can I help you find something?",
+"kind": "sentence"
+},
+{
+"key": "b71a4efc74a29128509168afd2bdafd0",
+"lang": "en",
+"text": "I'm allergic to penicillin.",
+"synth": "I'm allergic to penicillin.",
+"kind": "sentence"
+},
+{
+"key": "b777703871adfe3fc70c110f02a3fdce",
+"lang": "en",
+"text": "I'd suggest we push the launch back by a week to run more tests.",
+"synth": "I'd suggest we push the launch back by a week to run more tests.",
+"kind": "sentence"
+},
+{
+"key": "b7ed66b82c15d3a74daf32ab80700783",
+"lang": "en",
+"text": "Thanks for joining. Could you walk us through last month's numbers?",
+"synth": "Thanks for joining. Could you walk us through last month's numbers?",
+"kind": "sentence"
+},
+{
+"key": "baf0f7a7986b1fb25cb7e4a8ac89122f",
+"lang": "en",
+"text": "Are utilities included in the rent?",
+"synth": "Are utilities included in the rent?",
+"kind": "sentence"
+},
+{
+"key": "be16abd5a957036c9058cf8c9386847c",
+"lang": "en",
+"text": "I think it's going to rain this afternoon.",
+"synth": "I think it's going to rain this afternoon.",
+"kind": "sentence"
+},
+{
+"key": "c1424aabbc0ae649be716a66d245647a",
+"lang": "en",
+"text": "I've been learning English for two years.",
+"synth": "I've been learning English for two years.",
+"kind": "sentence"
+},
+{
+"key": "c3263486bbf856fde4309f503501df8d",
+"lang": "en",
+"text": "It's not exactly what I expected, but it'll do for now.",
+"synth": "It's not exactly what I expected, but it'll do for now.",
+"kind": "sentence"
+},
+{
+"key": "c4c843e4507b14735b68b4782a6880bb",
+"lang": "en",
+"text": "Let me get back to you once I've checked the details.",
+"synth": "Let me get back to you once I've checked the details.",
+"kind": "sentence"
+},
+{
+"key": "ca267184d6c7aab2833111fba180678f",
+"lang": "en",
+"text": "Could we get the check, please?",
+"synth": "Could we get the check, please?",
+"kind": "sentence"
+},
+{
+"key": "cae4152f844e6bd6ded55baea09724f2",
+"lang": "en",
+"text": "Is it within walking distance?",
+"synth": "Is it within walking distance?",
+"kind": "sentence"
+},
+{
+"key": "cba757de023e842842bea674037d574e",
+"lang": "en",
+"text": "Welcome to the Grand Hotel! Do you have a reservation with us?",
+"synth": "Welcome to the Grand Hotel! Do you have a reservation with us?",
+"kind": "sentence"
+},
+{
+"key": "cbe2b7dc482064c3ca93f2582bccd847",
+"lang": "en",
+"text": "Thanks for getting back to me so quickly.",
+"synth": "Thanks for getting back to me so quickly.",
+"kind": "sentence"
+},
+{
+"key": "cc1d4d9da409a3b4e9566ea8ba2dbe55",
+"lang": "en",
+"text": "My suitcase didn't come out on the carousel.",
+"synth": "My suitcase didn't come out on the carousel.",
+"kind": "sentence"
+},
+{
+"key": "d2cf7690055c842ac48c07ba938eb5d2",
+"lang": "en",
+"text": "I'll keep you posted if anything changes.",
+"synth": "I'll keep you posted if anything changes.",
+"kind": "sentence"
+},
+{
+"key": "d3572ebfc0e8f4cd4e1740ae26413047",
+"lang": "en",
+"text": "Good morning! Where are you flying to today?",
+"synth": "Good morning! Where are you flying to today?",
+"kind": "sentence"
+},
+{
+"key": "d4a7c040186c2de877162ce9d830eab0",
+"lang": "en",
+"text": "I'm blocked until I get access to the payment API.",
+"synth": "I'm blocked until I get access to the payment API.",
+"kind": "sentence"
+},
+{
+"key": "d6e7ecd853853a9f22fec4af0313521e",
+"lang": "en",
+"text": "She has a remarkable ability to explain complex ideas simply.",
+"synth": "She has a remarkable ability to explain complex ideas simply.",
+"kind": "sentence"
+},
+{
+"key": "dcd38903ac84ee2c1b6e2181fb1640e2",
+"lang": "en",
+"text": "Hello, nice to meet you.",
+"synth": "Hello, nice to meet you.",
+"kind": "sentence"
+},
+{
+"key": "ddc634f6cec8794233dd181f3a14aa2b",
+"lang": "en",
+"text": "What's the best way to get to the airport from here?",
+"synth": "What's the best way to get to the airport from here?",
+"kind": "sentence"
+},
+{
+"key": "e1a402a6e07a68760de6d49155cf331b",
+"lang": "en",
+"text": "Welcome! Are you interested in becoming a member?",
+"synth": "Welcome! Are you interested in becoming a member?",
+"kind": "sentence"
+},
+{
+"key": "e5fe86e62c18660abcc9616c6e52846d",
+"lang": "en",
+"text": "Could I get a refund instead of store credit?",
+"synth": "Could I get a refund instead of store credit?",
+"kind": "sentence"
+},
+{
+"key": "e673fc0a442574aec595bb975e02193d",
+"lang": "en",
+"text": "She works three days a week from home.",
+"synth": "She works three days a week from home.",
+"kind": "sentence"
+},
+{
+"key": "e75a159a94eee5746235823e01c8545f",
+"lang": "en",
+"text": "Hey! How was your weekend?",
+"synth": "Hey! How was your weekend?",
+"kind": "sentence"
+},
+{
+"key": "ed06b88b062770bf4178e19e62802e47",
+"lang": "en",
+"text": "To be fair, I think we're overthinking this.",
+"synth": "To be fair, I think we're overthinking this.",
+"kind": "sentence"
+},
+{
+"key": "ed97f751a3ff95b4520a7aa9251bc293",
+"lang": "en",
+"text": "Would it be possible to get a late checkout?",
+"synth": "Would it be possible to get a late checkout?",
+"kind": "sentence"
+},
+{
+"key": "eedd449d0664463f4a60a5239556e5c0",
+"lang": "en",
+"text": "Thank you very much for your help.",
+"synth": "Thank you very much for your help.",
+"kind": "sentence"
+},
+{
+"key": "f0e5758655b838af8777089515585a7e",
+"lang": "en",
+"text": "I usually get up at seven.",
+"synth": "I usually get up at seven.",
+"kind": "sentence"
+},
+{
+"key": "f18637b39aa5a68d4e4c86c767a0724f",
+"lang": "en",
+"text": "I've never been to a concert like that before.",
+"synth": "I've never been to a concert like that before.",
+"kind": "sentence"
+},
+{
+"key": "f266d4ede58b4a8dd81617eea40690e2",
+"lang": "en",
+"text": "What do you usually do on weekends?",
+"synth": "What do you usually do on weekends?",
+"kind": "sentence"
+},
+{
+"key": "f583cd8a99d72450dc203b852a9f5474",
+"lang": "en",
+"text": "Their customer service has improved significantly over the past year.",
+"synth": "Their customer service has improved significantly over the past year.",
+"kind": "sentence"
+},
+{
+"key": "f75455bc24fa7b6d3b951cdafaa65c70",
+"lang": "en",
+"text": "He should have told us about the problem earlier.",
+"synth": "He should have told us about the problem earlier.",
+"kind": "sentence"
+},
+{
+"key": "f9bf8361be509cca63952cc59691fe0e",
+"lang": "en",
+"text": "I couldn't agree more with what you just said.",
+"synth": "I couldn't agree more with what you just said.",
+"kind": "sentence"
+},
+{
+"key": "fadf02315ffe312fd4b77e23dae612a8",
+"lang": "en",
+"text": "I'd like to book a table for two at eight.",
+"synth": "I'd like to book a table for two at eight.",
+"kind": "sentence"
+},
+{
+"key": "fbca2bbadbddbabd38da926328a817aa",
+"lang": "en",
+"text": "Hi, this is Sarah from Bloom Cosmetics. Our online store has been really slow since yesterday. Can you help?",
+"synth": "Hi, this is Sarah from Bloom Cosmetics. Our online store has been really slow since yesterday. Can you help?",
+"kind": "sentence"
+},
+{
+"key": "ff95aae1020279c16457bbd207f9bf24",
+"lang": "en",
+"text": "Hi, come on in. What seems to be the problem today?",
+"synth": "Hi, come on in. What seems to be the problem today?",
+"kind": "sentence"
+},
+{
+"key": "00ccf7a1e272d0a6f1eb42e488999f5a",
+"lang": "en",
+"text": "each",
+"synth": "each",
+"kind": "word"
+},
+{
+"key": "0106e50c8c13cae4568efb3431e650c0",
+"lang": "en",
+"text": "penicillin",
+"synth": "penicillin",
+"kind": "word"
+},
+{
+"key": "01b7177f8c2835bef1a927e505b91516",
+"lang": "en",
+"text": "lately",
+"synth": "lately",
+"kind": "word"
+},
+{
+"key": "02513eab03b76079cd92b1efdee4df9c",
+"lang": "en",
+"text": "flying",
+"synth": "flying",
+"kind": "word"
+},
+{
+"key": "03866bc75f84e904f0530b132fb81d9f",
+"lang": "en",
+"text": "carousel",
+"synth": "carousel",
+"kind": "word"
+},
+{
+"key": "04054780808b6935acd9c87864bcc9ef",
+"lang": "en",
+"text": "anything",
+"synth": "anything",
+"kind": "word"
+},
+{
+"key": "051f9544c0e15b850f544c5300973b47",
+"lang": "en",
+"text": "until",
+"synth": "until",
+"kind": "word"
+},
+{
+"key": "05ad533236ac495e2cf6ad39f5ad64c6",
+"lang": "en",
+"text": "sick",
+"synth": "sick",
+"kind": "word"
+},
+{
+"key": "05ba9a758b9e0ac5f5312f403145303b",
+"lang": "en",
+"text": "users",
+"synth": "users",
+"kind": "word"
+},
+{
+"key": "05de45dd58897af0ee64fb9b32552b2d",
+"lang": "en",
+"text": "be",
+"synth": "be",
+"kind": "word"
+},
+{
+"key": "074fdb9a16a58813f7807ae03c749bec",
+"lang": "en",
+"text": "fixed",
+"synth": "fixed",
+"kind": "word"
+},
+{
+"key": "086b72ccebca51a0bc99c99b0e1961c8",
+"lang": "en",
+"text": "rescheduling",
+"synth": "rescheduling",
+"kind": "word"
+},
+{
+"key": "086cbc9c2ec1a0db27cb52482807f4e1",
+"lang": "en",
+"text": "have",
+"synth": "have",
+"kind": "word"
+},
+{
+"key": "08db3063e8c4da4fe0e5cd955896d2ad",
+"lang": "en",
+"text": "recommend",
+"synth": "recommend",
+"kind": "word"
+},
+{
+"key": "095aebba387a761a715a2a48968dbc20",
+"lang": "en",
+"text": "sank",
+"synth": "sank",
+"kind": "word"
+},
+{
+"key": "0a0511d91e08ef9d405c389dc42806d5",
+"lang": "en",
+"text": "passport",
+"synth": "passport",
+"kind": "word"
+},
+{
+"key": "0a33b9754cf453558724697885e3e4e7",
+"lang": "en",
+"text": "improved",
+"synth": "improved",
+"kind": "word"
+},
+{
+"key": "0acecd26b81ec3c010b78917ed0c2eda",
+"lang": "en",
+"text": "lunch",
+"synth": "lunch",
+"kind": "word"
+},
+{
+"key": "0b8e4c5a156c1f71eab0a0d7d340c2a2",
+"lang": "en",
+"text": "window",
+"synth": "window",
+"kind": "word"
+},
+{
+"key": "0c8f9688818c0cd75b579a987bae4f3f",
+"lang": "en",
+"text": "met",
+"synth": "met",
+"kind": "word"
+},
+{
+"key": "0cd1de3a29bada80cc651500194f1484",
+"lang": "en",
+"text": "sheep",
+"synth": "sheep",
+"kind": "word"
+},
+{
+"key": "0cd5c29c5305b2795b639764bddc0c00",
+"lang": "en",
+"text": "restaurant",
+"synth": "restaurant",
+"kind": "word"
+},
+{
+"key": "0dee8d4a9ae75e11a05873dc12651419",
+"lang": "en",
+"text": "learning",
+"synth": "learning",
+"kind": "word"
+},
+{
+"key": "0e6b644538d8b073cacdc8621c6967d7",
+"lang": "en",
+"text": "suitcase",
+"synth": "suitcase",
+"kind": "word"
+},
+{
+"key": "109f1d1336e006628d3133a15f7bd856",
+"lang": "en",
+"text": "she",
+"synth": "she",
+"kind": "word"
+},
+{
+"key": "117b338aa8f1fed40333d5fe3c13f3d2",
+"lang": "en",
+"text": "but",
+"synth": "but",
+"kind": "word"
+},
+{
+"key": "1248c7c8303dc447e08992a25fcf59e8",
+"lang": "en",
+"text": "handled",
+"synth": "handled",
+"kind": "word"
+},
+{
+"key": "12a2273675091c197e02e011aaba3921",
+"lang": "en",
+"text": "lock",
+"synth": "lock",
+"kind": "word"
+},
+{
+"key": "12bfe50fd8771dda70867f8a1241c3ed",
+"lang": "en",
+"text": "same",
+"synth": "same",
+"kind": "word"
+},
+{
+"key": "1351e94d5c1574f2e4c7134a2923f49a",
+"lang": "en",
+"text": "going",
+"synth": "going",
+"kind": "word"
+},
+{
+"key": "13c233e3945bb06c7af61950ec0d2d06",
+"lang": "en",
+"text": "weekend",
+"synth": "weekend",
+"kind": "word"
+},
+{
+"key": "13cd43bd56da5a9d324e6eac3081dda9",
+"lang": "en",
+"text": "interested",
+"synth": "interested",
+"kind": "word"
+},
+{
+"key": "13d89f302b2bca900b15b25708c73966",
+"lang": "en",
+"text": "coming",
+"synth": "coming",
+"kind": "word"
+},
+{
+"key": "143bf2fb6efa29a43d3d35da71100094",
+"lang": "en",
+"text": "marketing",
+"synth": "marketing",
+"kind": "word"
+},
+{
+"key": "154e8589d32ba17e1d6c5c1902fa5e79",
+"lang": "en",
+"text": "launch",
+"synth": "launch",
+"kind": "word"
+},
+{
+"key": "158180512aad107660d8238b9cbb78bb",
+"lang": "en",
+"text": "table",
+"synth": "table",
+"kind": "word"
+},
+{
+"key": "159c0325c435dbde42ba9215dbbd2daa",
+"lang": "en",
+"text": "it's",
+"synth": "it's",
+"kind": "word"
+},
+{
+"key": "15fd7d790a5fa5ca7145ce64bdde63ce",
+"lang": "en",
+"text": "everyone",
+"synth": "everyone",
+"kind": "word"
+},
+{
+"key": "16c556f1989651c35a43a189f1260b4d",
+"lang": "en",
+"text": "good",
+"synth": "good",
+"kind": "word"
+},
+{
+"key": "16ff9289db08a5ac4753be1c6c1835b4",
+"lang": "en",
+"text": "pull",
+"synth": "pull",
+"kind": "word"
+},
+{
+"key": "186ce9f1b5b804bf21eebc125c21867f",
+"lang": "en",
+"text": "keep",
+"synth": "keep",
+"kind": "word"
+},
+{
+"key": "18f206aea35b4fe479121b7cd2f143fa",
+"lang": "en",
+"text": "said",
+"synth": "said",
+"kind": "word"
+},
+{
+"key": "18fc0f99a9168417d3bd941ca220c2d5",
+"lang": "en",
+"text": "a",
+"synth": "a",
+"kind": "word"
+},
+{
+"key": "19e92c86e2df8fe3a3931d130da56333",
+"lang": "en",
+"text": "payment",
+"synth": "payment",
+"kind": "word"
+},
+{
+"key": "1a281a9f90bed097d17782f66eb65c02",
+"lang": "en",
+"text": "welcome",
+"synth": "welcome",
+"kind": "word"
+},
+{
+"key": "1abbe412cd3b202c9e56fa3d4ca10433",
+"lang": "en",
+"text": "work",
+"synth": "work",
+"kind": "word"
+},
+{
+"key": "1ac8106a9e5ce3e0dbe204bbfc34ac31",
+"lang": "en",
+"text": "traffic",
+"synth": "traffic",
+"kind": "word"
+},
+{
+"key": "1ad89935c257c02ecb6c99ff813cece6",
+"lang": "en",
+"text": "grass",
+"synth": "grass",
+"kind": "word"
+},
+{
+"key": "1b1dc2ac7ea0e7582b23d74dfca816aa",
+"lang": "en",
+"text": "taking",
+"synth": "taking",
+"kind": "word"
+},
+{
+"key": "1b5ef74e3ab3022f4b9eb325b862f9bd",
+"lang": "en",
+"text": "cat",
+"synth": "cat",
+"kind": "word"
+},
+{
+"key": "1beb03012286da10ded1574c42c79e91",
+"lang": "en",
+"text": "vine",
+"synth": "vine",
+"kind": "word"
+},
+{
+"key": "1c2ae8ed098bc03289adc739bf019e78",
+"lang": "en",
+"text": "talk",
+"synth": "talk",
+"kind": "word"
+},
+{
+"key": "1c6c82746461543619dba374d796aa10",
+"lang": "en",
+"text": "concert",
+"synth": "concert",
+"kind": "word"
+},
+{
+"key": "1cdbd3b1ae393ddfbe4a8784dff2112e",
+"lang": "en",
+"text": "report",
+"synth": "report",
+"kind": "word"
+},
+{
+"key": "1e1ddc2eebdf7e2f37af012130364588",
+"lang": "en",
+"text": "did",
+"synth": "did",
+"kind": "word"
+},
+{
+"key": "1f04f600b62bd6f94a5ab2c5fa24f841",
+"lang": "en",
+"text": "numbers",
+"synth": "numbers",
+"kind": "word"
+},
+{
+"key": "1f2f16097c433099c5af29d167e5f1fa",
+"lang": "en",
+"text": "return",
+"synth": "return",
+"kind": "word"
+},
+{
+"key": "1fbb86aef92d30920ba955da85d8c030",
+"lang": "en",
+"text": "how",
+"synth": "how",
+"kind": "word"
+},
+{
+"key": "1ff7342e8249500838782b890077d583",
+"lang": "en",
+"text": "me",
+"synth": "me",
+"kind": "word"
+},
+{
+"key": "2250952866446b85b75116b2e232c875",
+"lang": "en",
+"text": "hi",
+"synth": "hi",
+"kind": "word"
+},
+{
+"key": "225500c17a1676c56ce13bd8b2e5cca5",
+"lang": "en",
+"text": "much",
+"synth": "much",
+"kind": "word"
+},
+{
+"key": "2323ba9000dd00c2b8566fbce9be9a68",
+"lang": "en",
+"text": "live",
+"synth": "live",
+"kind": "word"
+},
+{
+"key": "23351622550c04da3642ae6237219750",
+"lang": "en",
+"text": "picture",
+"synth": "picture",
+"kind": "word"
+},
+{
+"key": "23f3769fd3dbc901458c7c96f38384aa",
+"lang": "en",
+"text": "vacation",
+"synth": "vacation",
+"kind": "word"
+},
+{
+"key": "245a15bff407b0c17b5b7ebea63b31ee",
+"lang": "en",
+"text": "of",
+"synth": "of",
+"kind": "word"
+},
+{
+"key": "245bf5df91821050459798a45b77f239",
+"lang": "en",
+"text": "today",
+"synth": "today",
+"kind": "word"
+},
+{
+"key": "2480ddeef08eae7c701f42cd544b61e9",
+"lang": "en",
+"text": "explain",
+"synth": "explain",
+"kind": "word"
+},
+{
+"key": "24b0060f84918eef27fc1e00f5cfec28",
+"lang": "en",
+"text": "is",
+"synth": "is",
+"kind": "word"
+},
+{
+"key": "24f33698ba2030414a064029eca2a5be",
+"lang": "en",
+"text": "wine",
+"synth": "wine",
+"kind": "word"
+},
+{
+"key": "25057f86bb37e7b8d25edd52bb85e16b",
+"lang": "en",
+"text": "rather",
+"synth": "rather",
+"kind": "word"
+},
+{
+"key": "255260028b1bca1c6768c5b24d682d75",
+"lang": "en",
+"text": "look",
+"synth": "look",
+"kind": "word"
+},
+{
+"key": "255fb40aed9de9ed66b3d465579f6ee3",
+"lang": "en",
+"text": "features",
+"synth": "features",
+"kind": "word"
+},
+{
+"key": "2664aafadde4faa8ded3b4ba02333584",
+"lang": "en",
+"text": "thank",
+"synth": "thank",
+"kind": "word"
+},
+{
+"key": "271e5875b613e16515e7b828a3407154",
+"lang": "en",
+"text": "hello",
+"synth": "hello",
+"kind": "word"
+},
+{
+"key": "27b477f95b50539c0bcce8bba7a4e71d",
+"lang": "en",
+"text": "really",
+"synth": "really",
+"kind": "word"
+},
+{
+"key": "27d1aa50ece1b98c6a08aaa27588e0dc",
+"lang": "en",
+"text": "three",
+"synth": "three",
+"kind": "word"
+},
+{
+"key": "27da7f3a504cb05df88bded208da1e12",
+"lang": "en",
+"text": "now",
+"synth": "now",
+"kind": "word"
+},
+{
+"key": "283a8866e32faec1926cc89a0c000255",
+"lang": "en",
+"text": "way",
+"synth": "way",
+"kind": "word"
+},
+{
+"key": "285332d2c1dea6474a8fc11a54aa9396",
+"lang": "en",
+"text": "you",
+"synth": "you",
+"kind": "word"
+},
+{
+"key": "289fa734ec8a3fd65aa42e0dfe31a16e",
+"lang": "en",
+"text": "identified",
+"synth": "identified",
+"kind": "word"
+},
+{
+"key": "299af7ba888ea1a7bfd230f1107bf4bd",
+"lang": "en",
+"text": "were",
+"synth": "were",
+"kind": "word"
+},
+{
+"key": "2a2040006c6045f2b3b964890d4595ed",
+"lang": "en",
+"text": "room",
+"synth": "room",
+"kind": "word"
+},
+{
+"key": "2a83554304bfdb77a232e7f1023d62de",
+"lang": "en",
+"text": "for",
+"synth": "for",
+"kind": "word"
+},
+{
+"key": "2ab4a6933a0fa3ac1350328a52e34e0c",
+"lang": "en",
+"text": "api",
+"synth": "api",
+"kind": "word"
+},
+{
+"key": "2cd5583ed261971bcc23f7757a159bb8",
+"lang": "en",
+"text": "the",
+"synth": "the",
+"kind": "word"
+},
+{
+"key": "2cff142575ba1e39d69c7920a48efb01",
+"lang": "en",
+"text": "push",
+"synth": "push",
+"kind": "word"
+},
+{
+"key": "2e83cfe33c433d4f2d7e0f5a63d43fc1",
+"lang": "en",
+"text": "monthly",
+"synth": "monthly",
+"kind": "word"
+},
+{
+"key": "2f1a46cae6e94ab0b443b4cd2c129c7f",
+"lang": "en",
+"text": "us",
+"synth": "us",
+"kind": "word"
+},
+{
+"key": "3092b29c046b5bda451f69d955b3e708",
+"lang": "en",
+"text": "air",
+"synth": "air",
+"kind": "word"
+},
+{
+"key": "309abf095dd848315e8d77b9fc0f395f",
+"lang": "en",
+"text": "feedback",
+"synth": "feedback",
+"kind": "word"
+},
+{
+"key": "31203bcc813589fbf99525467112f780",
+"lang": "en",
+"text": "second",
+"synth": "second",
+"kind": "word"
+},
+{
+"key": "31325d490abaae5808e350d80e43406d",
+"lang": "en",
+"text": "told",
+"synth": "told",
+"kind": "word"
+},
+{
+"key": "319295883a6a483632ba0325caabe9eb",
+"lang": "en",
+"text": "book",
+"synth": "book",
+"kind": "word"
+},
+{
+"key": "31cd44022eb255d0216673977669c37b",
+"lang": "en",
+"text": "subway",
+"synth": "subway",
+"kind": "word"
+},
+{
+"key": "31f49cb4a7f2a9cad51ecf66b17865aa",
+"lang": "en",
+"text": "instead",
+"synth": "instead",
+"kind": "word"
+},
+{
+"key": "32151818e1477dc00d2470bf2a4f7e40",
+"lang": "en",
+"text": "let's",
+"synth": "let's",
+"kind": "word"
+},
+{
+"key": "32da55c564a55aa5c2a5a6f8a50c47e5",
+"lang": "en",
+"text": "isn't",
+"synth": "isn't",
+"kind": "word"
+},
+{
+"key": "330f9b84b58bd1937fa90542a0d2aa81",
+"lang": "en",
+"text": "about",
+"synth": "about",
+"kind": "word"
+},
+{
+"key": "337a6b86e89b52b3299c6bc6757ebbe2",
+"lang": "en",
+"text": "sheet",
+"synth": "sheet",
+"kind": "word"
+},
+{
+"key": "33917acf462a9dd1ab113f2d8db1774f",
+"lang": "en",
+"text": "lease",
+"synth": "lease",
+"kind": "word"
+},
+{
+"key": "33e5f0c9828dd0c7a6699bd5b26a32d4",
+"lang": "en",
+"text": "two",
+"synth": "two",
+"kind": "word"
+},
+{
+"key": "345b586e31335bbb476f8d47f16e17a7",
+"lang": "en",
+"text": "please",
+"synth": "please",
+"kind": "word"
+},
+{
+"key": "372bf1a945563aa55510573d1fde9ad6",
+"lang": "en",
+"text": "fit",
+"synth": "fit",
+"kind": "word"
+},
+{
+"key": "37e278d0f53f16af69a4109b0c09ca40",
+"lang": "en",
+"text": "customer",
+"synth": "customer",
+"kind": "word"
+},
+{
+"key": "381f99fca30d38644ffbda99db2fabe8",
+"lang": "en",
+"text": "quickly",
+"synth": "quickly",
+"kind": "word"
+},
+{
+"key": "38289fb47eb649aacd2b763eeb73703f",
+"lang": "en",
+"text": "posted",
+"synth": "posted",
+"kind": "word"
+},
+{
+"key": "393d29f669069472441154a9463cb408",
+"lang": "en",
+"text": "nearby",
+"synth": "nearby",
+"kind": "word"
+},
+{
+"key": "39e505efe9bee1734516400d3b875165",
+"lang": "en",
+"text": "desk",
+"synth": "desk",
+"kind": "word"
+},
+{
+"key": "39f72ca1697a615ef1a64b7d210c25a7",
+"lang": "en",
+"text": "login",
+"synth": "login",
+"kind": "word"
+},
+{
+"key": "3a3f58155a96ddcbed5298b3ccefa1f6",
+"lang": "en",
+"text": "hat",
+"synth": "hat",
+"kind": "word"
+},
+{
+"key": "3a426e869c88aa566d2828bbd4950155",
+"lang": "en",
+"text": "would",
+"synth": "would",
+"kind": "word"
+},
+{
+"key": "3ac560801f4fd74f8d5b6d1dac05e67d",
+"lang": "en",
+"text": "things",
+"synth": "things",
+"kind": "word"
+},
+{
+"key": "3ad7c061cb5954117d5864c48a0262d8",
+"lang": "en",
+"text": "joining",
+"synth": "joining",
+"kind": "word"
+},
+{
+"key": "3b5845520c293781103774010a7a507a",
+"lang": "en",
+"text": "making",
+"synth": "making",
+"kind": "word"
+},
+{
+"key": "3b7c193ae4a24105b2608650103208f9",
+"lang": "en",
+"text": "tasting",
+"synth": "tasting",
+"kind": "word"
+},
+{
+"key": "3c4b3d3db3ba22ed0bd7c6a259db206d",
+"lang": "en",
+"text": "looking",
+"synth": "looking",
+"kind": "word"
+},
+{
+"key": "3cc2caf7c593f45beb8d4e1e846105f8",
+"lang": "en",
+"text": "year",
+"synth": "year",
+"kind": "word"
+},
+{
+"key": "3d19da8312cb1e641a6e841733d6086c",
+"lang": "en",
+"text": "open",
+"synth": "open",
+"kind": "word"
+},
+{
+"key": "3de3fcc4c50a4984c16816420b46ea1f",
+"lang": "en",
+"text": "light",
+"synth": "light",
+"kind": "word"
+},
+{
+"key": "3e7821c0aa99857bb996668ca0f252a3",
+"lang": "en",
+"text": "find",
+"synth": "find",
+"kind": "word"
+},
+{
+"key": "3f439e1b7ca217c46fd21994cf112ba3",
+"lang": "en",
+"text": "their",
+"synth": "their",
+"kind": "word"
+},
+{
+"key": "3fb9e564d0b26a77cd955879b2e944c2",
+"lang": "en",
+"text": "rent",
+"synth": "rent",
+"kind": "word"
+},
+{
+"key": "3ffe2cfd36e09191d13a29bde4ae24fa",
+"lang": "en",
+"text": "has",
+"synth": "has",
+"kind": "word"
+},
+{
+"key": "41094d0c662a5ffb068fa4b387038e59",
+"lang": "en",
+"text": "at",
+"synth": "at",
+"kind": "word"
+},
+{
+"key": "410ad393edb99981f372f0766063f25b",
+"lang": "en",
+"text": "went",
+"synth": "went",
+"kind": "word"
+},
+{
+"key": "4133d2bf8581db9947c6f20ebc3ad93b",
+"lang": "en",
+"text": "percent",
+"synth": "percent",
+"kind": "word"
+},
+{
+"key": "437d643a713a36d3efb2ff11c2051934",
+"lang": "en",
+"text": "he",
+"synth": "he",
+"kind": "word"
+},
+{
+"key": "43d508b2f59f053aceeaa36ba0c800a5",
+"lang": "en",
+"text": "throat",
+"synth": "throat",
+"kind": "word"
+},
+{
+"key": "4439e7384aaf7bd48a638865941fba84",
+"lang": "en",
+"text": "can",
+"synth": "can",
+"kind": "word"
+},
+{
+"key": "450d134150cab0629b41a525fa96412f",
+"lang": "en",
+"text": "tree",
+"synth": "tree",
+"kind": "word"
+},
+{
+"key": "46aee177fbf796341ed8f83a672f7780",
+"lang": "en",
+"text": "change",
+"synth": "change",
+"kind": "word"
+},
+{
+"key": "46afdfee69cb026e2513e3559b5c70be",
+"lang": "en",
+"text": "need",
+"synth": "need",
+"kind": "word"
+},
+{
+"key": "47737524ceab16731a97fa85e3e2065e",
+"lang": "en",
+"text": "to",
+"synth": "to",
+"kind": "word"
+},
+{
+"key": "48781bd9d3b64bb3455a31f4e226316b",
+"lang": "en",
+"text": "through",
+"synth": "through",
+"kind": "word"
+},
+{
+"key": "4936476af92a7d58cad83d275327af75",
+"lang": "en",
+"text": "may",
+"synth": "may",
+"kind": "word"
+},
+{
+"key": "4940347e21590ae0c4ca4c1fe73bf3a2",
+"lang": "en",
+"text": "glass",
+"synth": "glass",
+"kind": "word"
+},
+{
+"key": "4a6f144cee67ea93b74e8f4109e6364c",
+"lang": "en",
+"text": "just",
+"synth": "just",
+"kind": "word"
+},
+{
+"key": "4be44b292d13274dd3bf2c22f8bcf08a",
+"lang": "en",
+"text": "check",
+"synth": "check",
+"kind": "word"
+},
+{
+"key": "4c4e29e741d2c10f4cea5c4f5e38c683",
+"lang": "en",
+"text": "store",
+"synth": "store",
+"kind": "word"
+},
+{
+"key": "4cdaa60aa5fd7ede6288285fdd7d6aa3",
+"lang": "en",
+"text": "before",
+"synth": "before",
+"kind": "word"
+},
+{
+"key": "4def14ee1f303958a4eb65c1ad9c889d",
+"lang": "en",
+"text": "was",
+"synth": "was",
+"kind": "word"
+},
+{
+"key": "4e57a41bb467dd92e6c40b2a1699b916",
+"lang": "en",
+"text": "run",
+"synth": "run",
+"kind": "word"
+},
+{
+"key": "4e5a40d24d4a38f313bedcd70af09024",
+"lang": "en",
+"text": "trying",
+"synth": "trying",
+"kind": "word"
+},
+{
+"key": "4f2c6782845b0991331bfb0ba8e889b3",
+"lang": "en",
+"text": "rate",
+"synth": "rate",
+"kind": "word"
+},
+{
+"key": "5078e1fbdb1ea0654ab960bb596e9bb6",
+"lang": "en",
+"text": "everything",
+"synth": "everything",
+"kind": "word"
+},
+{
+"key": "5190a7df383b3a1c561f8dd1fa22e298",
+"lang": "en",
+"text": "cancel",
+"synth": "cancel",
+"kind": "word"
+},
+{
+"key": "520ff655c017ad001cd046cb4d81a15c",
+"lang": "en",
+"text": "expected",
+"synth": "expected",
+"kind": "word"
+},
+{
+"key": "5247e6802f1d154b692829afebf95b30",
+"lang": "en",
+"text": "years",
+"synth": "years",
+"kind": "word"
+},
+{
+"key": "5290707173e88d603909e0c63f4c50e5",
+"lang": "en",
+"text": "in",
+"synth": "in",
+"kind": "word"
+},
+{
+"key": "52d21c04a01eef32dd8390cbb1142b86",
+"lang": "en",
+"text": "help",
+"synth": "help",
+"kind": "word"
+},
+{
+"key": "532b7f719f5f75d787e7c0e68c1a6ba4",
+"lang": "en",
+"text": "days",
+"synth": "days",
+"kind": "word"
+},
+{
+"key": "53a036b0f274db1c5c0a2e51adaa8d72",
+"lang": "en",
+"text": "past",
+"synth": "past",
+"kind": "word"
+},
+{
+"key": "5405fa8a8cc1aed2424ce43633c2e12e",
+"lang": "en",
+"text": "problem",
+"synth": "problem",
+"kind": "word"
+},
+{
+"key": "54d0fa62e8ce8d54ea74495380614ab4",
+"lang": "en",
+"text": "distance",
+"synth": "distance",
+"kind": "word"
+},
+{
+"key": "54d44f9bc6e744eec743119d8aa85940",
+"lang": "en",
+"text": "agree",
+"synth": "agree",
+"kind": "word"
+},
+{
+"key": "553297e66a5117e29c2dbcbcd0a17ab8",
+"lang": "en",
+"text": "slow",
+"synth": "slow",
+"kind": "word"
+},
+{
+"key": "55d828e0f3bbba779c72390f98e338da",
+"lang": "en",
+"text": "must",
+"synth": "must",
+"kind": "word"
+},
+{
+"key": "55e3543031e9b83b6e7322b5b3d942ee",
+"lang": "en",
+"text": "emma",
+"synth": "emma",
+"kind": "word"
+},
+{
+"key": "565e4987dd709a0ea02ccf186e5d74d4",
+"lang": "en",
+"text": "been",
+"synth": "been",
+"kind": "word"
+},
+{
+"key": "56ceb8a607f9ff808aec1c582a84924c",
+"lang": "en",
+"text": "say",
+"synth": "say",
+"kind": "word"
+},
+{
+"key": "57547325b1820f3402e90a7ba3889423",
+"lang": "en",
+"text": "late",
+"synth": "late",
+"kind": "word"
+},
+{
+"key": "57cc14c46a662803cc06de18015789e6",
+"lang": "en",
+"text": "weather",
+"synth": "weather",
+"kind": "word"
+},
+{
+"key": "5862c81ad2001dfa9679575439e15880",
+"lang": "en",
+"text": "far",
+"synth": "far",
+"kind": "word"
+},
+{
+"key": "587454a2cf682b1d507c3d5fa3973ee6",
+"lang": "en",
+"text": "due",
+"synth": "due",
+"kind": "word"
+},
+{
+"key": "5877b86e39a26b9fe52d0ca57ed1313b",
+"lang": "en",
+"text": "china",
+"synth": "china",
+"kind": "word"
+},
+{
+"key": "58fb9b8435a945b7c8697c48bb541afc",
+"lang": "en",
+"text": "rain",
+"synth": "rain",
+"kind": "word"
+},
+{
+"key": "5917811034de62533095e0f798d1c5f3",
+"lang": "en",
+"text": "ran",
+"synth": "ran",
+"kind": "word"
+},
+{
+"key": "59fc215d1facfcf77c051a97a84ea37b",
+"lang": "en",
+"text": "concerned",
+"synth": "concerned",
+"kind": "word"
+},
+{
+"key": "5bcae545c7c7d7b5b9ede5d31c2d7d27",
+"lang": "en",
+"text": "hey",
+"synth": "hey",
+"kind": "word"
+},
+{
+"key": "5c54be7a98a7bd5e0e586b90e9c19814",
+"lang": "en",
+"text": "coffee",
+"synth": "coffee",
+"kind": "word"
+},
+{
+"key": "5cfdb2a5b24180edf037c7d9b1da5d8d",
+"lang": "en",
+"text": "search",
+"synth": "search",
+"kind": "word"
+},
+{
+"key": "5d909d3827678b8762d909a5fcce534e",
+"lang": "en",
+"text": "any",
+"synth": "any",
+"kind": "word"
+},
+{
+"key": "5d9d66cc1430b808cd9f270d2efba8df",
+"lang": "en",
+"text": "didn't",
+"synth": "didn't",
+"kind": "word"
+},
+{
+"key": "5da94b72dc8e7b95dfa89890b334a324",
+"lang": "en",
+"text": "service",
+"synth": "service",
+"kind": "word"
+},
+{
+"key": "5e034e5b580ccdc7e22c70cc796c42f4",
+"lang": "en",
+"text": "start",
+"synth": "start",
+"kind": "word"
+},
+{
+"key": "5e07aedcbfe327aecb21d488a62c2656",
+"lang": "en",
+"text": "hot",
+"synth": "hot",
+"kind": "word"
+},
+{
+"key": "5e5bb4ce3f800a813af3946beb7cecf6",
+"lang": "en",
+"text": "rice",
+"synth": "rice",
+"kind": "word"
+},
+{
+"key": "5e6940ff50d31f7a63a28a76d4b62022",
+"lang": "en",
+"text": "membership",
+"synth": "membership",
+"kind": "word"
+},
+{
+"key": "5fb08454ee65d7475a1fe54cc84bac19",
+"lang": "en",
+"text": "option",
+"synth": "option",
+"kind": "word"
+},
+{
+"key": "6101e560a58d99535bbfd5317fbe03fb",
+"lang": "en",
+"text": "your",
+"synth": "your",
+"kind": "word"
+},
+{
+"key": "61bb2697e5cfc3965e9c3f2bec754c9a",
+"lang": "en",
+"text": "some",
+"synth": "some",
+"kind": "word"
+},
+{
+"key": "61fcc72d4be9fef6513a184dd978c0cd",
+"lang": "en",
+"text": "ordered",
+"synth": "ordered",
+"kind": "word"
+},
+{
+"key": "624a918ca9158f7d601fffac3b6f4f74",
+"lang": "en",
+"text": "part",
+"synth": "part",
+"kind": "word"
+},
+{
+"key": "62fbe88ee3c2a693a9e848301862bd3b",
+"lang": "en",
+"text": "fry",
+"synth": "fry",
+"kind": "word"
+},
+{
+"key": "63c9543a41c216ad2100ced46a412111",
+"lang": "en",
+"text": "online",
+"synth": "online",
+"kind": "word"
+},
+{
+"key": "655870be5ea8eff2729a755b57df8b5c",
+"lang": "en",
+"text": "don't",
+"synth": "don't",
+"kind": "word"
+},
+{
+"key": "662c172c5e2a7e443ae5b47833f328a0",
+"lang": "en",
+"text": "simply",
+"synth": "simply",
+"kind": "word"
+},
+{
+"key": "67bbb5ce4884a3b06a2bd653fef838b6",
+"lang": "en",
+"text": "results",
+"synth": "results",
+"kind": "word"
+},
+{
+"key": "67f84a6ec1142526701135fa72d8f87d",
+"lang": "en",
+"text": "startup",
+"synth": "startup",
+"kind": "word"
+},
+{
+"key": "68a05fdcf7ba0d062f0aea82411d8bd7",
+"lang": "en",
+"text": "with",
+"synth": "with",
+"kind": "word"
+},
+{
+"key": "68c0fe22cb9f272b563a7dad91309cfc",
+"lang": "en",
+"text": "best",
+"synth": "best",
+"kind": "word"
+},
+{
+"key": "68ddbb94630fbe036e4140eedb704298",
+"lang": "en",
+"text": "day",
+"synth": "day",
+"kind": "word"
+},
+{
+"key": "69f7856b928ee0c5ed292a4636381934",
+"lang": "en",
+"text": "what's",
+"synth": "what's",
+"kind": "word"
+},
+{
+"key": "6a03e3f313f056ee2061bf4f1f8513d1",
+"lang": "en",
+"text": "week",
+"synth": "week",
+"kind": "word"
+},
+{
+"key": "6a6c349906d26bfcbb533b32f15c4d37",
+"lang": "en",
+"text": "allergic",
+"synth": "allergic",
+"kind": "word"
+},
+{
+"key": "6bb6f3ca08e396330361b4be02266d89",
+"lang": "en",
+"text": "becoming",
+"synth": "becoming",
+"kind": "word"
+},
+{
+"key": "6bb91413f95460eccdab0ae7a92042d9",
+"lang": "en",
+"text": "rock",
+"synth": "rock",
+"kind": "word"
+},
+{
+"key": "6c324fcc0601e7b0209bafd3b1d00991",
+"lang": "en",
+"text": "night",
+"synth": "night",
+"kind": "word"
+},
+{
+"key": "6c5fd1809c50fa70f8e62692a8e6aa8c",
+"lang": "en",
+"text": "sink",
+"synth": "sink",
+"kind": "word"
+},
+{
+"key": "6cc6151e80c81bec90a1cb5dce476954",
+"lang": "en",
+"text": "thick",
+"synth": "thick",
+"kind": "word"
+},
+{
+"key": "6d7f98697a0d8ab3af6d127f9f8db134",
+"lang": "en",
+"text": "little",
+"synth": "little",
+"kind": "word"
+},
+{
+"key": "6d8fa02b435ebea98032b2a5f069ec9a",
+"lang": "en",
+"text": "thanks",
+"synth": "thanks",
+"kind": "word"
+},
+{
+"key": "6e4a9cc4e2a03ab5e1d47b653e6009bd",
+"lang": "en",
+"text": "my",
+"synth": "my",
+"kind": "word"
+},
+{
+"key": "6e66c24b0ac2f1441a98c79e36af482c",
+"lang": "en",
+"text": "over",
+"synth": "over",
+"kind": "word"
+},
+{
+"key": "6e6766e05dbdba0046f735dc0cff50ea",
+"lang": "en",
+"text": "usually",
+"synth": "usually",
+"kind": "word"
+},
+{
+"key": "6eb38b05f111472624474f2384fea2e1",
+"lang": "en",
+"text": "very",
+"synth": "very",
+"kind": "word"
+},
+{
+"key": "6ef6077ed5bb97c0370febef21a75c30",
+"lang": "en",
+"text": "get",
+"synth": "get",
+"kind": "word"
+},
+{
+"key": "6fcebaf63e212ae8d0038994d34e3db8",
+"lang": "en",
+"text": "nice",
+"synth": "nice",
+"kind": "word"
+},
+{
+"key": "70151827f958e93099634d93aab49a4e",
+"lang": "en",
+"text": "included",
+"synth": "included",
+"kind": "word"
+},
+{
+"key": "702e563024157d3e811f2ece80d6e402",
+"lang": "en",
+"text": "i'm",
+"synth": "i'm",
+"kind": "word"
+},
+{
+"key": "70312e666e231f645d064a138c8f4c38",
+"lang": "en",
+"text": "ideas",
+"synth": "ideas",
+"kind": "word"
+},
+{
+"key": "70361ad863854f23428c0f0acf760c8f",
+"lang": "en",
+"text": "our",
+"synth": "our",
+"kind": "word"
+},
+{
+"key": "716fe548e1c353ea9349ae1ee7048bc0",
+"lang": "en",
+"text": "stay",
+"synth": "stay",
+"kind": "word"
+},
+{
+"key": "71f7206d297ea1b4aa2e8efdd8746c2b",
+"lang": "en",
+"text": "can't",
+"synth": "can't",
+"kind": "word"
+},
+{
+"key": "72827666f266dae7abe68b7816985342",
+"lang": "en",
+"text": "tonight",
+"synth": "tonight",
+"kind": "word"
+},
+{
+"key": "72b24ef115f712565b8965a1a65becf4",
+"lang": "en",
+"text": "seat",
+"synth": "seat",
+"kind": "word"
+},
+{
+"key": "737056fc6a19b8aed182012d3c2e20cb",
+"lang": "en",
+"text": "more",
+"synth": "more",
+"kind": "word"
+},
+{
+"key": "74e4003bd76632e004dd9db2d3f787ec",
+"lang": "en",
+"text": "details",
+"synth": "details",
+"kind": "word"
+},
+{
+"key": "751c0b92ff4b19974f318ebc7694fc3e",
+"lang": "en",
+"text": "stuck",
+"synth": "stuck",
+"kind": "word"
+},
+{
+"key": "75fbd1876b04859a5caa5f7a07d495da",
+"lang": "en",
+"text": "it'll",
+"synth": "it'll",
+"kind": "word"
+},
+{
+"key": "78396882e566fcab1820cd78928687dc",
+"lang": "en",
+"text": "are",
+"synth": "are",
+"kind": "word"
+},
+{
+"key": "7853632342c96af83eef14b9e6f45ad8",
+"lang": "en",
+"text": "since",
+"synth": "since",
+"kind": "word"
+},
+{
+"key": "7886b92ab7aca4dfc839b189697b6c0e",
+"lang": "en",
+"text": "fly",
+"synth": "fly",
+"kind": "word"
+},
+{
+"key": "79c12425da5ed0396b1f456aa0b2892a",
+"lang": "en",
+"text": "yourself",
+"synth": "yourself",
+"kind": "word"
+},
+{
+"key": "7b38f76e724e3f179825c41bec9a5a51",
+"lang": "en",
+"text": "oneonone",
+"synth": "oneonone",
+"kind": "word"
+},
+{
+"key": "7be81098729e590a00f0d77c1dc2f818",
+"lang": "en",
+"text": "works",
+"synth": "works",
+"kind": "word"
+},
+{
+"key": "7c9a9e99c6404c1921ae7723a9aaa0a5",
+"lang": "en",
+"text": "or",
+"synth": "or",
+"kind": "word"
+},
+{
+"key": "7cddaa59a953484e75fbb51ab9576e76",
+"lang": "en",
+"text": "low",
+"synth": "low",
+"kind": "word"
+},
+{
+"key": "7e9483ea123ab4e34ce503ffe2bd3bbb",
+"lang": "en",
+"text": "right",
+"synth": "right",
+"kind": "word"
+},
+{
+"key": "7efebe5971722186c5a7e0c381213357",
+"lang": "en",
+"text": "reservation",
+"synth": "reservation",
+"kind": "word"
+},
+{
+"key": "813327c60f43224873f087bef4b08266",
+"lang": "en",
+"text": "i've",
+"synth": "i've",
+"kind": "word"
+},
+{
+"key": "815e6c2bbee6135acb0154080b7f9c3f",
+"lang": "en",
+"text": "fool",
+"synth": "fool",
+"kind": "word"
+},
+{
+"key": "826789fa81d94b31394ee0b2e2c8e23a",
+"lang": "en",
+"text": "meeting",
+"synth": "meeting",
+"kind": "word"
+},
+{
+"key": "832bb8052742bb421a415265e93b6440",
+"lang": "en",
+"text": "towards",
+"synth": "towards",
+"kind": "word"
+},
+{
+"key": "833737057e2e82350c2891411ab0245e",
+"lang": "en",
+"text": "time",
+"synth": "time",
+"kind": "word"
+},
+{
+"key": "836dbab4b528f3f0eb4f7ace9972064d",
+"lang": "en",
+"text": "i'll",
+"synth": "i'll",
+"kind": "word"
+},
+{
+"key": "844930052795df7402cd916adc7a45f4",
+"lang": "en",
+"text": "later",
+"synth": "later",
+"kind": "word"
+},
+{
+"key": "844a9734ad3255ff72bf9cc020944cbb",
+"lang": "en",
+"text": "bigger",
+"synth": "bigger",
+"kind": "word"
+},
+{
+"key": "84b4055ad31dbd277bc73b4e7f008bb3",
+"lang": "en",
+"text": "picking",
+"synth": "picking",
+"kind": "word"
+},
+{
+"key": "84b7c863d2fe4a0d61b5e3a2cfd650bb",
+"lang": "en",
+"text": "remarkable",
+"synth": "remarkable",
+"kind": "word"
+},
+{
+"key": "84c4b5ebb03059e5a606d09a2dd3ca64",
+"lang": "en",
+"text": "once",
+"synth": "once",
+"kind": "word"
+},
+{
+"key": "85b3c6c0f377474ef7b41147fcc2c737",
+"lang": "en",
+"text": "berry",
+"synth": "berry",
+"kind": "word"
+},
+{
+"key": "86250730ebca4b4bde9fc3f4cce388a7",
+"lang": "en",
+"text": "here",
+"synth": "here",
+"kind": "word"
+},
+{
+"key": "873db1040fa4d961a9ea3496aaf6c380",
+"lang": "en",
+"text": "conditioning",
+"synth": "conditioning",
+"kind": "word"
+},
+{
+"key": "87754884aa095e4ba03af5b12197d610",
+"lang": "en",
+"text": "tomorrow",
+"synth": "tomorrow",
+"kind": "word"
+},
+{
+"key": "878199df718fdf72b399e6cc46a2884a",
+"lang": "en",
+"text": "friday",
+"synth": "friday",
+"kind": "word"
+},
+{
+"key": "87f316e863d2aa2943e82f09e3865616",
+"lang": "en",
+"text": "fee",
+"synth": "fee",
+"kind": "word"
+},
+{
+"key": "87f3e631883e8dd9f97b9ab95ac20f3f",
+"lang": "en",
+"text": "do",
+"synth": "do",
+"kind": "word"
+},
+{
+"key": "8948495582d66e568484b70be9faec10",
+"lang": "en",
+"text": "should",
+"synth": "should",
+"kind": "word"
+},
+{
+"key": "8a19d433b592b1b000b1fae425376b09",
+"lang": "en",
+"text": "not",
+"synth": "not",
+"kind": "word"
+},
+{
+"key": "8a3e625e5b789a940844e0adc242251e",
+"lang": "en",
+"text": "we've",
+"synth": "we've",
+"kind": "word"
+},
+{
+"key": "8ac71ec9d178f68a148505140e9c9f6f",
+"lang": "en",
+"text": "seven",
+"synth": "seven",
+"kind": "word"
+},
+{
+"key": "8b475b7b1916385a0b8be9f1027c6031",
+"lang": "en",
+"text": "beginning",
+"synth": "beginning",
+"kind": "word"
+},
+{
+"key": "8bf19d1ac7c1c046802643d049372e50",
+"lang": "en",
+"text": "month's",
+"synth": "month's",
+"kind": "word"
+},
+{
+"key": "8c5713e1f517b42f6473704a06ea4112",
+"lang": "en",
+"text": "see",
+"synth": "see",
+"kind": "word"
+},
+{
+"key": "8cf77f2481f4a98d0ee3c3b2e0fed474",
+"lang": "en",
+"text": "if",
+"synth": "if",
+"kind": "word"
+},
+{
+"key": "8f288daf3e59720a134ef795df7e388e",
+"lang": "en",
+"text": "home",
+"synth": "home",
+"kind": "word"
+},
+{
+"key": "925d3ba611c9b288be51ca58f9fafbc5",
+"lang": "en",
+"text": "ship",
+"synth": "ship",
+"kind": "word"
+},
+{
+"key": "92e0ae3cc4f95ff509dfd244a0cfde44",
+"lang": "en",
+"text": "grab",
+"synth": "grab",
+"kind": "word"
+},
+{
+"key": "943f7f92e4303cd95f70446603dba372",
+"lang": "en",
+"text": "insurance",
+"synth": "insurance",
+"kind": "word"
+},
+{
+"key": "949e24c697eb0cd8642e2469fb65e6fa",
+"lang": "en",
+"text": "telling",
+"synth": "telling",
+"kind": "word"
+},
+{
+"key": "94db274135fe0d57466bc05a1f0ec63d",
+"lang": "en",
+"text": "we're",
+"synth": "we're",
+"kind": "word"
+},
+{
+"key": "95240106881a32e2b165b5c5532e0a56",
+"lang": "en",
+"text": "let",
+"synth": "let",
+"kind": "word"
+},
+{
+"key": "958276df49a22ffe2b68153b6e9db1d5",
+"lang": "en",
+"text": "correct",
+"synth": "correct",
+"kind": "word"
+},
+{
+"key": "959e75134406e91d1facbde741b03db7",
+"lang": "en",
+"text": "leave",
+"synth": "leave",
+"kind": "word"
+},
+{
+"key": "95d07e52c14f21fb3b5ad7969ffe9952",
+"lang": "en",
+"text": "renew",
+"synth": "renew",
+"kind": "word"
+},
+{
+"key": "961a35238eaf21f79649684f9de90c58",
+"lang": "en",
+"text": "cut",
+"synth": "cut",
+"kind": "word"
+},
+{
+"key": "96d7e0583eb373cdbbce96c575ab9570",
+"lang": "en",
+"text": "breakfast",
+"synth": "breakfast",
+"kind": "word"
+},
+{
+"key": "97988d16148e311204e644122ce1811e",
+"lang": "en",
+"text": "watch",
+"synth": "watch",
+"kind": "word"
+},
+{
+"key": "979dcde663362903681a0847e48ccdad",
+"lang": "en",
+"text": "appreciate",
+"synth": "appreciate",
+"kind": "word"
+},
+{
+"key": "97a03edd12bdcf90f958c34360f61821",
+"lang": "en",
+"text": "mind",
+"synth": "mind",
+"kind": "word"
+},
+{
+"key": "97f93b427b3205881c91f7ee22fbe88f",
+"lang": "en",
+"text": "yesterday",
+"synth": "yesterday",
+"kind": "word"
+},
+{
+"key": "9873c98cf9d7ca7f971547b22c6191b9",
+"lang": "en",
+"text": "slowly",
+"synth": "slowly",
+"kind": "word"
+},
+{
+"key": "989ba5034cd2ee7f8c133ad2a504ae13",
+"lang": "en",
+"text": "minutes",
+"synth": "minutes",
+"kind": "word"
+},
+{
+"key": "9c2154710532a23c5b86c9ed015b3c87",
+"lang": "en",
+"text": "savings",
+"synth": "savings",
+"kind": "word"
+},
+{
+"key": "9c9fce19becb201dd7a9e74c49155bee",
+"lang": "en",
+"text": "take",
+"synth": "take",
+"kind": "word"
+},
+{
+"key": "9cc51ec91e20cb1d539c5444d64fd3e2",
+"lang": "en",
+"text": "sign",
+"synth": "sign",
+"kind": "word"
+},
+{
+"key": "9ce02191be9481a249840270d6807fd4",
+"lang": "en",
+"text": "restroom",
+"synth": "restroom",
+"kind": "word"
+},
+{
+"key": "9d7ceb9a1db8ca0ece1452475ca6a830",
+"lang": "en",
+"text": "nearest",
+"synth": "nearest",
+"kind": "word"
+},
+{
+"key": "9e2b885ce08b02d5eb6bfa1773379259",
+"lang": "en",
+"text": "and",
+"synth": "and",
+"kind": "word"
+},
+{
+"key": "9f0ac2d2b67aa4a5c05dd996fc27b4c6",
+"lang": "en",
+"text": "month",
+"synth": "month",
+"kind": "word"
+},
+{
+"key": "9f319ad9db41342a1c80d6eee4142689",
+"lang": "en",
+"text": "around",
+"synth": "around",
+"kind": "word"
+},
+{
+"key": "a05e25d639a90724a1bac849dde81743",
+"lang": "en",
+"text": "tokyo",
+"synth": "tokyo",
+"kind": "word"
+},
+{
+"key": "a08cbedf24311419d339a3f9461c5c20",
+"lang": "en",
+"text": "missed",
+"synth": "missed",
+"kind": "word"
+},
+{
+"key": "a0a7dca8e7cb7580f6f49707f0a42fb9",
+"lang": "en",
+"text": "fix",
+"synth": "fix",
+"kind": "word"
+},
+{
+"key": "a0baaaf6bfd2d33fc0e4cb2e05d706c8",
+"lang": "en",
+"text": "price",
+"synth": "price",
+"kind": "word"
+},
+{
+"key": "a1788feeef438c806392010da6635150",
+"lang": "en",
+"text": "repeat",
+"synth": "repeat",
+"kind": "word"
+},
+{
+"key": "a261ed05329b763b3c9af0da758ba955",
+"lang": "en",
+"text": "ability",
+"synth": "ability",
+"kind": "word"
+},
+{
+"key": "a2cbd0eb9676846704936e66e7b17c5b",
+"lang": "en",
+"text": "purpose",
+"synth": "purpose",
+"kind": "word"
+},
+{
+"key": "a48e0e20b42123f89883ba23ac477924",
+"lang": "en",
+"text": "cause",
+"synth": "cause",
+"kind": "word"
+},
+{
+"key": "a676e9d3feacc158703b32a8e22b764a",
+"lang": "en",
+"text": "feel",
+"synth": "feel",
+"kind": "word"
+},
+{
+"key": "a6cb1e5b4d47099b3379981d79d44cd1",
+"lang": "en",
+"text": "project",
+"synth": "project",
+"kind": "word"
+},
+{
+"key": "a75e42bc46695f8504929062e24bed8d",
+"lang": "en",
+"text": "earlier",
+"synth": "earlier",
+"kind": "word"
+},
+{
+"key": "a7d4feb5ff3ac5303b6c6744386535cb",
+"lang": "en",
+"text": "had",
+"synth": "had",
+"kind": "word"
+},
+{
+"key": "a7eaf8a673fa0756e3f2a5d00eba0f40",
+"lang": "en",
+"text": "back",
+"synth": "back",
+"kind": "word"
+},
+{
+"key": "a80689d764c339792351d5aed86eab31",
+"lang": "en",
+"text": "points",
+"synth": "points",
+"kind": "word"
+},
+{
+"key": "a87127755864fb22ac65a40a32ff6f8c",
+"lang": "en",
+"text": "that",
+"synth": "that",
+"kind": "word"
+},
+{
+"key": "a892cc169b6f9388c3d444f72f3e889b",
+"lang": "en",
+"text": "downtown",
+"synth": "downtown",
+"kind": "word"
+},
+{
+"key": "a8b4fcdaac307a875e5f2e0a735fa4a6",
+"lang": "en",
+"text": "sarah",
+"synth": "sarah",
+"kind": "word"
+},
+{
+"key": "a9b2e3b88a962242ef4badea69d2b3aa",
+"lang": "en",
+"text": "tests",
+"synth": "tests",
+"kind": "word"
+},
+{
+"key": "a9bbcdd6cc6e9dff248a5a4261f22ebe",
+"lang": "en",
+"text": "changes",
+"synth": "changes",
+"kind": "word"
+},
+{
+"key": "aa0b73feaef6af04078c1aaf57f1deab",
+"lang": "en",
+"text": "credit",
+"synth": "credit",
+"kind": "word"
+},
+{
+"key": "accaae8ec22140b4d377fc1b0e0a38d2",
+"lang": "en",
+"text": "i'd",
+"synth": "i'd",
+"kind": "word"
+},
+{
+"key": "adc81ffc54db9410a0ed5cd3dc68ac6f",
+"lang": "en",
+"text": "checkout",
+"synth": "checkout",
+"kind": "word"
+},
+{
+"key": "ae53dcdd52b40e755129f0222e19b2c1",
+"lang": "en",
+"text": "read",
+"synth": "read",
+"kind": "word"
+},
+{
+"key": "ae92d1164ad0e22fc3e842e5ac515b4f",
+"lang": "en",
+"text": "station",
+"synth": "station",
+"kind": "word"
+},
+{
+"key": "aed4390382db67abfbdf7f52d52e295c",
+"lang": "en",
+"text": "eat",
+"synth": "eat",
+"kind": "word"
+},
+{
+"key": "aef37217eb4dd51c783f6cec4fa1b743",
+"lang": "en",
+"text": "water",
+"synth": "water",
+"kind": "word"
+},
+{
+"key": "aef8022f60b6de11b9add8bdd365d20d",
+"lang": "en",
+"text": "bad",
+"synth": "bad",
+"kind": "word"
+},
+{
+"key": "b08ef0e387a03d347ae0c33bfb9dcf77",
+"lang": "en",
+"text": "meant",
+"synth": "meant",
+"kind": "word"
+},
+{
+"key": "b09e5491b741dcd6a9ecc307f4a028c0",
+"lang": "en",
+"text": "ten",
+"synth": "ten",
+"kind": "word"
+},
+{
+"key": "b0d68c2f54ceb990d0f43aeb6a102625",
+"lang": "en",
+"text": "screen",
+"synth": "screen",
+"kind": "word"
+},
+{
+"key": "b171c9cfe906cc6c7a5baa3562f50832",
+"lang": "en",
+"text": "sore",
+"synth": "sore",
+"kind": "word"
+},
+{
+"key": "b1ec8764de3e78b63c10071ed986368b",
+"lang": "en",
+"text": "new",
+"synth": "new",
+"kind": "word"
+},
+{
+"key": "b235012a512b8db049aa7482d2efe12d",
+"lang": "en",
+"text": "include",
+"synth": "include",
+"kind": "word"
+},
+{
+"key": "b262fb38ef2f7c7acaed1d2ecf515db9",
+"lang": "en",
+"text": "we",
+"synth": "we",
+"kind": "word"
+},
+{
+"key": "b33cf13d2fded263813b8b53b751e368",
+"lang": "en",
+"text": "medicine",
+"synth": "medicine",
+"kind": "word"
+},
+{
+"key": "b421c5a66ed36ab6cf9950877972f2f0",
+"lang": "en",
+"text": "significantly",
+"synth": "significantly",
+"kind": "word"
+},
+{
+"key": "b4812712fdc9abe1f033ac7463c3c248",
+"lang": "en",
+"text": "visit",
+"synth": "visit",
+"kind": "word"
+},
+{
+"key": "b4bee85e75f57a463efba605519e8a3b",
+"lang": "en",
+"text": "often",
+"synth": "often",
+"kind": "word"
+},
+{
+"key": "b50e906d612731c5ec9647533ae9b05f",
+"lang": "en",
+"text": "something",
+"synth": "something",
+"kind": "word"
+},
+{
+"key": "b57b5f056e921a14f36fb84b7b1d5cd4",
+"lang": "en",
+"text": "into",
+"synth": "into",
+"kind": "word"
+},
+{
+"key": "b59520836a857da0afe8e6de657d1955",
+"lang": "en",
+"text": "point",
+"synth": "point",
+"kind": "word"
+},
+{
+"key": "b61227704f780d6bea74de0f5459e8df",
+"lang": "en",
+"text": "last",
+"synth": "last",
+"kind": "word"
+},
+{
+"key": "b781555d18c343b6f9941ddb60a081f2",
+"lang": "en",
+"text": "end",
+"synth": "end",
+"kind": "word"
+},
+{
+"key": "b81a5b8c9f46e64c6a3a4f21523306ea",
+"lang": "en",
+"text": "takes",
+"synth": "takes",
+"kind": "word"
+},
+{
+"key": "b89e584ba30ce4bf5825d7b5094c9dbe",
+"lang": "en",
+"text": "bug",
+"synth": "bug",
+"kind": "word"
+},
+{
+"key": "bb93764f6cff1212904c7d3c9b0beb47",
+"lang": "en",
+"text": "doesn't",
+"synth": "doesn't",
+"kind": "word"
+},
+{
+"key": "bc4091bda002e18c01a8471df2a2d58f",
+"lang": "en",
+"text": "grand",
+"synth": "grand",
+"kind": "word"
+},
+{
+"key": "bc9e8e4d610edb24e7d7aaa3185692bb",
+"lang": "en",
+"text": "airport",
+"synth": "airport",
+"kind": "word"
+},
+{
+"key": "bd5e6ee71b684b87fee604fe7582e0c2",
+"lang": "en",
+"text": "call",
+"synth": "call",
+"kind": "word"
+},
+{
+"key": "bd693224e18a8fbb67838b998f6c65d7",
+"lang": "en",
+"text": "on",
+"synth": "on",
+"kind": "word"
+},
+{
+"key": "be6fd2cbfe2c4f29c5d37dea541253d9",
+"lang": "en",
+"text": "least",
+"synth": "least",
+"kind": "word"
+},
+{
+"key": "bea9d002971b69d2b1399d2e46367dcb",
+"lang": "en",
+"text": "weekends",
+"synth": "weekends",
+"kind": "word"
+},
+{
+"key": "beff073a0626c35e8aa56bd861d0af41",
+"lang": "en",
+"text": "seems",
+"synth": "seems",
+"kind": "word"
+},
+{
+"key": "c04880f529ffcb0799f13ac30663bca4",
+"lang": "en",
+"text": "eight",
+"synth": "eight",
+"kind": "word"
+},
+{
+"key": "c06bbc6612de0aeb987f3fae0b3758ac",
+"lang": "en",
+"text": "utilities",
+"synth": "utilities",
+"kind": "word"
+},
+{
+"key": "c0b1390734f325ba7646628a2fc673c0",
+"lang": "en",
+"text": "cosmetics",
+"synth": "cosmetics",
+"kind": "word"
+},
+{
+"key": "c0be81b8188c9f07cb1dbb6e05b60722",
+"lang": "en",
+"text": "movie",
+"synth": "movie",
+"kind": "word"
+},
+{
+"key": "c0fba8a0282e1d89a52cd43a125488f7",
+"lang": "en",
+"text": "cart",
+"synth": "cart",
+"kind": "word"
+},
+{
+"key": "c10a048e4ec2542122737031e111fe10",
+"lang": "en",
+"text": "all",
+"synth": "all",
+"kind": "word"
+},
+{
+"key": "c13cafdb32f6577fb82d49ca5e0f497b",
+"lang": "en",
+"text": "somewhere",
+"synth": "somewhere",
+"kind": "word"
+},
+{
+"key": "c2744fd9dae6bef093aeef1728dbc8ba",
+"lang": "en",
+"text": "sure",
+"synth": "sure",
+"kind": "word"
+},
+{
+"key": "c29c25b88e4ca4f7e76e33afa79bb267",
+"lang": "en",
+"text": "checked",
+"synth": "checked",
+"kind": "word"
+},
+{
+"key": "c349837d39e2cd4d8ddef8a44c10d3f9",
+"lang": "en",
+"text": "step",
+"synth": "step",
+"kind": "word"
+},
+{
+"key": "c45b1397dc788275553280b057149a21",
+"lang": "en",
+"text": "think",
+"synth": "think",
+"kind": "word"
+},
+{
+"key": "c73b8727753dd8edf440db6bb974d87e",
+"lang": "en",
+"text": "afternoon",
+"synth": "afternoon",
+"kind": "word"
+},
+{
+"key": "c8f2d8e356f7a3bc6c9f750c000516cc",
+"lang": "en",
+"text": "page",
+"synth": "page",
+"kind": "word"
+},
+{
+"key": "c900f89e286b804b20883cf872f0dc10",
+"lang": "en",
+"text": "lead",
+"synth": "lead",
+"kind": "word"
+},
+{
+"key": "c926205b1e419f6b18d7f498eb58cefc",
+"lang": "en",
+"text": "speak",
+"synth": "speak",
+"kind": "word"
+},
+{
+"key": "c95de7f3d09831f528971afaa04cdba0",
+"lang": "en",
+"text": "working",
+"synth": "working",
+"kind": "word"
+},
+{
+"key": "c9dc568e58ed496bd9ea4d5fa9936314",
+"lang": "en",
+"text": "refund",
+"synth": "refund",
+"kind": "word"
+},
+{
+"key": "c9f6a0cdc224dfe06b9424bdc4302462",
+"lang": "en",
+"text": "this",
+"synth": "this",
+"kind": "word"
+},
+{
+"key": "cc2be4924eb72e634fd6d0d28720bac8",
+"lang": "en",
+"text": "update",
+"synth": "update",
+"kind": "word"
+},
+{
+"key": "cca5752cfeccf28fb214666e338623a2",
+"lang": "en",
+"text": "retail",
+"synth": "retail",
+"kind": "word"
+},
+{
+"key": "ccb4620ebd439581224ee2503be09329",
+"lang": "en",
+"text": "oneyear",
+"synth": "oneyear",
+"kind": "word"
+},
+{
+"key": "cf77494cbf654e9df0c6859891dc33ec",
+"lang": "en",
+"text": "what",
+"synth": "what",
+"kind": "word"
+},
+{
+"key": "cfa9be68c0b44e2a44473b56e3a13c86",
+"lang": "en",
+"text": "bloom",
+"synth": "bloom",
+"kind": "word"
+},
+{
+"key": "cfea3fef03900eb95a39b04d8f2fba9e",
+"lang": "en",
+"text": "account",
+"synth": "account",
+"kind": "word"
+},
+{
+"key": "cfea57153e6d7b1340647147f9440dd7",
+"lang": "en",
+"text": "within",
+"synth": "within",
+"kind": "word"
+},
+{
+"key": "d066a3060cc618eb7839afbb2a0c8f61",
+"lang": "en",
+"text": "main",
+"synth": "main",
+"kind": "word"
+},
+{
+"key": "d13125dcdd7eae8ad9450ccb13d1ad12",
+"lang": "en",
+"text": "member",
+"synth": "member",
+"kind": "word"
+},
+{
+"key": "d1c095cf318d4eb6eb9be1d64f6dc6ed",
+"lang": "en",
+"text": "mouse",
+"synth": "mouse",
+"kind": "word"
+},
+{
+"key": "d28fe1398f8e70bde4b13733f12668f4",
+"lang": "en",
+"text": "so",
+"synth": "so",
+"kind": "word"
+},
+{
+"key": "d2918ee1e82920bdd00608a4872ea99f",
+"lang": "en",
+"text": "honest",
+"synth": "honest",
+"kind": "word"
+},
+{
+"key": "d2ee62170e8912b979a33c0eae8d6f3a",
+"lang": "en",
+"text": "collect",
+"synth": "collect",
+"kind": "word"
+},
+{
+"key": "d34d75ce8b0953e5b7fc164fe5491f68",
+"lang": "en",
+"text": "make",
+"synth": "make",
+"kind": "word"
+},
+{
+"key": "d3a6a56441fbe47681c21859724bd1a7",
+"lang": "en",
+"text": "exactly",
+"synth": "exactly",
+"kind": "word"
+},
+{
+"key": "d3ae3fb05e0e2a2dfc310c4429d8e30f",
+"lang": "en",
+"text": "front",
+"synth": "front",
+"kind": "word"
+},
+{
+"key": "d3bf5ad39210bc791722af576e2848da",
+"lang": "en",
+"text": "next",
+"synth": "next",
+"kind": "word"
+},
+{
+"key": "d448407995037d4321c770ca9c1c6b79",
+"lang": "en",
+"text": "overthinking",
+"synth": "overthinking",
+"kind": "word"
+},
+{
+"key": "d4db8a4b5f729ff13b4bed8c4c205bb2",
+"lang": "en",
+"text": "complex",
+"synth": "complex",
+"kind": "word"
+},
+{
+"key": "d4e20b6fed9bc1fa28134cd92456f473",
+"lang": "en",
+"text": "together",
+"synth": "together",
+"kind": "word"
+},
+{
+"key": "d4ef1d93f8ec2d73ee9c0deb60b5b3e1",
+"lang": "en",
+"text": "mouth",
+"synth": "mouth",
+"kind": "word"
+},
+{
+"key": "d5bf86028f91a7e6828d21e5151c5935",
+"lang": "en",
+"text": "when",
+"synth": "when",
+"kind": "word"
+},
+{
+"key": "d5edfc211054f7128520c49c573dc517",
+"lang": "en",
+"text": "deadline",
+"synth": "deadline",
+"kind": "word"
+},
+{
+"key": "d63c0af1e8fb6bd69d299a1f463a4409",
+"lang": "en",
+"text": "i",
+"synth": "i",
+"kind": "word"
+},
+{
+"key": "d6f13a8ab7bb82100dec8e675200b304",
+"lang": "en",
+"text": "prioritize",
+"synth": "prioritize",
+"kind": "word"
+},
+{
+"key": "d776aefb34b693cb8467b835432a312d",
+"lang": "en",
+"text": "morning",
+"synth": "morning",
+"kind": "word"
+},
+{
+"key": "d7a11c459f2076cefd76508727934f1e",
+"lang": "en",
+"text": "it",
+"synth": "it",
+"kind": "word"
+},
+{
+"key": "d7c982d4b6e3675d19667c8089fb6cd8",
+"lang": "en",
+"text": "seeing",
+"synth": "seeing",
+"kind": "word"
+},
+{
+"key": "d825a2bc5a8ccc4123729e4d3d7105f7",
+"lang": "en",
+"text": "pool",
+"synth": "pool",
+"kind": "word"
+},
+{
+"key": "d871b9dcd40d8bc3eb11a70a106f0e25",
+"lang": "en",
+"text": "matter",
+"synth": "matter",
+"kind": "word"
+},
+{
+"key": "d90510896308fca4f22c80f2c2d073ac",
+"lang": "en",
+"text": "there",
+"synth": "there",
+"kind": "word"
+},
+{
+"key": "d9725f2f176afc064d2bf3ff957b3385",
+"lang": "en",
+"text": "started",
+"synth": "started",
+"kind": "word"
+},
+{
+"key": "d9838520e8571c1d22159bff0869e96d",
+"lang": "en",
+"text": "hotel",
+"synth": "hotel",
+"kind": "word"
+},
+{
+"key": "d99833a6be2bd34f8d9d3e7f5f1f72cb",
+"lang": "en",
+"text": "timeline",
+"synth": "timeline",
+"kind": "word"
+},
+{
+"key": "d9ab3217ecffd5bc5e78243a54b73695",
+"lang": "en",
+"text": "jacket",
+"synth": "jacket",
+"kind": "word"
+},
+{
+"key": "d9b72eeebda6c86bc2ed048707640482",
+"lang": "en",
+"text": "large",
+"synth": "large",
+"kind": "word"
+},
+{
+"key": "da0c11766090945fda3c1e133d0f5325",
+"lang": "en",
+"text": "vest",
+"synth": "vest",
+"kind": "word"
+},
+{
+"key": "db8b33ff31ddf9dc8b048f615ead596d",
+"lang": "en",
+"text": "does",
+"synth": "does",
+"kind": "word"
+},
+{
+"key": "dc2a8d7f5153b9157d750522cd2fa872",
+"lang": "en",
+"text": "sorry",
+"synth": "sorry",
+"kind": "word"
+},
+{
+"key": "dd391da1354cef49951d2b65b18288f9",
+"lang": "en",
+"text": "like",
+"synth": "like",
+"kind": "word"
+},
+{
+"key": "dd74885a857cb52459317a57f172b147",
+"lang": "en",
+"text": "fair",
+"synth": "fair",
+"kind": "word"
+},
+{
+"key": "ddeb52a22e2c7dac3d65c3ec6d7367aa",
+"lang": "en",
+"text": "access",
+"synth": "access",
+"kind": "word"
+},
+{
+"key": "de070f8d8f1a1adaf33e6f0ef62325ac",
+"lang": "en",
+"text": "leaning",
+"synth": "leaning",
+"kind": "word"
+},
+{
+"key": "de5a701293ff35f7fdeed27a3022d544",
+"lang": "en",
+"text": "walking",
+"synth": "walking",
+"kind": "word"
+},
+{
+"key": "deb300f1df45a48e1942e8c07304c915",
+"lang": "en",
+"text": "travel",
+"synth": "travel",
+"kind": "word"
+},
+{
+"key": "e007c8574189ac09cf82dd498d48cf23",
+"lang": "en",
+"text": "out",
+"synth": "out",
+"kind": "word"
+},
+{
+"key": "e01befffc765bceb9173d8e8861cf393",
+"lang": "en",
+"text": "apartment",
+"synth": "apartment",
+"kind": "word"
+},
+{
+"key": "e156c1e63d625bb386cd9c5e633b82c5",
+"lang": "en",
+"text": "up",
+"synth": "up",
+"kind": "word"
+},
+{
+"key": "e1de05c63d6feecb3f30378193d9ccca",
+"lang": "en",
+"text": "fifteen",
+"synth": "fifteen",
+"kind": "word"
+},
+{
+"key": "e2369720009e5e6fca71e497484447fb",
+"lang": "en",
+"text": "thing",
+"synth": "thing",
+"kind": "word"
+},
+{
+"key": "e247d35cf42a7c0482d21acc8cc3cd0e",
+"lang": "en",
+"text": "rise",
+"synth": "rise",
+"kind": "word"
+},
+{
+"key": "e27f32402bb3441be24aae47d000ea17",
+"lang": "en",
+"text": "walk",
+"synth": "walk",
+"kind": "word"
+},
+{
+"key": "e29524822c3e4d5c210bc710e47f6f17",
+"lang": "en",
+"text": "fan",
+"synth": "fan",
+"kind": "word"
+},
+{
+"key": "e610c633e6d50076c522fd0f2cdf9591",
+"lang": "en",
+"text": "by",
+"synth": "by",
+"kind": "word"
+},
+{
+"key": "ea53d1a5e59deab80c14262c9012855b",
+"lang": "en",
+"text": "getting",
+"synth": "getting",
+"kind": "word"
+},
+{
+"key": "ea8b65794414436d3e4ce9bd345bcd2c",
+"lang": "en",
+"text": "staying",
+"synth": "staying",
+"kind": "word"
+},
+{
+"key": "eb168809df01d04a5f0aaa4df3371efc",
+"lang": "en",
+"text": "most",
+"synth": "most",
+"kind": "word"
+},
+{
+"key": "ec40ff9b4c3a4517ba252ec31d89956b",
+"lang": "en",
+"text": "know",
+"synth": "know",
+"kind": "word"
+},
+{
+"key": "ecfb0f63577c90122ecfceafcb6ace35",
+"lang": "en",
+"text": "worth",
+"synth": "worth",
+"kind": "word"
+},
+{
+"key": "ed7fd27ab9177830fb1a7902b4fba626",
+"lang": "en",
+"text": "excuse",
+"synth": "excuse",
+"kind": "word"
+},
+{
+"key": "ef5cb8a9860177f58f4b477417f89895",
+"lang": "en",
+"text": "speaking",
+"synth": "speaking",
+"kind": "word"
+},
+{
+"key": "ef6ea9e30205ff7fb5645413c633e1b9",
+"lang": "en",
+"text": "could",
+"synth": "could",
+"kind": "word"
+},
+{
+"key": "efe8c917f6d2f366b7bbdc2175a9a711",
+"lang": "en",
+"text": "suggest",
+"synth": "suggest",
+"kind": "word"
+},
+{
+"key": "f061b39695ecf13a63281b66cfb1023d",
+"lang": "en",
+"text": "never",
+"synth": "never",
+"kind": "word"
+},
+{
+"key": "f09533b5f763a32587236c3b3248627d",
+"lang": "en",
+"text": "budget",
+"synth": "budget",
+"kind": "word"
+},
+{
+"key": "f15e2aa07420f35e11aa0e7cac9b2627",
+"lang": "en",
+"text": "blocked",
+"synth": "blocked",
+"kind": "word"
+},
+{
+"key": "f1c34f44dfae6cf94049552ecf90d9a0",
+"lang": "en",
+"text": "from",
+"synth": "from",
+"kind": "word"
+},
+{
+"key": "f1de9db56775d6d813d111f5d6c093e4",
+"lang": "en",
+"text": "bet",
+"synth": "bet",
+"kind": "word"
+},
+{
+"key": "f2c2709361cdef741f8c6c3ac644770a",
+"lang": "en",
+"text": "share",
+"synth": "share",
+"kind": "word"
+},
+{
+"key": "f311e93c042be0e9ca0d74bf6f178de8",
+"lang": "en",
+"text": "again",
+"synth": "again",
+"kind": "word"
+},
+{
+"key": "f3c79527cbdc36a7af81f61dee488f3a",
+"lang": "en",
+"text": "couldn't",
+"synth": "couldn't",
+"kind": "word"
+},
+{
+"key": "f43c8cb6e364a5f4ce7cc50e34b40750",
+"lang": "en",
+"text": "bed",
+"synth": "bed",
+"kind": "word"
+},
+{
+"key": "f51608b3a627c6ed1291175fbbc4b20c",
+"lang": "en",
+"text": "forward",
+"synth": "forward",
+"kind": "word"
+},
+{
+"key": "f57ffaa0737be9b06957a7cfaf0f8058",
+"lang": "en",
+"text": "meet",
+"synth": "meet",
+"kind": "word"
+},
+{
+"key": "f5de07f04cb548906ccdd168eef21ec2",
+"lang": "en",
+"text": "card",
+"synth": "card",
+"kind": "word"
+},
+{
+"key": "f7dc99ec6514f8ee8f82c1d387299428",
+"lang": "en",
+"text": "afraid",
+"synth": "afraid",
+"kind": "word"
+},
+{
+"key": "f931b26206e96797dafa465543b6ab8e",
+"lang": "en",
+"text": "that's",
+"synth": "that's",
+"kind": "word"
+},
+{
+"key": "f93e690ef7e588f9fe9c3622be7ab65d",
+"lang": "en",
+"text": "where",
+"synth": "where",
+"kind": "word"
+},
+{
+"key": "f977982baca7ffe41d61f9532165994a",
+"lang": "en",
+"text": "possible",
+"synth": "possible",
+"kind": "word"
+},
+{
+"key": "fa7161cd66f75bd1fb649f97ffb3f9a0",
+"lang": "en",
+"text": "full",
+"synth": "full",
+"kind": "word"
+},
+{
+"key": "fb28788b1c82b6c312d386b1a2dd0207",
+"lang": "en",
+"text": "client",
+"synth": "client",
+"kind": "word"
+},
+{
+"key": "fb300bdc91ac99db6352add70e249f14",
+"lang": "en",
+"text": "come",
+"synth": "come",
+"kind": "word"
+},
+{
+"key": "fbc32ff0cababa349ffe5f0e05165394",
+"lang": "en",
+"text": "van",
+"synth": "van",
+"kind": "word"
+},
+{
+"key": "fcaf7a69d8ea65ae1008b25f5c44c827",
+"lang": "en",
+"text": "go",
+"synth": "go",
+"kind": "word"
+},
+{
+"key": "fd062cba052911cac0dcceebbb2c1cbd",
+"lang": "en",
+"text": "prescription",
+"synth": "prescription",
+"kind": "word"
+},
+{
+"key": "fd2236997cbfbaa1d25e4eec659ac155",
+"lang": "en",
+"text": "world",
+"synth": "world",
+"kind": "word"
+},
+{
+"key": "fd8ee836a13890e10307d7a13ef12dc1",
+"lang": "en",
+"text": "alex",
+"synth": "alex",
+"kind": "word"
+},
+{
+"key": "fe6efba7c3d7d31f440f050de366c423",
+"lang": "en",
+"text": "conversion",
+"synth": "conversion",
+"kind": "word"
+},
+{
+"key": "fe8520c3722a8cd9c11e4986d4aa0b14",
+"lang": "en",
+"text": "english",
+"synth": "english",
+"kind": "word"
+},
+{
+"key": "000bdcaa93c63337600e94b10b2a92a0",
+"lang": "ja",
+"text": "ず",
+"synth": "ズ",
+"kind": "kana"
+},
+{
+"key": "045a21f7419148b292e59fd9e5edfa45",
+"lang": "ja",
+"text": "ぜ",
+"synth": "ゼ",
+"kind": "kana"
+},
+{
+"key": "05a242760b9cf4af45f7acfaea3fb511",
+"lang": "ja",
+"text": "き",
+"synth": "キ",
+"kind": "kana"
+},
+{
+"key": "121f2f9feb2c099746357974b0cff7db",
+"lang": "ja",
+"text": "び",
+"synth": "ビ",
+"kind": "kana"
+},
+{
+"key": "1432b8d692483e4a3ad6f30c3c1a9c6f",
+"lang": "ja",
+"text": "ぎ",
+"synth": "ギ",
+"kind": "kana"
+},
+{
+"key": "14ff33f3beec6bd3094d2acedcf9075d",
+"lang": "ja",
+"text": "つ",
+"synth": "ツ",
+"kind": "kana"
+},
+{
+"key": "1594bfe4d8bea2d6e085701d741d45c0",
+"lang": "ja",
+"text": "こ",
+"synth": "コ",
+"kind": "kana"
+},
+{
+"key": "18a51d7096e122fea3f1e572c00d184b",
+"lang": "ja",
+"text": "ぴょ",
+"synth": "ピョ",
+"kind": "kana"
+},
+{
+"key": "1cb8d9bbb92c5ac21e0896ed2731379e",
+"lang": "ja",
+"text": "さ",
+"synth": "サ",
+"kind": "kana"
+},
+{
+"key": "21cf7738c07451e80db040e4f81c4f78",
+"lang": "ja",
+"text": "に",
+"synth": "ニ",
+"kind": "kana"
+},
+{
+"key": "23d52a3582268df214f946a634634463",
+"lang": "ja",
+"text": "にょ",
+"synth": "ニョ",
+"kind": "kana"
+},
+{
+"key": "24fbe3bfd432002c88226d283357ead7",
+"lang": "ja",
+"text": "みゃ",
+"synth": "ミャ",
+"kind": "kana"
+},
+{
+"key": "2a6fa1041f0407a0ad6a8034477d68c7",
+"lang": "ja",
+"text": "で",
+"synth": "デ",
+"kind": "kana"
+},
+{
+"key": "2b6995403a391254a23a96e875e6299d",
+"lang": "ja",
+"text": "す",
+"synth": "ス",
+"kind": "kana"
+},
+{
+"key": "2bba2a0ce36b46fdc217ee518ba0668d",
+"lang": "ja",
+"text": "か",
+"synth": "カ",
+"kind": "kana"
+},
+{
+"key": "2ff803efe686b05c2dfabaa758e25361",
+"lang": "ja",
+"text": "げ",
+"synth": "ゲ",
+"kind": "kana"
+},
+{
+"key": "36259c8ddaf336814f7570923b2c8bfc",
+"lang": "ja",
+"text": "ん",
+"synth": "ン",
+"kind": "kana"
+},
+{
+"key": "3785a6402b9250049ecf08b7e9f38e9b",
+"lang": "ja",
+"text": "ぱ",
+"synth": "パ",
+"kind": "kana"
+},
+{
+"key": "381bfe7436221dbd6bd23356c1fba734",
+"lang": "ja",
+"text": "りゅ",
+"synth": "リュ",
+"kind": "kana"
+},
+{
+"key": "3ab9ce66091c18577f7f695d0119580c",
+"lang": "ja",
+"text": "ちょ",
+"synth": "チョ",
+"kind": "kana"
+},
+{
+"key": "3b42dc22d16f586ddd4490862af5c49d",
+"lang": "ja",
+"text": "べ",
+"synth": "ベ",
+"kind": "kana"
+},
+{
+"key": "3f860539febb849b84925192717e45a2",
+"lang": "ja",
+"text": "ぬ",
+"synth": "ヌ",
+"kind": "kana"
+},
+{
+"key": "41083a5a213a09749c17e4249b6622c5",
+"lang": "ja",
+"text": "ぢ",
+"synth": "ヂ",
+"kind": "kana"
+},
+{
+"key": "4108bc3b6374a5e37369757e5c7c504a",
+"lang": "ja",
+"text": "みょ",
+"synth": "ミョ",
+"kind": "kana"
+},
+{
+"key": "41620e82352886335dd2d2b4e9df98ae",
+"lang": "ja",
+"text": "ぎゃ",
+"synth": "ギャ",
+"kind": "kana"
+},
+{
+"key": "4178c4176319985808baa543263a24b2",
+"lang": "ja",
+"text": "く",
+"synth": "ク",
+"kind": "kana"
+},
+{
+"key": "43ffeaf678a6d32c56dc481afdb59ba3",
+"lang": "ja",
+"text": "じょ",
+"synth": "ジョ",
+"kind": "kana"
+},
+{
+"key": "4551637cfa8a3e2ea497334239bb8a25",
+"lang": "ja",
+"text": "る",
+"synth": "ル",
+"kind": "kana"
+},
+{
+"key": "47b8b95fca5d1002d8c240e7c5f7a76a",
+"lang": "ja",
+"text": "ぴ",
+"synth": "ピ",
+"kind": "kana"
+},
+{
+"key": "4830cc7b051d3206dab28be66ad9a3bc",
+"lang": "ja",
+"text": "り",
+"synth": "リ",
+"kind": "kana"
+},
+{
+"key": "4a0060b281a3275c8ad9164c2ddb6a32",
+"lang": "ja",
+"text": "む",
+"synth": "ム",
+"kind": "kana"
+},
+{
+"key": "4a27d42437004aeed347463bb460a1b0",
+"lang": "ja",
+"text": "ち",
+"synth": "チ",
+"kind": "kana"
+},
+{
+"key": "4a2cabc4bb927835b654b822e50a7bb9",
+"lang": "ja",
+"text": "しゅ",
+"synth": "シュ",
+"kind": "kana"
+},
+{
+"key": "4c7a5015ee36a7be39aaa3ef01c37988",
+"lang": "ja",
+"text": "ね",
+"synth": "ネ",
+"kind": "kana"
+},
+{
+"key": "4f7b76d525e812df32d9f50d97f55dee",
+"lang": "ja",
+"text": "ほ",
+"synth": "ホ",
+"kind": "kana"
+},
+{
+"key": "53537624ecc445c122881163dba2f996",
+"lang": "ja",
+"text": "きゅ",
+"synth": "キュ",
+"kind": "kana"
+},
+{
+"key": "56cae49a7517484fe1c74d7250e8b879",
+"lang": "ja",
+"text": "づ",
+"synth": "ヅ",
+"kind": "kana"
+},
+{
+"key": "56d3f5c36e55d999837999edccea145f",
+"lang": "ja",
+"text": "ぞ",
+"synth": "ゾ",
+"kind": "kana"
+},
+{
+"key": "585a2f974f364d782a2de8539ad4f193",
+"lang": "ja",
+"text": "せ",
+"synth": "セ",
+"kind": "kana"
+},
+{
+"key": "592732171270212430bbf5ca9e983d10",
+"lang": "ja",
+"text": "ちゅ",
+"synth": "チュ",
+"kind": "kana"
+},
+{
+"key": "5b160989c0b95afa6bed257bfbc925d4",
+"lang": "ja",
+"text": "し",
+"synth": "シ",
+"kind": "kana"
+},
+{
+"key": "64c99d0ef87440e1d99793de89754684",
+"lang": "ja",
+"text": "は",
+"synth": "ハ",
+"kind": "kana"
+},
+{
+"key": "651d0f05e0234aed66a2d91c273519bd",
+"lang": "ja",
+"text": "い",
+"synth": "イ",
+"kind": "kana"
+},
+{
+"key": "67ee69cf953d5bf4a5d66fd8fff4db6f",
+"lang": "ja",
+"text": "ぽ",
+"synth": "ポ",
+"kind": "kana"
+},
+{
+"key": "6b930144f952f3c8eb37ad268b629373",
+"lang": "ja",
+"text": "りょ",
+"synth": "リョ",
+"kind": "kana"
+},
+{
+"key": "6d72bf1365c4b270c3186e3bf512f964",
+"lang": "ja",
+"text": "じゅ",
+"synth": "ジュ",
+"kind": "kana"
+},
+{
+"key": "716a5c4e0fc93b84d737026e3f448a59",
+"lang": "ja",
+"text": "よ",
+"synth": "ヨ",
+"kind": "kana"
+},
+{
+"key": "71e7307387105627f9f5df6bb579b93a",
+"lang": "ja",
+"text": "ぼ",
+"synth": "ボ",
+"kind": "kana"
+},
+{
+"key": "7326bc3b272d5c2162d22555f914a6d6",
+"lang": "ja",
+"text": "そ",
+"synth": "ソ",
+"kind": "kana"
+},
+{
+"key": "76d8b05c04c3c23a922ed424609b5c95",
+"lang": "ja",
+"text": "ぶ",
+"synth": "ブ",
+"kind": "kana"
+},
+{
+"key": "79826222d99481e0705407b3bad197af",
+"lang": "ja",
+"text": "ま",
+"synth": "マ",
+"kind": "kana"
+},
+{
+"key": "79e1562ee404a25ccc6c5c7fe5240f0b",
+"lang": "ja",
+"text": "ひょ",
+"synth": "ヒョ",
+"kind": "kana"
+},
+{
+"key": "7b2f81ce6ba6e1dfcabb49b202541245",
+"lang": "ja",
+"text": "しょ",
+"synth": "ショ",
+"kind": "kana"
+},
+{
+"key": "7b8af6b96748c40e8cedc9670da305b5",
+"lang": "ja",
+"text": "にゃ",
+"synth": "ニャ",
+"kind": "kana"
+},
+{
+"key": "7c3083626310565f7697a69649494a0f",
+"lang": "ja",
+"text": "じゃ",
+"synth": "ジャ",
+"kind": "kana"
+},
+{
+"key": "7c3ebee966e9f8f0950fffa7ba723765",
+"lang": "ja",
+"text": "け",
+"synth": "ケ",
+"kind": "kana"
+},
+{
+"key": "824e66b261abc0ea7263a8747e018cd1",
+"lang": "ja",
+"text": "きゃ",
+"synth": "キャ",
+"kind": "kana"
+},
+{
+"key": "835abc08b79ac031bc8d98388b61a031",
+"lang": "ja",
+"text": "の",
+"synth": "ノ",
+"kind": "kana"
+},
+{
+"key": "89518a6500b8ee4bee283ada28165759",
+"lang": "ja",
+"text": "ひ",
+"synth": "ヒ",
+"kind": "kana"
+},
+{
+"key": "8a22fe1183dc1b1c9c1a2e5b7a12cd62",
+"lang": "ja",
+"text": "ぴゅ",
+"synth": "ピュ",
+"kind": "kana"
+},
+{
+"key": "8e434b139c8c82bb340f5b0218b850a5",
+"lang": "ja",
+"text": "ど",
+"synth": "ド",
+"kind": "kana"
+},
+{
+"key": "922fcf4e64b9123f527982a1db7079c3",
+"lang": "ja",
+"text": "りゃ",
+"synth": "リャ",
+"kind": "kana"
+},
+{
+"key": "949c8bcc62b2027f310f8c4839e9d7ba",
+"lang": "ja",
+"text": "ぎょ",
+"synth": "ギョ",
+"kind": "kana"
+},
+{
+"key": "958c82893d81d15e23925565f696e953",
+"lang": "ja",
+"text": "ちゃ",
+"synth": "チャ",
+"kind": "kana"
+},
+{
+"key": "95a8332dadd76a9d7bc44c1e2f62aaf3",
+"lang": "ja",
+"text": "ぺ",
+"synth": "ペ",
+"kind": "kana"
+},
+{
+"key": "9c778b28badc10a492ce8cdfb1941c63",
+"lang": "ja",
+"text": "ぐ",
+"synth": "グ",
+"kind": "kana"
+},
+{
+"key": "a1e88abcada4cc0b0f35c0a77ae64864",
+"lang": "ja",
+"text": "ひゅ",
+"synth": "ヒュ",
+"kind": "kana"
+},
+{
+"key": "a33d8ca768707182b690e0036e268600",
+"lang": "ja",
+"text": "だ",
+"synth": "ダ",
+"kind": "kana"
+},
+{
+"key": "a42a4bf6d4d0ec5823f12875db2cd05a",
+"lang": "ja",
+"text": "み",
+"synth": "ミ",
+"kind": "kana"
+},
+{
+"key": "a4697e4e52918081128739a1456ada38",
+"lang": "ja",
+"text": "わ",
+"synth": "ワ",
+"kind": "kana"
+},
+{
+"key": "a5a736ea16bcf4477147c376235795ff",
+"lang": "ja",
+"text": "れ",
+"synth": "レ",
+"kind": "kana"
+},
+{
+"key": "a63f27caaccd4b8be0d7ed3b4dbe5e45",
+"lang": "ja",
+"text": "ぴゃ",
+"synth": "ピャ",
+"kind": "kana"
+},
+{
+"key": "b0337f6455ab6284cc5b6160987faaad",
+"lang": "ja",
+"text": "じ",
+"synth": "ジ",
+"kind": "kana"
+},
+{
+"key": "b2a1bf601e043df3ccb68f17583f8064",
+"lang": "ja",
+"text": "びょ",
+"synth": "ビョ",
+"kind": "kana"
+},
+{
+"key": "b2d348ad0ea00a98199afe5c20fe02c4",
+"lang": "ja",
+"text": "あ",
+"synth": "ア",
+"kind": "kana"
+},
+{
+"key": "b3151da2a23037ea93e4400bf41f9fc1",
+"lang": "ja",
+"text": "が",
+"synth": "ガ",
+"kind": "kana"
+},
+{
+"key": "b6cc134e702e4c11da7aae21e08d7849",
+"lang": "ja",
+"text": "びゃ",
+"synth": "ビャ",
+"kind": "kana"
+},
+{
+"key": "b9de96db06649d1193623b740b3c684b",
+"lang": "ja",
+"text": "ひゃ",
+"synth": "ヒャ",
+"kind": "kana"
+},
+{
+"key": "baf9e69d3c008d3943c4cdeec1a98c53",
+"lang": "ja",
+"text": "ろ",
+"synth": "ロ",
+"kind": "kana"
+},
+{
+"key": "bb1ccc1c5accd6a7728e013028eebbfd",
+"lang": "ja",
+"text": "も",
+"synth": "モ",
+"kind": "kana"
+},
+{
+"key": "bcc54dbcff066b5fbe94f811286d8227",
+"lang": "ja",
+"text": "や",
+"synth": "ヤ",
+"kind": "kana"
+},
+{
+"key": "bf912cb510351b971ed3931528907992",
+"lang": "ja",
+"text": "ゆ",
+"synth": "ユ",
+"kind": "kana"
+},
+{
+"key": "c016688c6f006ed0c89a0ec7dfac34da",
+"lang": "ja",
+"text": "な",
+"synth": "ナ",
+"kind": "kana"
+},
+{
+"key": "c04c6a31269295603e77a6159a5db415",
+"lang": "ja",
+"text": "て",
+"synth": "テ",
+"kind": "kana"
+},
+{
+"key": "c22c18baa56e2a739fede07dccf62618",
+"lang": "ja",
+"text": "ふ",
+"synth": "フ",
+"kind": "kana"
+},
+{
+"key": "c2f02e324cc29acb1d21c0163bb8390e",
+"lang": "ja",
+"text": "ご",
+"synth": "ゴ",
+"kind": "kana"
+},
+{
+"key": "ca951b5c684237b0b170d0791318cf4f",
+"lang": "ja",
+"text": "ら",
+"synth": "ラ",
+"kind": "kana"
+},
+{
+"key": "cb9d89d0cdeaa541583420cdbec06e79",
+"lang": "ja",
+"text": "ば",
+"synth": "バ",
+"kind": "kana"
+},
+{
+"key": "d38617aa47e6faa2de4e7f9cf1fc3a10",
+"lang": "ja",
+"text": "お",
+"synth": "オ",
+"kind": "kana"
+},
+{
+"key": "d3d24b3106a96d02926b03e12e9db5ee",
+"lang": "ja",
+"text": "う",
+"synth": "ウ",
+"kind": "kana"
+},
+{
+"key": "d482cf08b6b91fc9eb833022d2c89a52",
+"lang": "ja",
+"text": "みゅ",
+"synth": "ミュ",
+"kind": "kana"
+},
+{
+"key": "d5b5a7170e887dcf415cc6ce7bd2103c",
+"lang": "ja",
+"text": "きょ",
+"synth": "キョ",
+"kind": "kana"
+},
+{
+"key": "d6721e198546ac65ac4d9def88c7050e",
+"lang": "ja",
+"text": "しゃ",
+"synth": "シャ",
+"kind": "kana"
+},
+{
+"key": "d7e43cde0fa747bb7d82a133648f6706",
+"lang": "ja",
+"text": "ぷ",
+"synth": "プ",
+"kind": "kana"
+},
+{
+"key": "dc0dd178c161a7bd62cbc1ba4cae2b67",
+"lang": "ja",
+"text": "を",
+"synth": "ヲ",
+"kind": "kana"
+},
+{
+"key": "ea49cdb0a383aa36c125882c111b2220",
+"lang": "ja",
+"text": "へ",
+"synth": "ヘ",
+"kind": "kana"
+},
+{
+"key": "f2b37b7128cbd56667f9fd8cfc6d0327",
+"lang": "ja",
+"text": "ざ",
+"synth": "ザ",
+"kind": "kana"
+},
+{
+"key": "f72d9b9ce8e2c663c4ff7f4fb50f201e",
+"lang": "ja",
+"text": "た",
+"synth": "タ",
+"kind": "kana"
+},
+{
+"key": "f7b43c6ef433393add8249caed32da4b",
+"lang": "ja",
+"text": "にゅ",
+"synth": "ニュ",
+"kind": "kana"
+},
+{
+"key": "f7ef6eb6ce15b69f2edf61ecf458d158",
+"lang": "ja",
+"text": "め",
+"synth": "メ",
+"kind": "kana"
+},
+{
+"key": "f860ded71fc9365b7f132fcc02bf203e",
+"lang": "ja",
+"text": "びゅ",
+"synth": "ビュ",
+"kind": "kana"
+},
+{
+"key": "f8cddb0a5421dcd5e06cc5fdc33ec435",
+"lang": "ja",
+"text": "と",
+"synth": "ト",
+"kind": "kana"
+},
+{
+"key": "fc823a7da44fe0565844e885b8222fcd",
+"lang": "ja",
+"text": "ぎゅ",
+"synth": "ギュ",
+"kind": "kana"
+},
+{
+"key": "00020ef5e83a2646f55dd7ef8ff83b49",
+"lang": "ja",
+"text": "どうしました？何かありましたか？",
+"synth": "どうしました？何かありましたか？",
+"kind": "sentence"
+},
+{
+"key": "00786c17485886c7780256c65eebf61a",
+"lang": "ja",
+"text": "折り返しお電話いたしましょうか。",
+"synth": "{折|お}り{返|かえ}しお{電話|でんわ}いたしましょうか。",
+"kind": "sentence"
+},
+{
+"key": "02f6cd87b6aab9523eabca1c2310cfb2",
+"lang": "ja",
+"text": "この薬は一日三回、食後に飲んでください。",
+"synth": "この{薬|くすり}は{一日|いちにち}{三回|さんかい}、{食後|しょくご}に{飲|の}んでください。",
+"kind": "sentence"
+},
+{
+"key": "06d027ce20cdcdef0138cd1bd6ca86a1",
+"lang": "ja",
+"text": "財布を電車に忘れてしまいました。",
+"synth": "{財布|さいふ}を{電車|でんしゃ}に{忘|わす}れてしまいました。",
+"kind": "sentence"
+},
+{
+"key": "0797a2d4834ecb1d70988e5ffc702dd6",
+"lang": "ja",
+"text": "来週の金曜日までに対応できると思います。",
+"synth": "{来週|らいしゅう}の{金曜日|きんようび}までに{対応|たいおう}できると{思|おも}います。",
+"kind": "sentence"
+},
+{
+"key": "088ebe003f65af57566c69af2be8d8da",
+"lang": "ja",
+"text": "こんにちは。今日はどのようにしましょうか？",
+"synth": "こんにちは。今日はどのようにしましょうか？",
+"kind": "sentence"
+},
+{
+"key": "09ff03264492d8e71df821cf7face4d7",
+"lang": "ja",
+"text": "日本語を勉強して二年になります。",
+"synth": "{日本語|にほんご}を{勉強|べんきょう}して{二年|にねん}になります。",
+"kind": "sentence"
+},
+{
+"key": "0d24e9d4eb47e35ed089fb31669c1513",
+"lang": "ja",
+"text": "結論から申し上げますと、予算が足りません。",
+"synth": "{結論|けつろん}から{申|もう}し{上|あ}げますと、{予算|よさん}が{足|た}りません。",
+"kind": "sentence"
+},
+{
+"key": "0da7f5c226e575c7e9c3162add096748",
+"lang": "ja",
+"text": "駅はどこですか。",
+"synth": "{駅|えき}はどこですか。",
+"kind": "sentence"
+},
+{
+"key": "1354de5164111d57f05dea713eb8dec8",
+"lang": "ja",
+"text": "いらっしゃいませ！お弁当、温めますか？",
+"synth": "いらっしゃいませ！お弁当、温めますか？",
+"kind": "sentence"
+},
+{
+"key": "14be491dc9a1d0173a92d5ac499b4308",
+"lang": "ja",
+"text": "とりあえず生ビールを二つください。",
+"synth": "とりあえず{生|なま}ビールを{二|ふた}つください。",
+"kind": "sentence"
+},
+{
+"key": "16a750e17f21797112513b7d160e1c19",
+"lang": "ja",
+"text": "雨が降りそうなので、傘を持っていきます。",
+"synth": "{雨|あめ}が{降|ふ}りそうなので、{傘|かさ}を{持|も}っていきます。",
+"kind": "sentence"
+},
+{
+"key": "1928da3afc7357bf38fff66d0554d0a6",
+"lang": "ja",
+"text": "カードで払えますか。",
+"synth": "カードで{払|はら}えますか。",
+"kind": "sentence"
+},
+{
+"key": "1a826e516975d075dfc6a6454fb1332a",
+"lang": "ja",
+"text": "こんにちは。どちらへ行かれる予定ですか？",
+"synth": "こんにちは。どちらへ行かれる予定ですか？",
+"kind": "sentence"
+},
+{
+"key": "1d58af0658ae6e23f3121f98a09e5583",
+"lang": "ja",
+"text": "恐れ入りますが、もう一度お名前をお伺いしてもよろしいでしょうか。",
+"synth": "{恐|おそ}れ{入|い}りますが、もう{一度|いちど}お{名前|なまえ}をお{伺|うかが}いしてもよろしいでしょうか。",
+"kind": "sentence"
+},
+{
+"key": "1e792c4fa94a8f3a3b50d1b579792ba0",
+"lang": "ja",
+"text": "窓を開けてもいいですか。",
+"synth": "{窓|まど}を{開|あ}けてもいいですか。",
+"kind": "sentence"
+},
+{
+"key": "2340c5395f4ff4614d4d877e6c1a1c8f",
+"lang": "ja",
+"text": "彼の提案は実現可能性が高いと思います。",
+"synth": "{彼|かれ}の{提案|ていあん}は{実現|じつげん}{可能性|かのうせい}が{高|たか}いと{思|おも}います。",
+"kind": "sentence"
+},
+{
+"key": "25965cc8db7cc4b5b805bbdcfde3ba44",
+"lang": "ja",
+"text": "健康のために、毎日歩くようにしています。",
+"synth": "{健康|けんこう}のために、{毎日|まいにち}{歩|ある}くようにしています。",
+"kind": "sentence"
+},
+{
+"key": "291adcc9811d72e9ff14248b0edcef93",
+"lang": "ja",
+"text": "原因を調査して、本日中にご報告いたします。",
+"synth": "{原因|げんいん}を{調査|ちょうさ}して、{本日中|ほんじつちゅう}にご{報告|ほうこく}いたします。",
+"kind": "sentence"
+},
+{
+"key": "296215610677725e7b0a20696c7d45bc",
+"lang": "ja",
+"text": "はい、どうしましたか？",
+"synth": "はい、どうしましたか？",
+"kind": "sentence"
+},
+{
+"key": "2d492cb6f8eec168cceac3b8d89bc22f",
+"lang": "ja",
+"text": "先日はお世話になりました。",
+"synth": "{先日|せんじつ}はお{世話|せわ}になりました。",
+"kind": "sentence"
+},
+{
+"key": "302bffbd040d8aada6c9bdfa7447df02",
+"lang": "ja",
+"text": "おはようございます。では、昨日の進捗を報告してもらえますか？",
+"synth": "おはようございます。では、昨日の進捗を報告してもらえますか？",
+"kind": "sentence"
+},
+{
+"key": "398819f8767712e5ff5e27da9f536125",
+"lang": "ja",
+"text": "それでは、この件について皆さんのご意見をお聞かせください。",
+"synth": "それでは、この件について皆さんのご意見をお聞かせください。",
+"kind": "sentence"
+},
+{
+"key": "3a8fb3138f2d3b435b8f96c290bcc14c",
+"lang": "ja",
+"text": "いらっしゃいませ。お荷物の発送ですか？",
+"synth": "いらっしゃいませ。お荷物の発送ですか？",
+"kind": "sentence"
+},
+{
+"key": "3d8a1b7d779e16356cbb1aa8fd3eb6c5",
+"lang": "ja",
+"text": "敷金と礼金はかかりますか。",
+"synth": "{敷金|しききん}と{礼金|れいきん}はかかりますか。",
+"kind": "sentence"
+},
+{
+"key": "3de38b4f1aa6897a420a51642fca308f",
+"lang": "ja",
+"text": "窓側の席は空いていますか。",
+"synth": "{窓側|まどがわ}の{席|せき}は{空|あ}いていますか。",
+"kind": "sentence"
+},
+{
+"key": "416819a506695f8683c6998048c032f2",
+"lang": "ja",
+"text": "その件については、社内で検討させてください。",
+"synth": "その{件|けん}については、{社内|しゃない}で{検討|けんとう}させてください。",
+"kind": "sentence"
+},
+{
+"key": "416dce58eb717c80f3babb5aebba6fdb",
+"lang": "ja",
+"text": "こんにちは。はじめまして、よろしくお願いします。",
+"synth": "こんにちは。はじめまして、よろしくお願いします。",
+"kind": "sentence"
+},
+{
+"key": "4333df979d0daa30fd36b20ec89cf650",
+"lang": "ja",
+"text": "仕様について確認したい点があります。",
+"synth": "{仕様|しよう}について{確認|かくにん}したい{点|てん}があります。",
+"kind": "sentence"
+},
+{
+"key": "442fe314008f61ccd664c8687ded382b",
+"lang": "ja",
+"text": "すみません、これはいくらですか。",
+"synth": "すみません、これはいくらですか。",
+"kind": "sentence"
+},
+{
+"key": "46bf28fe3144cc89223d401f7feae402",
+"lang": "ja",
+"text": "いらっしゃいませ。本日は新規のご契約でしょうか？",
+"synth": "いらっしゃいませ。本日は新規のご契約でしょうか？",
+"kind": "sentence"
+},
+{
+"key": "4924d89dc974faf926efa4f6b53794f7",
+"lang": "ja",
+"text": "検討した結果、今回は見送ることになりました。",
+"synth": "{検討|けんとう}した{結果|けっか}、{今回|こんかい}は{見送|みおく}ることになりました。",
+"kind": "sentence"
+},
+{
+"key": "4aaec7b56119992b3a8f2469a181da26",
+"lang": "ja",
+"text": "前髪は眉にかかるくらいでお願いします。",
+"synth": "{前髪|まえがみ}は{眉|まゆ}にかかるくらいでお{願|ねが}いします。",
+"kind": "sentence"
+},
+{
+"key": "4b0415df4e65ba30ddd10be0fb4cd831",
+"lang": "ja",
+"text": "会議は三時から始まります。",
+"synth": "{会議|かいぎ}は{三時|さんじ}から{始|はじ}まります。",
+"kind": "sentence"
+},
+{
+"key": "4fcf8649ce61fa54554729afd8210f22",
+"lang": "ja",
+"text": "彼の話によると、来月引っ越すそうです。",
+"synth": "{彼|かれ}の{話|はなし}によると、{来月|らいげつ}{引|ひ}っ{越|こ}すそうです。",
+"kind": "sentence"
+},
+{
+"key": "509c426f95b6c52a73f07d879587da9b",
+"lang": "ja",
+"text": "いらっしゃいませ！お飲み物は何になさいますか？",
+"synth": "いらっしゃいませ！お飲み物は何になさいますか？",
+"kind": "sentence"
+},
+{
+"key": "556127c97270fb93a5b1b7ba5c5537c2",
+"lang": "ja",
+"text": "電車が遅れたせいで、会議に間に合いませんでした。",
+"synth": "{電車|でんしゃ}が{遅|おく}れたせいで、{会議|かいぎ}に{間|ま}に{合|あ}いませんでした。",
+"kind": "sentence"
+},
+{
+"key": "59b909209309a4874a990a0c28009af8",
+"lang": "ja",
+"text": "毎朝七時に起きます。",
+"synth": "{毎朝|まいあさ}{七時|しちじ}に{起|お}きます。",
+"kind": "sentence"
+},
+{
+"key": "5a46b26f46cc3271c58154531bbc4e29",
+"lang": "ja",
+"text": "こんにちは！最近、何か面白いことありましたか？",
+"synth": "こんにちは！最近、何か面白いことありましたか？",
+"kind": "sentence"
+},
+{
+"key": "5adcc28277f339ab9a2ae0d1d4f4f5f7",
+"lang": "ja",
+"text": "こんにちは。初診の方ですか？保険証をお願いします。",
+"synth": "こんにちは。初診の方ですか？保険証をお願いします。",
+"kind": "sentence"
+},
+{
+"key": "5b61a3b75203c62232fd7847de0c9baa",
+"lang": "ja",
+"text": "予約をキャンセルしたいんですが。",
+"synth": "{予約|よやく}をキャンセルしたいんですが。",
+"kind": "sentence"
+},
+{
+"key": "5c225de738f2392fae25ae91abd6dee8",
+"lang": "ja",
+"text": "一番近いコンビニはどこですか。",
+"synth": "{一番|いちばん}{近|ちか}いコンビニはどこですか。",
+"kind": "sentence"
+},
+{
+"key": "5f11c6e59fa15454f8f23dda73cf3777",
+"lang": "ja",
+"text": "トイレはどこにありますか。",
+"synth": "トイレはどこにありますか。",
+"kind": "sentence"
+},
+{
+"key": "61569f7624b4f3fc57085a148dff2d77",
+"lang": "ja",
+"text": "おはようございます。昨日の会議の資料、もう見ましたか？",
+"synth": "おはようございます。昨日の会議の資料、もう見ましたか？",
+"kind": "sentence"
+},
+{
+"key": "6287a48f0bed50a2ee9cdf495e0bc00d",
+"lang": "ja",
+"text": "この問題について、皆さんの意見を聞かせてください。",
+"synth": "この{問題|もんだい}について、{皆|みな}さんの{意見|いけん}を{聞|き}かせてください。",
+"kind": "sentence"
+},
+{
+"key": "6421567b2e2c383ba787b084687f1dcd",
+"lang": "ja",
+"text": "一度決めたからには、最後までやり遂げるつもりです。",
+"synth": "{一度|いちど}{決|き}めたからには、{最後|さいご}までやり{遂|と}げるつもりです。",
+"kind": "sentence"
+},
+{
+"key": "64e773ff986ddc5ac24bf9e82080dc32",
+"lang": "ja",
+"text": "予約は要りますか。",
+"synth": "{予約|よやく}は{要|い}りますか。",
+"kind": "sentence"
+},
+{
+"key": "65387b992c5b30785a24229d3ed9ab8f",
+"lang": "ja",
+"text": "お忙しいところ恐れ入りますが、ご確認をお願いいたします。",
+"synth": "お{忙|いそが}しいところ{恐|おそ}れ{入|い}りますが、ご{確認|かくにん}をお{願|ねが}いいたします。",
+"kind": "sentence"
+},
+{
+"key": "665718eee6c0e00eff975b0cc9d8c133",
+"lang": "ja",
+"text": "書類はこれで全部ですか。",
+"synth": "{書類|しょるい}はこれで{全部|ぜんぶ}ですか。",
+"kind": "sentence"
+},
+{
+"key": "67140306d6139ac69dedc2625cb99b0b",
+"lang": "ja",
+"text": "荷物を預かっていただけませんか。",
+"synth": "{荷物|にもつ}を{預|あず}かっていただけませんか。",
+"kind": "sentence"
+},
+{
+"key": "68f413ad4d8b54b77ec8bad0860e3557",
+"lang": "ja",
+"text": "京都まで大人二枚お願いします。",
+"synth": "{京都|きょうと}まで{大人|おとな}{二枚|にまい}お{願|ねが}いします。",
+"kind": "sentence"
+},
+{
+"key": "69b1ed592fbcf4428c03a45fcd2fdcbe",
+"lang": "ja",
+"text": "いらっしゃいませ。本日はお部屋探しですか？ご希望のエリアはありますか？",
+"synth": "いらっしゃいませ。本日はお部屋探しですか？ご希望のエリアはありますか？",
+"kind": "sentence"
+},
+{
+"key": "6c1e14863f71548607a7b69fc59b5a50",
+"lang": "ja",
+"text": "お先に失礼します。",
+"synth": "お{先|さき}に{失礼|しつれい}します。",
+"kind": "sentence"
+},
+{
+"key": "6cd82c324e5f6a967ed03ea2d872e100",
+"lang": "ja",
+"text": "この電車は東京駅に行きますか。",
+"synth": "この{電車|でんしゃ}は{東京|とうきょう}{駅|えき}に{行|い}きますか。",
+"kind": "sentence"
+},
+{
+"key": "70de21371c914f2f701dbca93bca5b16",
+"lang": "ja",
+"text": "道に迷ってしまいました。",
+"synth": "{道|みち}に{迷|まよ}ってしまいました。",
+"kind": "sentence"
+},
+{
+"key": "725dfe955deeb22dfd6bd182143cccc5",
+"lang": "ja",
+"text": "お世話になっております。株式会社さくらの田中と申します。担当の方はいらっしゃいますか？",
+"synth": "お世話になっております。株式会社さくらの田中と申します。担当の方はいらっしゃいますか？",
+"kind": "sentence"
+},
+{
+"key": "725e9df1c1274a0f8bc3f75eb328d5b2",
+"lang": "ja",
+"text": "熱があって、喉が痛いです。",
+"synth": "{熱|ねつ}があって、{喉|のど}が{痛|いた}いです。",
+"kind": "sentence"
+},
+{
+"key": "77cc03638379c853aa74970699d04c96",
+"lang": "ja",
+"text": "どちらまで行かれますか？",
+"synth": "どちらまで行かれますか？",
+"kind": "sentence"
+},
+{
+"key": "78138675d83cf9d0ee0fca9dad2fb2b3",
+"lang": "ja",
+"text": "差し支えなければ、資料を共有していただけますか。",
+"synth": "{差|さ}し{支|つか}えなければ、{資料|しりょう}を{共有|きょうゆう}していただけますか。",
+"kind": "sentence"
+},
+{
+"key": "81409a322647970b232f43a73406713d",
+"lang": "ja",
+"text": "駅まで歩いて十分ぐらいです。",
+"synth": "{駅|えき}まで{歩|ある}いて{十分|じゅっぷん}ぐらいです。",
+"kind": "sentence"
+},
+{
+"key": "8141f6b9b9ca51c98527c134c778d696",
+"lang": "ja",
+"text": "仕事が終わったら、一緒に飲みに行きませんか。",
+"synth": "{仕事|しごと}が{終|お}わったら、{一緒|いっしょ}に{飲|の}みに{行|い}きませんか。",
+"kind": "sentence"
+},
+{
+"key": "816b21736ef6fa52975a0c0be5114ffa",
+"lang": "ja",
+"text": "納期に間に合うかどうか、確認してから折り返しご連絡します。",
+"synth": "{納期|のうき}に{間|ま}に{合|あ}うかどうか、{確認|かくにん}してから{折|お}り{返|かえ}しご{連絡|れんらく}します。",
+"kind": "sentence"
+},
+{
+"key": "81909c96accb4ba14ec6867b27f43adb",
+"lang": "ja",
+"text": "もし時間があれば、京都にも行ってみたいです。",
+"synth": "もし{時間|じかん}があれば、{京都|きょうと}にも{行|い}ってみたいです。",
+"kind": "sentence"
+},
+{
+"key": "86a2455a16497de21557b9d4bc922313",
+"lang": "ja",
+"text": "この住所までお願いします。",
+"synth": "この{住所|じゅうしょ}までお{願|ねが}いします。",
+"kind": "sentence"
+},
+{
+"key": "87d5dc0c5de94f06df6d6d13912d454e",
+"lang": "ja",
+"text": "詳細につきましては、添付の資料をご覧ください。",
+"synth": "{詳細|しょうさい}につきましては、{添付|てんぷ}の{資料|しりょう}をご{覧|らん}ください。",
+"kind": "sentence"
+},
+{
+"key": "898b56f0068c2f081511092496600073",
+"lang": "ja",
+"text": "水をもう一杯お願いします。",
+"synth": "{水|みず}をもう{一杯|いっぱい}お{願|ねが}いします。",
+"kind": "sentence"
+},
+{
+"key": "90617b0fd70eca592c9405c152a4b5b2",
+"lang": "ja",
+"text": "本番環境で不具合が発生しています。",
+"synth": "{本番|ほんばん}{環境|かんきょう}で{不具合|ふぐあい}が{発生|はっせい}しています。",
+"kind": "sentence"
+},
+{
+"key": "93af90af64ead50b49832a06b8b98164",
+"lang": "ja",
+"text": "明日は何時に会いますか。",
+"synth": "{明日|あした}は{何時|なんじ}に{会|あ}いますか。",
+"kind": "sentence"
+},
+{
+"key": "953ad63e02bb3528260482f3319dc016",
+"lang": "ja",
+"text": "少々お待ちください。",
+"synth": "{少々|しょうしょう}お{待|ま}ちください。",
+"kind": "sentence"
+},
+{
+"key": "95d515c23017de3af69e9bc439d73fdb",
+"lang": "ja",
+"text": "はじめまして、どうぞよろしくお願いします。",
+"synth": "はじめまして、どうぞよろしくお{願|ねが}いします。",
+"kind": "sentence"
+},
+{
+"key": "9fe8c6944f0f3ce5b94fa2eeff2f1841",
+"lang": "ja",
+"text": "いらっしゃいませ。チェックインでございますか？",
+"synth": "いらっしゃいませ。チェックインでございますか？",
+"kind": "sentence"
+},
+{
+"key": "a93b3cf064d4447f8bbe9f32a3f93298",
+"lang": "ja",
+"text": "大浴場は何時まで利用できますか。",
+"synth": "{大浴場|だいよくじょう}は{何時|なんじ}まで{利用|りよう}できますか。",
+"kind": "sentence"
+},
+{
+"key": "acb08d870c6e3df47196663a16fabf2f",
+"lang": "ja",
+"text": "次の方どうぞ。どちらまでですか？",
+"synth": "次の方どうぞ。どちらまでですか？",
+"kind": "sentence"
+},
+{
+"key": "ae4513d9c8a04d43df0aaf4d3a7de819",
+"lang": "ja",
+"text": "こんにちは。本日はどのようなご用件でしょうか。",
+"synth": "こんにちは。本日はどのようなご用件でしょうか。",
+"kind": "sentence"
+},
+{
+"key": "aeb2fd47a6af288eaf22261599fe1d51",
+"lang": "ja",
+"text": "差し支えなければ、ご連絡先を教えていただけますか。",
+"synth": "{差|さ}し{支|つか}えなければ、ご{連絡先|れんらくさき}を{教|おし}えていただけますか。",
+"kind": "sentence"
+},
+{
+"key": "b1049a302898121c98e127b395e849b9",
+"lang": "ja",
+"text": "今後ともどうぞよろしくお願い申し上げます。",
+"synth": "{今後|こんご}ともどうぞよろしくお{願|ねが}い{申|もう}し{上|あ}げます。",
+"kind": "sentence"
+},
+{
+"key": "b1e43bb11cd7fd9a7adb7629b9c58e5a",
+"lang": "ja",
+"text": "昨日の作業は予定通り終わりました。",
+"synth": "{昨日|きのう}の{作業|さぎょう}は{予定|よてい}{通|どお}り{終|お}わりました。",
+"kind": "sentence"
+},
+{
+"key": "b204a4c3424d35ac9407a40b70b67af1",
+"lang": "ja",
+"text": "私は中国から来ました。",
+"synth": "{私|わたし}は{中国|ちゅうごく}から{来|き}ました。",
+"kind": "sentence"
+},
+{
+"key": "b3c88421dd05fd4c07d79541e06c03eb",
+"lang": "ja",
+"text": "週末は友達と映画を見に行きました。",
+"synth": "{週末|しゅうまつ}は{友達|ともだち}と{映画|えいが}を{見|み}に{行|い}きました。",
+"kind": "sentence"
+},
+{
+"key": "b496a8ec2c213490f9499fb7fc85cb73",
+"lang": "ja",
+"text": "病院は何時まで開いていますか。",
+"synth": "{病院|びょういん}は{何時|なんじ}まで{開|あ}いていますか。",
+"kind": "sentence"
+},
+{
+"key": "b53eeaac4f1908bd45d005b99f57a6bc",
+"lang": "ja",
+"text": "ようこそお越しくださいました。お名前を頂戴できますか？",
+"synth": "ようこそお越しくださいました。お名前を頂戴できますか？",
+"kind": "sentence"
+},
+{
+"key": "b5a0987864cd5490cb6ccbb0e7c5a3f9",
+"lang": "ja",
+"text": "いらっしゃいませ。何名様ですか？",
+"synth": "いらっしゃいませ。何名様ですか？",
+"kind": "sentence"
+},
+{
+"key": "b833f379101a52967f08cc1a4e5260c5",
+"lang": "ja",
+"text": "駅から歩いて何分ですか。",
+"synth": "{駅|えき}から{歩|ある}いて{何分|なんぷん}ですか。",
+"kind": "sentence"
+},
+{
+"key": "b90b170dd4d86bc2bcc352d93db66460",
+"lang": "ja",
+"text": "月々の料金はいくらになりますか。",
+"synth": "{月々|つきづき}の{料金|りょうきん}はいくらになりますか。",
+"kind": "sentence"
+},
+{
+"key": "ba4e45b71012df531655f2bd5ccf5d89",
+"lang": "ja",
+"text": "この荷物を中国に送りたいです。",
+"synth": "この{荷物|にもつ}を{中国|ちゅうごく}に{送|おく}りたいです。",
+"kind": "sentence"
+},
+{
+"key": "bc498be43d9cd526343af359de50a6e9",
+"lang": "ja",
+"text": "この料理はとてもおいしいです。",
+"synth": "この{料理|りょうり}はとてもおいしいです。",
+"kind": "sentence"
+},
+{
+"key": "bdaf91eb211540ac78f4652522b26150",
+"lang": "ja",
+"text": "コーヒーを一つください。",
+"synth": "コーヒーを{一|ひと}つください。",
+"kind": "sentence"
+},
+{
+"key": "bdb4545a6b3b08359bfd073aa1b18bcf",
+"lang": "ja",
+"text": "思ったより簡単でした。",
+"synth": "{思|おも}ったより{簡単|かんたん}でした。",
+"kind": "sentence"
+},
+{
+"key": "bec086e8aa0a6eba43cac02f2f8375e1",
+"lang": "ja",
+"text": "本日はお忙しいところお越しいただき、ありがとうございます。",
+"synth": "本日はお忙しいところお越しいただき、ありがとうございます。",
+"kind": "sentence"
+},
+{
+"key": "c173a50f734297e33394b4abc3eeb033",
+"lang": "ja",
+"text": "申し訳ありませんが、今満席です。",
+"synth": "{申|もう}し{訳|わけ}ありませんが、{今|いま}{満席|まんせき}です。",
+"kind": "sentence"
+},
+{
+"key": "cf04819b7f91f0129618499cc5774320",
+"lang": "ja",
+"text": "お会計お願いします。",
+"synth": "お{会計|かいけい}お{願|ねが}いします。",
+"kind": "sentence"
+},
+{
+"key": "cf5f6591daa9a4f751e52190b6d597af",
+"lang": "ja",
+"text": "家賃は管理費込みでいくらですか。",
+"synth": "{家賃|やちん}は{管理費|かんりひ}{込|こ}みでいくらですか。",
+"kind": "sentence"
+},
+{
+"key": "cf64b7b60d24c565679fd4a1b9ddad7d",
+"lang": "ja",
+"text": "資料を確認していただけますか。",
+"synth": "{資料|しりょう}を{確認|かくにん}していただけますか。",
+"kind": "sentence"
+},
+{
+"key": "d3d1ba726a0efd96d6147febf4867a79",
+"lang": "ja",
+"text": "円安の影響で、海外からの観光客が増えています。",
+"synth": "{円安|えんやす}の{影響|えいきょう}で、{海外|かいがい}からの{観光客|かんこうきゃく}が{増|ふ}えています。",
+"kind": "sentence"
+},
+{
+"key": "d430c17e05f69a3670a7455bb1bda76b",
+"lang": "ja",
+"text": "ご不明な点がございましたら、お気軽にお問い合わせください。",
+"synth": "ご{不明|ふめい}な{点|てん}がございましたら、お{気軽|きがる}にお{問|と}い{合|あ}わせください。",
+"kind": "sentence"
+},
+{
+"key": "d9539fa5f4579e5aae69c6fafb999597",
+"lang": "ja",
+"text": "忙しくて、昼ご飯を食べる時間もありません。",
+"synth": "{忙|いそが}しくて、{昼|ひる}ご{飯|はん}を{食|た}べる{時間|じかん}もありません。",
+"kind": "sentence"
+},
+{
+"key": "de8f6ed886624bbcd8b06b201c84492a",
+"lang": "ja",
+"text": "申し訳ございません、今席を外しております。",
+"synth": "{申|もう}し{訳|わけ}ございません、{今|いま}{席|せき}を{外|はず}しております。",
+"kind": "sentence"
+},
+{
+"key": "e21cef637640c8e0df93dae17dde15ad",
+"lang": "ja",
+"text": "おすすめは何ですか。",
+"synth": "おすすめは{何|なん}ですか。",
+"kind": "sentence"
+},
+{
+"key": "e33ba33cd1ddba50f0fd87477661968d",
+"lang": "ja",
+"text": "お疲れさまです！乾杯しましょう。最近、仕事はどうですか？",
+"synth": "お疲れさまです！乾杯しましょう。最近、仕事はどうですか？",
+"kind": "sentence"
+},
+{
+"key": "e35a23c0bbeba9c96618a79b704eb1e9",
+"lang": "ja",
+"text": "どうしましたか？何か落とされましたか？",
+"synth": "どうしましたか？何か落とされましたか？",
+"kind": "sentence"
+},
+{
+"key": "e35e98c3aa9b022906f6cc5d16641ce4",
+"lang": "ja",
+"text": "夕食は何時からですか。",
+"synth": "{夕食|ゆうしょく}は{何時|なんじ}からですか。",
+"kind": "sentence"
+},
+{
+"key": "e3b73e4b77d0d0595b48a5883702794a",
+"lang": "ja",
+"text": "保険証を忘れてしまいました。",
+"synth": "{保険証|ほけんしょう}を{忘|わす}れてしまいました。",
+"kind": "sentence"
+},
+{
+"key": "e8f0af6ab3d54cbaa66e066033308200",
+"lang": "ja",
+"text": "お疲れさまでした。",
+"synth": "お{疲|つか}れさまでした。",
+"kind": "sentence"
+},
+{
+"key": "e9dfae2469723869a150782373f7292a",
+"lang": "ja",
+"text": "売上は先月より二割増えました。",
+"synth": "{売上|うりあげ}は{先月|せんげつ}より{二割|にわり}{増|ふ}えました。",
+"kind": "sentence"
+},
+{
+"key": "ebc9cd1fdf3526bc16ecb5226e4509d6",
+"lang": "ja",
+"text": "先週、初めて富士山に登りました。",
+"synth": "{先週|せんしゅう}、{初|はじ}めて{富士山|ふじさん}に{登|のぼ}りました。",
+"kind": "sentence"
+},
+{
+"key": "eeead2804e6396753930dfd4c901fb9b",
+"lang": "ja",
+"text": "転入届けを出したいんですが。",
+"synth": "{転入届|てんにゅうとど}けを{出|だ}したいんですが。",
+"kind": "sentence"
+},
+{
+"key": "f1a87ceac72173feb2433c0c61289c85",
+"lang": "ja",
+"text": "切手を三枚ください。",
+"synth": "{切手|きって}を{三枚|さんまい}ください。",
+"kind": "sentence"
+},
+{
+"key": "f228894d72dda61ba261842a0fb53053",
+"lang": "ja",
+"text": "少しゆっくり話してもらえますか。",
+"synth": "{少|すこ}しゆっくり{話|はな}してもらえますか。",
+"kind": "sentence"
+},
+{
+"key": "f4d7c3fa909c93261392051c0ed8e1e1",
+"lang": "ja",
+"text": "今日はいい天気ですね。",
+"synth": "{今日|きょう}はいい{天気|てんき}ですね。",
+"kind": "sentence"
+},
+{
+"key": "fb156dc54aeba8a4116c9be05315d8e7",
+"lang": "ja",
+"text": "写真を撮ってもいいですか。",
+"synth": "{写真|しゃしん}を{撮|と}ってもいいですか。",
+"kind": "sentence"
+},
+{
+"key": "fb1f0a068f2d8afd9c70010f32964706",
+"lang": "ja",
+"text": "日本に来てから、料理をするようになりました。",
+"synth": "{日本|にほん}に{来|き}てから、{料理|りょうり}をするようになりました。",
+"kind": "sentence"
+},
+{
+"key": "001670d3ff8fe22dc56abdc14cde2aab",
+"lang": "ja",
+"text": "りんご",
+"synth": "りんご",
+"kind": "word"
+},
+{
+"key": "02cbeb27d06ccc6e40a98a5fd2c715b7",
+"lang": "ja",
+"text": "えん",
+"synth": "えん",
+"kind": "word"
+},
+{
+"key": "04ccd87bffdeae83b82fe5c5b0aa1977",
+"lang": "ja",
+"text": "眼鏡",
+"synth": "めがね",
+"kind": "word"
+},
+{
+"key": "0570af361e1ebe8ef436f709f0762bc3",
+"lang": "ja",
+"text": "星",
+"synth": "ほし",
+"kind": "word"
+},
+{
+"key": "07de31c2f4e2a74cf9f3755342d314ea",
+"lang": "ja",
+"text": "勉強",
+"synth": "べんきょう",
+"kind": "word"
+},
+{
+"key": "09c6b604130ea512fd5983b17e40ac0a",
+"lang": "ja",
+"text": "塩",
+"synth": "しお",
+"kind": "word"
+},
+{
+"key": "0a540b501b9a74b072fde9bce3985600",
+"lang": "ja",
+"text": "廊下",
+"synth": "ろうか",
+"kind": "word"
+},
+{
+"key": "0a7ba4992224f4742c44d340f9e86dfc",
+"lang": "ja",
+"text": "夏",
+"synth": "なつ",
+"kind": "word"
+},
+{
+"key": "0aabd3d15b85894f5114401cc4c1c400",
+"lang": "ja",
+"text": "からだ",
+"synth": "からだ",
+"kind": "word"
+},
+{
+"key": "0abe197b518ed4bb40b6147cd9f7a42d",
+"lang": "ja",
+"text": "元気",
+"synth": "げんき",
+"kind": "word"
+},
+{
+"key": "0c658ccf9557c3cf4ac84deafffd69fd",
+"lang": "ja",
+"text": "夜",
+"synth": "よる",
+"kind": "word"
+},
+{
+"key": "0d1367fd9267b8cacf557f68480d1f58",
+"lang": "ja",
+"text": "人",
+"synth": "ひと",
+"kind": "word"
+},
+{
+"key": "0f815c8c6561b0e591f8d9e1de4b514f",
+"lang": "ja",
+"text": "留学",
+"synth": "りゅうがく",
+"kind": "word"
+},
+{
+"key": "10a01d633f2df11dff2e382c7760ada8",
+"lang": "ja",
+"text": "虫",
+"synth": "むし",
+"kind": "word"
+},
+{
+"key": "1290074f7649dcdd4a9d7b4870916f52",
+"lang": "ja",
+"text": "北",
+"synth": "きた",
+"kind": "word"
+},
+{
+"key": "17ce2b999e35ab52c6a36cf1d6f21998",
+"lang": "ja",
+"text": "声",
+"synth": "こえ",
+"kind": "word"
+},
+{
+"key": "185805c4168f3ff4eddb3cd79f708a39",
+"lang": "ja",
+"text": "かこ",
+"synth": "かこ",
+"kind": "word"
+},
+{
+"key": "18eb1b52fceb180df86d89d1e9d6a28f",
+"lang": "ja",
+"text": "ちょっと",
+"synth": "ちょっと",
+"kind": "word"
+},
+{
+"key": "19230d17d2eac1da1b201927b2366386",
+"lang": "ja",
+"text": "銀行",
+"synth": "ぎんこう",
+"kind": "word"
+},
+{
+"key": "19b8cb8e80494de867e553850c606553",
+"lang": "ja",
+"text": "名字",
+"synth": "みょうじ",
+"kind": "word"
+},
+{
+"key": "1a6d347bfe0e6fa7cee13dd988ed0654",
+"lang": "ja",
+"text": "いっち",
+"synth": "いっち",
+"kind": "word"
+},
+{
+"key": "1a936e9e5febb0919b01c09d006440a8",
+"lang": "ja",
+"text": "ゆき",
+"synth": "ゆき",
+"kind": "word"
+},
+{
+"key": "1bedb2591965e65921d9766ae8c6baee",
+"lang": "ja",
+"text": "金魚",
+"synth": "きんぎょ",
+"kind": "word"
+},
+{
+"key": "1f72678dceeb1abff6513ba0c7aaef76",
+"lang": "ja",
+"text": "動物",
+"synth": "どうぶつ",
+"kind": "word"
+},
+{
+"key": "21a0155a295e1dc8128fca44d3a49506",
+"lang": "ja",
+"text": "来年",
+"synth": "らいねん",
+"kind": "word"
+},
+{
+"key": "21c0f8b1f9a37255501a88f95384e36a",
+"lang": "ja",
+"text": "略語",
+"synth": "りゃくご",
+"kind": "word"
+},
+{
+"key": "225c8e1f00440c8c40d4201adbed99a6",
+"lang": "ja",
+"text": "いち",
+"synth": "いち",
+"kind": "word"
+},
+{
+"key": "258cca59f335bf3106bb50e424d5a921",
+"lang": "ja",
+"text": "おと",
+"synth": "おと",
+"kind": "word"
+},
+{
+"key": "25f27f8d979ff175e1f7d9aafa033fd6",
+"lang": "ja",
+"text": "今日",
+"synth": "きょう",
+"kind": "word"
+},
+{
+"key": "26f280a5e32b4ca73adf76bbe067b2b2",
+"lang": "ja",
+"text": "全部",
+"synth": "ぜんぶ",
+"kind": "word"
+},
+{
+"key": "297abc1815009c06c0bbfb8317fea6ee",
+"lang": "ja",
+"text": "ご飯",
+"synth": "ごはん",
+"kind": "word"
+},
+{
+"key": "29f9d38a3b6d34c98fc641280ab982cb",
+"lang": "ja",
+"text": "飲み物",
+"synth": "のみもの",
+"kind": "word"
+},
+{
+"key": "2b0c91c6920c29531901d955085ebe06",
+"lang": "ja",
+"text": "おばあさん",
+"synth": "おばあさん",
+"kind": "word"
+},
+{
+"key": "2e233364af34f664f40c17a6f1ef7b13",
+"lang": "ja",
+"text": "かっこ",
+"synth": "かっこ",
+"kind": "word"
+},
+{
+"key": "3065fb6d9caba74837618b96add4d92a",
+"lang": "ja",
+"text": "窓",
+"synth": "まど",
+"kind": "word"
+},
+{
+"key": "310635a3db1d324507d92813772b3da1",
+"lang": "ja",
+"text": "ビル",
+"synth": "ビル",
+"kind": "word"
+},
+{
+"key": "32524eb3b37d1ff7acece616c1ea5a19",
+"lang": "ja",
+"text": "花",
+"synth": "はな",
+"kind": "word"
+},
+{
+"key": "33eb3b50e416c03b3c1c9bb69af4cc58",
+"lang": "ja",
+"text": "船",
+"synth": "ふね",
+"kind": "word"
+},
+{
+"key": "349ebb2efc5db83fb763de1e46f8631e",
+"lang": "ja",
+"text": "おじさん",
+"synth": "おじさん",
+"kind": "word"
+},
+{
+"key": "34dc527e36c48c8e764a7413ef615333",
+"lang": "ja",
+"text": "世界",
+"synth": "せかい",
+"kind": "word"
+},
+{
+"key": "381f634cc175a552f1ee90364ce1f386",
+"lang": "ja",
+"text": "ミュージカル",
+"synth": "みゅーじかる",
+"kind": "word"
+},
+{
+"key": "382f0319f56ab36e86532f42e1ffb969",
+"lang": "ja",
+"text": "朝",
+"synth": "あさ",
+"kind": "word"
+},
+{
+"key": "396f37d179ef30a1ec0ef548af41eca1",
+"lang": "ja",
+"text": "地図",
+"synth": "ちず",
+"kind": "word"
+},
+{
+"key": "3c4e0797f91109f1f0ca778cfbb5fc87",
+"lang": "ja",
+"text": "脈",
+"synth": "みゃく",
+"kind": "word"
+},
+{
+"key": "3d6c66f788948c418b97d19146fc0d74",
+"lang": "ja",
+"text": "先生",
+"synth": "せんせい",
+"kind": "word"
+},
+{
+"key": "402a7a4041c89b16278b8b955bff3e34",
+"lang": "ja",
+"text": "きて",
+"synth": "きて",
+"kind": "word"
+},
+{
+"key": "41e3e49afc49dd922513062eed716a2b",
+"lang": "ja",
+"text": "きんゆ",
+"synth": "きんゆ",
+"kind": "word"
+},
+{
+"key": "43c64221516220742cfb87fdaf3149d1",
+"lang": "ja",
+"text": "空",
+"synth": "そら",
+"kind": "word"
+},
+{
+"key": "44835d99c3fe2e25932dfa916e592ad1",
+"lang": "ja",
+"text": "プール",
+"synth": "ぷーる",
+"kind": "word"
+},
+{
+"key": "448f2ed541157842c23a88ce204ffa69",
+"lang": "ja",
+"text": "留守",
+"synth": "るす",
+"kind": "word"
+},
+{
+"key": "46779991c5c583ebebe37adae47f3673",
+"lang": "ja",
+"text": "電話",
+"synth": "でんわ",
+"kind": "word"
+},
+{
+"key": "46e26dc798383c5de8d409232cac23a7",
+"lang": "ja",
+"text": "牛乳",
+"synth": "ぎゅうにゅう",
+"kind": "word"
+},
+{
+"key": "49c96f8c625ca4001745ffd82c614c0e",
+"lang": "ja",
+"text": "涼しい",
+"synth": "すずしい",
+"kind": "word"
+},
+{
+"key": "4d8f7d3a84e2ceb2a57acbd974187333",
+"lang": "ja",
+"text": "駅",
+"synth": "えき",
+"kind": "word"
+},
+{
+"key": "539a361671e411473cd58604966c908a",
+"lang": "ja",
+"text": "肉",
+"synth": "にく",
+"kind": "word"
+},
+{
+"key": "56150b9817a39514aefa14f544bc993b",
+"lang": "ja",
+"text": "今朝",
+"synth": "けさ",
+"kind": "word"
+},
+{
+"key": "57747b3a7e3845f38153f9301207fd9a",
+"lang": "ja",
+"text": "でんき",
+"synth": "でんき",
+"kind": "word"
+},
+{
+"key": "5977aebe0198cae0e7ddaca76765d945",
+"lang": "ja",
+"text": "上手",
+"synth": "じょうず",
+"kind": "word"
+},
+{
+"key": "5cd7fa49c1075c0bb481e0d40626e57c",
+"lang": "ja",
+"text": "山",
+"synth": "やま",
+"kind": "word"
+},
+{
+"key": "5d26caf2b78d54741f2018f20bb1620d",
+"lang": "ja",
+"text": "こうこう",
+"synth": "こうこう",
+"kind": "word"
+},
+{
+"key": "612293bbcb862538e1a391aa3557ae93",
+"lang": "ja",
+"text": "ビール",
+"synth": "ビール",
+"kind": "word"
+},
+{
+"key": "6c06f792ca5ec356929a2a8719b2889e",
+"lang": "ja",
+"text": "美術館",
+"synth": "びじゅつかん",
+"kind": "word"
+},
+{
+"key": "713219dc334801e89191beef8a388c80",
+"lang": "ja",
+"text": "牛肉",
+"synth": "ぎゅうにく",
+"kind": "word"
+},
+{
+"key": "719f98796dbfd305f9cae95b2d15eec8",
+"lang": "ja",
+"text": "寿司",
+"synth": "すし",
+"kind": "word"
+},
+{
+"key": "745e9610c6808cfdddb610d0355bc3a8",
+"lang": "ja",
+"text": "びよういん",
+"synth": "びよういん",
+"kind": "word"
+},
+{
+"key": "755e1ef78309d16a8bebcff5a7ce9ebc",
+"lang": "ja",
+"text": "三百",
+"synth": "さんびゃく",
+"kind": "word"
+},
+{
+"key": "75c3659b5ae5c825022c778cb20be324",
+"lang": "ja",
+"text": "しゅじん",
+"synth": "しゅじん",
+"kind": "word"
+},
+{
+"key": "7d04c8fdbf84009b65cd450b35e39a62",
+"lang": "ja",
+"text": "宿題",
+"synth": "しゅくだい",
+"kind": "word"
+},
+{
+"key": "7d191c0d8e96ef3cac87dc5216e3621b",
+"lang": "ja",
+"text": "机",
+"synth": "つくえ",
+"kind": "word"
+},
+{
+"key": "7e1696545356c6005c9fdb2c37a0cd69",
+"lang": "ja",
+"text": "きって",
+"synth": "きって",
+"kind": "word"
+},
+{
+"key": "7eb7453155d534424ae43492548ac455",
+"lang": "ja",
+"text": "百",
+"synth": "ひゃく",
+"kind": "word"
+},
+{
+"key": "831be2dd6b04bcf0f5f294767683f169",
+"lang": "ja",
+"text": "とおり",
+"synth": "とおり",
+"kind": "word"
+},
+{
+"key": "869734d5d31049fbaa8ac2461a5706f0",
+"lang": "ja",
+"text": "家具",
+"synth": "かぐ",
+"kind": "word"
+},
+{
+"key": "871a3db767edec455114250ccd9299f5",
+"lang": "ja",
+"text": "かぎ",
+"synth": "かぎ",
+"kind": "word"
+},
+{
+"key": "875adb093ba8d1667e4ecb3a2453aeb8",
+"lang": "ja",
+"text": "ぶどう",
+"synth": "ぶどう",
+"kind": "word"
+},
+{
+"key": "89a69bf21ab10a7d9f14dec52fabe770",
+"lang": "ja",
+"text": "写真",
+"synth": "しゃしん",
+"kind": "word"
+},
+{
+"key": "8a37fd8c23fc46105ea7b9ba5e196198",
+"lang": "ja",
+"text": "じゆう",
+"synth": "じゆう",
+"kind": "word"
+},
+{
+"key": "8bf80e67f56631ccfe3c22898f522caa",
+"lang": "ja",
+"text": "食堂",
+"synth": "しょくどう",
+"kind": "word"
+},
+{
+"key": "906f856704d3023be6dc02a520d8bf38",
+"lang": "ja",
+"text": "魚",
+"synth": "さかな",
+"kind": "word"
+},
+{
+"key": "938a972ea1d76e99281f32993e80de60",
+"lang": "ja",
+"text": "きゅうり",
+"synth": "きゅうり",
+"kind": "word"
+},
+{
+"key": "9538a0efd11cc50faec99ef142e0a1ee",
+"lang": "ja",
+"text": "布",
+"synth": "ぬの",
+"kind": "word"
+},
+{
+"key": "95dbd8779f7f0dc5fffa140cc8497716",
+"lang": "ja",
+"text": "雪",
+"synth": "ゆき",
+"kind": "word"
+},
+{
+"key": "9a599ebc9685ab649b84590011235e4d",
+"lang": "ja",
+"text": "海",
+"synth": "うみ",
+"kind": "word"
+},
+{
+"key": "9b7cbfdf650ae04e6984822bff207d89",
+"lang": "ja",
+"text": "表",
+"synth": "ひょう",
+"kind": "word"
+},
+{
+"key": "9baa75271b29f2e4a8e1207e34f94ce2",
+"lang": "ja",
+"text": "帽子",
+"synth": "ぼうし",
+"kind": "word"
+},
+{
+"key": "9d1d70a943f81c4bb8f848d79464a4e7",
+"lang": "ja",
+"text": "しゅうじん",
+"synth": "しゅうじん",
+"kind": "word"
+},
+{
+"key": "9e09f59adaadcb1985c02f6bfc023f90",
+"lang": "ja",
+"text": "時間",
+"synth": "じかん",
+"kind": "word"
+},
+{
+"key": "9fe519f6a171e94b5697be70a18f5e73",
+"lang": "ja",
+"text": "発表",
+"synth": "はっぴょう",
+"kind": "word"
+},
+{
+"key": "a37861e09a01c66ca19bf6723ae0be01",
+"lang": "ja",
+"text": "傘",
+"synth": "かさ",
+"kind": "word"
+},
+{
+"key": "ac7b86a6fab8272112b384fef664e828",
+"lang": "ja",
+"text": "病気",
+"synth": "びょうき",
+"kind": "word"
+},
+{
+"key": "ad1f674d4d5bd9c92229e48317c26b50",
+"lang": "ja",
+"text": "旅行",
+"synth": "りょこう",
+"kind": "word"
+},
+{
+"key": "aeb8017adfc224262bf6ac3fd24ea6ee",
+"lang": "ja",
+"text": "きにゅう",
+"synth": "きにゅう",
+"kind": "word"
+},
+{
+"key": "b269e694a724b567edf96fa2a0f15065",
+"lang": "ja",
+"text": "私",
+"synth": "わたし",
+"kind": "word"
+},
+{
+"key": "b41d5b6ac8991e42653409c55a01b328",
+"lang": "ja",
+"text": "猫",
+"synth": "ねこ",
+"kind": "word"
+},
+{
+"key": "b4ccb96dc96776ccd21887a916d41baa",
+"lang": "ja",
+"text": "じゅう",
+"synth": "じゅう",
+"kind": "word"
+},
+{
+"key": "b72282df900b7f1844bb735facd98606",
+"lang": "ja",
+"text": "逆",
+"synth": "ぎゃく",
+"kind": "word"
+},
+{
+"key": "b7bb395fca91282c0868f99812097279",
+"lang": "ja",
+"text": "中国",
+"synth": "ちゅうごく",
+"kind": "word"
+},
+{
+"key": "b9df58d27a0626383459008e2dac5016",
+"lang": "ja",
+"text": "女房",
+"synth": "にょうぼう",
+"kind": "word"
+},
+{
+"key": "babc807b54a7327eefaf87b86f986cb7",
+"lang": "ja",
+"text": "学校",
+"synth": "がっこう",
+"kind": "word"
+},
+{
+"key": "be7d90682b37d42c7e592d3a8bb2e388",
+"lang": "ja",
+"text": "こんにゃく",
+"synth": "こんにゃく",
+"kind": "word"
+},
+{
+"key": "c0405bb0e4b9e01a35193f24b74c4c60",
+"lang": "ja",
+"text": "雑誌",
+"synth": "ざっし",
+"kind": "word"
+},
+{
+"key": "c0fc6f8e748fc9980266e11d1ce52eff",
+"lang": "ja",
+"text": "晩ご飯",
+"synth": "ばんごはん",
+"kind": "word"
+},
+{
+"key": "c106e91b583f9c5e24e4a94c0efc30dd",
+"lang": "ja",
+"text": "大学",
+"synth": "だいがく",
+"kind": "word"
+},
+{
+"key": "c21ac29e8b7068efd74a9b44b23138c8",
+"lang": "ja",
+"text": "がらす",
+"synth": "がらす",
+"kind": "word"
+},
+{
+"key": "c38d3f24b95518b8bfaa8d0be8da09c7",
+"lang": "ja",
+"text": "犬",
+"synth": "いぬ",
+"kind": "word"
+},
+{
+"key": "c9188319eada1f537e84b037c4dd8dba",
+"lang": "ja",
+"text": "本を読む",
+"synth": "ほんをよむ",
+"kind": "word"
+},
+{
+"key": "c9c35656bdbb78fc50fbeeba32dee9c7",
+"lang": "ja",
+"text": "おじいさん",
+"synth": "おじいさん",
+"kind": "word"
+},
+{
+"key": "caaa5128738bac80bcf5c9622f91951c",
+"lang": "ja",
+"text": "さっか",
+"synth": "さっか",
+"kind": "word"
+},
+{
+"key": "cc59492b4afd6ea17c9939c0e0ce1a12",
+"lang": "ja",
+"text": "授業",
+"synth": "じゅぎょう",
+"kind": "word"
+},
+{
+"key": "ccdbcb99adaf466a24ee93f5a2fbf8ad",
+"lang": "ja",
+"text": "おっと",
+"synth": "おっと",
+"kind": "word"
+},
+{
+"key": "cd592f83492f59450087aa6f4989d645",
+"lang": "ja",
+"text": "ポスト",
+"synth": "ぽすと",
+"kind": "word"
+},
+{
+"key": "ce5ac3d35f1d64b825b84ec9162be7a6",
+"lang": "ja",
+"text": "八百",
+"synth": "はっぴゃく",
+"kind": "word"
+},
+{
+"key": "cea1825933c06c213abf5a54e9ecb2b8",
+"lang": "ja",
+"text": "歴史",
+"synth": "れきし",
+"kind": "word"
+},
+{
+"key": "d281c071fb6ddd4ce74c34f7260991cf",
+"lang": "ja",
+"text": "え",
+"synth": "え",
+"kind": "word"
+},
+{
+"key": "d299ff00cfbc35e6e560b8177d29b07d",
+"lang": "ja",
+"text": "とり",
+"synth": "とり",
+"kind": "word"
+},
+{
+"key": "d78d1f282f47217ec2b704513f5919cd",
+"lang": "ja",
+"text": "卵",
+"synth": "たまご",
+"kind": "word"
+},
+{
+"key": "d88552317f0eee91cc5419cc6d4b4331",
+"lang": "ja",
+"text": "お茶",
+"synth": "おちゃ",
+"kind": "word"
+},
+{
+"key": "d8c3ad3ac09596e5e142e1e19e77325b",
+"lang": "ja",
+"text": "ピアノ",
+"synth": "ぴあの",
+"kind": "word"
+},
+{
+"key": "d9d1a1be12bbae23292805d2e85ea7fc",
+"lang": "ja",
+"text": "時計",
+"synth": "とけい",
+"kind": "word"
+},
+{
+"key": "db8d6d34b535ed0a482a4f5b99d8981b",
+"lang": "ja",
+"text": "てんき",
+"synth": "てんき",
+"kind": "word"
+},
+{
+"key": "dd34f0c5a1b8eadebe0f827cbcb00f87",
+"lang": "ja",
+"text": "手紙",
+"synth": "てがみ",
+"kind": "word"
+},
+{
+"key": "dfaf621636b5d406523483332c933fdc",
+"lang": "ja",
+"text": "ゆうき",
+"synth": "ゆうき",
+"kind": "word"
+},
+{
+"key": "e0d716e6ad5017c82b8a615f63c89912",
+"lang": "ja",
+"text": "客",
+"synth": "きゃく",
+"kind": "word"
+},
+{
+"key": "e6dbfee90ba61002d5d30ae297036bc2",
+"lang": "ja",
+"text": "部屋",
+"synth": "へや",
+"kind": "word"
+},
+{
+"key": "e742bcfeab10ff5c27d3b43d57af885a",
+"lang": "ja",
+"text": "びょういん",
+"synth": "びょういん",
+"kind": "word"
+},
+{
+"key": "ebc0916775a257c3abee81791c3e5020",
+"lang": "ja",
+"text": "かき",
+"synth": "かき",
+"kind": "word"
+},
+{
+"key": "ec49426bdc1f7bfa8ad55763fa95aaf0",
+"lang": "ja",
+"text": "さか",
+"synth": "さか",
+"kind": "word"
+},
+{
+"key": "ed90e1b8a49c8cb39411a70613e0c9d2",
+"lang": "ja",
+"text": "象",
+"synth": "ぞう",
+"kind": "word"
+},
+{
+"key": "eea26bc369a1882cd7de9e04b7a12397",
+"lang": "ja",
+"text": "森",
+"synth": "もり",
+"kind": "word"
+},
+{
+"key": "f218ad82eeea084bf343f15de4bd64b6",
+"lang": "ja",
+"text": "ペン",
+"synth": "ぺん",
+"kind": "word"
+},
+{
+"key": "f4b0d255f49f74d7e240d4f408d06ecc",
+"lang": "ja",
+"text": "続く",
+"synth": "つづく",
+"kind": "word"
+},
+{
+"key": "f612305d9ed8704879cbdd8f9daa8e79",
+"lang": "ja",
+"text": "靴",
+"synth": "くつ",
+"kind": "word"
+},
+{
+"key": "f6fb46cd53129596a31526278c8d38c5",
+"lang": "ja",
+"text": "おばさん",
+"synth": "おばさん",
+"kind": "word"
+},
+{
+"key": "f8607567a5a1da09e942b70d2cf50689",
+"lang": "ja",
+"text": "邪魔",
+"synth": "じゃま",
+"kind": "word"
+},
+{
+"key": "f8bb68d9a91a8c59d78dd64bf124b0b1",
+"lang": "ja",
+"text": "ここ",
+"synth": "ここ",
+"kind": "word"
+},
+{
+"key": "fb792fa45846ca52ad59a2641bfd82aa",
+"lang": "ja",
+"text": "耳",
+"synth": "みみ",
+"kind": "word"
+},
+{
+"key": "ff83cf8cea32679d67a9d81fb959b242",
+"lang": "ja",
+"text": "パン",
+"synth": "ぱん",
+"kind": "word"
+},
+{
+"key": "ffacdbe2680982adf833ae58d4ec86a8",
+"lang": "ja",
+"text": "鼻血",
+"synth": "はなぢ",
+"kind": "word"
+}
+]

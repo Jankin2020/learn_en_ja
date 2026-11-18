@@ -50,8 +50,59 @@ public final class PackSync {
 
     /** Downloads and installs one catalog entry; returns the summary line. */
     public static String installEntry(Context c, String catalogUrl, JSONObject entry) throws Exception {
-        String json = fetch(resolve(catalogUrl, entry.getString("url")));
-        return Store.installPacks(c, json);
+        String packUrl = resolve(catalogUrl, entry.getString("url"));
+        String json = fetch(packUrl);
+        String msg = Store.installPacks(c, json);
+        int got = fetchAudio(c, packUrl, json);
+        return got > 0 ? msg + "（下载离线录音 " + got + " 条）" : msg;
+    }
+
+    /** If the pack declares "audio": "audio/", download the offline clips its texts need (skips ones already present). */
+    static int fetchAudio(Context c, String packUrl, String json) {
+        int got = 0;
+        try {
+            JSONObject p = new JSONObject(json.trim());
+            String base = p.optString("audio", "");
+            if (base.length() == 0) return 0;
+            java.util.List<String[]> texts = new java.util.ArrayList<String[]>();
+            JSONArray a = p.optJSONArray("sentences");
+            if (a != null) for (int i = 0; i < a.length(); i++) {
+                JSONObject o = a.optJSONObject(i);
+                if (o != null) texts.add(new String[]{o.optString("lang", "en"), surface(o.optString("text"))});
+            }
+            a = p.optJSONArray("scenarios");
+            if (a != null) for (int i = 0; i < a.length(); i++) {
+                JSONObject o = a.optJSONObject(i);
+                if (o != null) texts.add(new String[]{o.optString("lang", "en"), o.optString("opener")});
+            }
+            for (String[] t : texts) {
+                if (t[1].trim().length() == 0 || AudioBank.has(c, t[0], t[1])) continue;
+                String key = AudioBank.key(t[0], t[1]);
+                try {
+                    HttpURLConnection con = (HttpURLConnection) new URL(resolve(packUrl, base + key + ".mp3")).openConnection();
+                    con.setConnectTimeout(10000);
+                    con.setReadTimeout(20000);
+                    if (con.getResponseCode() == 200) {
+                        java.io.File tmp = new java.io.File(AudioBank.dlDir(c), key + ".part");
+                        java.io.InputStream is = con.getInputStream();
+                        java.io.FileOutputStream fo = new java.io.FileOutputStream(tmp);
+                        byte[] buf = new byte[8192];
+                        int n;
+                        while ((n = is.read(buf)) > 0) fo.write(buf, 0, n);
+                        fo.close();
+                        is.close();
+                        if (tmp.length() > 500 && tmp.renameTo(new java.io.File(AudioBank.dlDir(c), key + ".mp3"))) got++;
+                        else tmp.delete();
+                    }
+                    con.disconnect();
+                } catch (Exception ignored) { }
+            }
+        } catch (Exception ignored) { }
+        return got;
+    }
+
+    private static String surface(String marked) {
+        return marked.replaceAll("\\{([^|}]*)\\|[^}]*\\}", "$1");
     }
 
     /** Updates installed packs that have a newer version in the catalog. Returns a message, or null when nothing changed. */

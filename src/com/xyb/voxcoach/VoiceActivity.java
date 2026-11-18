@@ -50,7 +50,7 @@ public class VoiceActivity extends Activity {
 
     private static final String[][] PRESETS = {
             {"硅基流动", "https://api.siliconflow.cn/v1", "FunAudioLLM/CosyVoice2-0.5B", "FunAudioLLM/CosyVoice2-0.5B:anna",
-                    "FunAudioLLM/CosyVoice2-0.5B:bella", "FunAudioLLM/SenseVoiceSmall"},
+                    "FunAudioLLM/CosyVoice2-0.5B:claire", "FunAudioLLM/SenseVoiceSmall"},
             {"OpenAI", "https://api.openai.com/v1", "tts-1", "alloy", "nova", "whisper-1"},
     };
 
@@ -66,182 +66,377 @@ public class VoiceActivity extends Activity {
         build(); // rebuild: the user may have just installed Google TTS / voice data
     }
 
+    /** Sections the user has expanded (kept across rebuilds while the app is running). */
+    private static final java.util.Set<String> OPEN = new java.util.HashSet<String>();
+
+    private interface Filler { void fill(LinearLayout box); }
+
     private void build() {
         gen++;
         shutdownProbes();
         if (testSpeaker != null) { testSpeaker.shutdown(); testSpeaker = null; }
+        saveCloud(); // keep anything typed into fields before they are rebuilt
+        saveAzure();
+        aBase = null;
+        azKey = null;
         LinearLayout body = UI.screen(this, "语音环境", null);
 
-        // ---------------- guide
-        LinearLayout g = UI.card(this);
-        g.addView(UI.text(this, "📱 国行手机（小米 / 华为 / OPPO…）怎么配", 16, UI.TEXT, true));
-        g.addView(UI.text(this,
-                "方案 A（免费、离线可用）：开代理 → Google Play 安装「Google 语音服务（Speech Services by Google）」和「Google」App "
-                        + "→ 回到这里点「下载 Google 日语语音包」，选 日本語 下载 → 下面引擎选 Google。\n"
-                        + "方案 B（无需代理）：在下方「在线语音」填一个硅基流动（国内直连）或 OpenAI 的 Key，把合成和识别都切到「在线」。\n"
-                        + "想要更像真人的示范：用下方「微软 Azure 神经语音」（每月有免费额度），或在 Google 音色里挑「高音质 · 联网」的音色。\n"
-                        + "这些方案可以混用：比如合成走 Azure，识别走 Google。", 13, UI.SUB, false), UI.matchWrap(this, 0, 6, 0, 0));
-        body.addView(g, UI.matchWrap(this, 0, 4, 0, 12));
+        // ---------------- what is in effect right now
+        LinearLayout cur = UI.card(this);
+        cur.addView(UI.text(this, "当前生效", 16, UI.TEXT, true));
+        cur.addView(statusLine("🔊 示范发音", ttsSummary()), UI.matchWrap(this, 0, 8, 0, 0));
+        cur.addView(statusLine("🎤 语音识别", asrSummary()), UI.matchWrap(this, 0, 6, 0, 0));
+        LinearLayout tr = UI.hbox(this);
+        tr.addView(small("▶ 听英语", new View.OnClickListener() { public void onClick(View v) { trySpeak("en", "Hello! Nice to meet you."); } }), UI.lpw(this, 1, 3));
+        tr.addView(small("▶ 听日语", new View.OnClickListener() { public void onClick(View v) { trySpeak("ja", "こんにちは。はじめまして、よろしくお願いします。"); } }), UI.lpw(this, 1, 3));
+        tr.addView(small("🎤 测英语", new View.OnClickListener() { public void onClick(View v) { testAsr("en"); } }), UI.lpw(this, 1, 3));
+        tr.addView(small("🎤 测日语", new View.OnClickListener() { public void onClick(View v) { testAsr("ja"); } }), UI.lpw(this, 1, 3));
+        cur.addView(tr, UI.matchWrap(this, -3, 10, -3, 0));
+        asrResult = UI.text(this, "", 13, UI.SUB, false);
+        cur.addView(asrResult, UI.matchWrap(this, 0, 4, 0, 0));
+        body.addView(cur, UI.matchWrap(this, 0, 4, 0, 12));
 
-        // ---------------- TTS
-        LinearLayout t = UI.card(this);
-        t.addView(UI.text(this, "🔊 语音合成（示范发音）", 16, UI.TEXT, true));
-        t.addView(modeRow(Store.ttsMode(this), new String[]{"system", "cloud", "azure"}, new String[]{"系统引擎", "在线(兼容)", "微软 Azure"}, true),
-                UI.matchWrap(this, -3, 8, -3, 4));
-        boolean googleTts = Speaker.installed(this, Speaker.GOOGLE_TTS);
-        t.addView(UI.text(this, "Google 语音服务：" + (googleTts ? "✅ 已安装" : "❌ 未安装（日语示范需要它，或改用在线 TTS）"), 13,
-                googleTts ? UI.GREEN : UI.RED, false), UI.matchWrap(this, 0, 6, 0, 6));
-        t.addView(UI.text(this, "已安装的引擎（点击选用，正在检测英/日语支持…）", 12, UI.SUB, false));
-        final LinearLayout engines = UI.vbox(this);
-        t.addView(engines, UI.matchWrap(this, 0, 4, 0, 8));
-        probeEngines(engines);
+        body.addView(UI.text(this, "点下面的分组展开详细设置", 12, UI.HINT, false), UI.matchWrap(this, 4, 0, 0, 6));
+        section(body, "tts", "🔊 示范发音用什么", ttsSummary(), new Filler() { public void fill(LinearLayout box) { fillTts(box); } });
+        section(body, "asr", "🎤 语音识别用什么", asrSummary(), new Filler() { public void fill(LinearLayout box) { fillAsr(box); } });
+        section(body, "cloud", "☁️ 在线语音接口（硅基流动 / OpenAI）", cloudSummary(), new Filler() { public void fill(LinearLayout box) { fillCloud(box); } });
+        section(body, "azure", "🗣 微软 Azure 神经语音", azureSummary(), new Filler() { public void fill(LinearLayout box) { fillAzure(box); } });
+        section(body, "guide", "📱 国行手机怎么配？", "不开代理也能用的推荐配置", new Filler() { public void fill(LinearLayout box) { fillGuide(box); } });
+    }
 
-        LinearLayout r1 = UI.hbox(this);
-        TextView tryEn = UI.button(this, "▶ 试听英语", false);
-        tryEn.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { trySpeak("en", "Hello! Nice to meet you."); } });
-        TextView tryJa = UI.button(this, "▶ 试听日语", false);
-        tryJa.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { trySpeak("ja", "こんにちは。はじめまして、よろしくお願いします。"); } });
-        r1.addView(tryEn, UI.lpw(this, 1, 3));
-        r1.addView(tryJa, UI.lpw(this, 1, 3));
-        t.addView(r1, UI.matchWrap(this, -3, 0, -3, 0));
-        LinearLayout r2 = UI.hbox(this);
-        TextView dl = UI.button(this, googleTts ? "下载 Google 日语语音包" : "安装 Google 语音服务", true);
-        dl.setOnClickListener(new View.OnClickListener() {
+    // ------------------------------------------------------------------ building blocks
+
+    private View statusLine(String label, String value) {
+        LinearLayout r = UI.hbox(this);
+        r.addView(UI.text(this, label, 14, UI.SUB, false), new LinearLayout.LayoutParams(UI.dp(this, 96), LinearLayout.LayoutParams.WRAP_CONTENT));
+        TextView v = UI.text(this, "✓ " + value, 14, UI.GREEN, true);
+        r.addView(v, new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1));
+        return r;
+    }
+
+    private TextView small(String label, View.OnClickListener l) {
+        TextView b = UI.button(this, label, false);
+        b.setTextSize(12);
+        b.setPadding(UI.dp(this, 4), UI.dp(this, 9), UI.dp(this, 4), UI.dp(this, 9));
+        b.setOnClickListener(l);
+        return b;
+    }
+
+    /** Collapsible card: header with title + current choice; content filled lazily when opened. */
+    private void section(LinearLayout body, final String key, String title, String summary, final Filler filler) {
+        final LinearLayout card = UI.card(this);
+        card.setPadding(0, 0, 0, 0);
+        final LinearLayout head = UI.hbox(this);
+        int p = UI.dp(this, 16);
+        head.setPadding(p, UI.dp(this, 14), p, UI.dp(this, 14));
+        head.setBackground(UI.ripple(this, UI.round(this, UI.CARD, 18)));
+        LinearLayout t = UI.vbox(this);
+        t.addView(UI.text(this, title, 15, UI.TEXT, true));
+        t.addView(UI.text(this, summary, 12, summary.startsWith("未") ? UI.ORANGE : UI.GREEN, false), UI.matchWrap(this, 0, 3, 0, 0));
+        head.addView(t, new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1));
+        final TextView arrow = UI.text(this, OPEN.contains(key) ? "▾" : "▸", 20, UI.HINT, false);
+        head.addView(arrow);
+        card.addView(head);
+        final LinearLayout box = UI.vbox(this);
+        box.setPadding(p, 0, p, p);
+        card.addView(box);
+        if (OPEN.contains(key)) filler.fill(box);
+        else box.setVisibility(View.GONE);
+        head.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if (Speaker.installed(VoiceActivity.this, Speaker.GOOGLE_TTS)) openGoogleVoiceData();
-                else openStore(Speaker.GOOGLE_TTS);
+                if (OPEN.contains(key)) {
+                    if ("cloud".equals(key)) saveCloud();
+                    if ("azure".equals(key)) saveAzure();
+                    OPEN.remove(key);
+                    box.setVisibility(View.GONE);
+                    box.removeAllViews();
+                    arrow.setText("▸");
+                } else {
+                    OPEN.add(key);
+                    box.removeAllViews();
+                    filler.fill(box);
+                    box.setVisibility(View.VISIBLE);
+                    arrow.setText("▾");
+                }
             }
         });
-        r2.addView(dl, UI.lpw(this, 1, 3));
-        t.addView(r2, UI.matchWrap(this, -3, 0, -3, 0));
-        t.addView(UI.text(this, "系统音色（引擎里可能有多个音色，「联网」音色通常更自然）", 12, UI.SUB, false), UI.matchWrap(this, 0, 10, 0, 2));
-        LinearLayout r5 = UI.hbox(this);
-        TextView pvEn = UI.button(this, "🎚 选英语音色", false);
-        pvEn.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { pickSysVoice("en"); } });
-        TextView pvJa = UI.button(this, "🎚 选日语音色", false);
-        pvJa.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { pickSysVoice("ja"); } });
-        r5.addView(pvEn, UI.lpw(this, 1, 3));
-        r5.addView(pvJa, UI.lpw(this, 1, 3));
-        t.addView(r5, UI.matchWrap(this, -3, 0, -3, 0));
-        body.addView(t, UI.matchWrap(this, 0, 0, 0, 12));
+        body.addView(card, UI.matchWrap(this, 0, 0, 0, 10));
+    }
 
-        // ---------------- ASR
-        LinearLayout a = UI.card(this);
-        a.addView(UI.text(this, "🎤 语音识别（跟读评分 / 对话）", 16, UI.TEXT, true));
-        a.addView(modeRow(Store.asrMode(this), new String[]{"system", "cloud"}, new String[]{"系统识别", "在线识别"}, false),
-                UI.matchWrap(this, -3, 8, -3, 4));
-        boolean gApp = Speaker.installed(this, "com.google.android.googlequicksearchbox");
-        a.addView(UI.text(this, "Google App：" + (gApp ? "✅ 已安装" : "❌ 未安装（系统识别推荐用它，识别日语更准）"), 13,
-                gApp ? UI.GREEN : UI.RED, false), UI.matchWrap(this, 0, 6, 0, 6));
-        a.addView(UI.text(this, "识别服务（点击选用）", 12, UI.SUB, false));
-        LinearLayout svc = UI.vbox(this);
-        a.addView(svc, UI.matchWrap(this, 0, 4, 0, 8));
-        renderServices(svc);
-        a.addView(UI.text(this, "系统识别能给出多个候选和置信度，评分更细；在线识别只返回一个结果，但不依赖 Google。", 12, UI.SUB, false),
-                UI.matchWrap(this, 0, 0, 0, 8));
-        LinearLayout r3 = UI.hbox(this);
-        TextView tEn = UI.button(this, "🎤 测英语", false);
-        tEn.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { testAsr("en"); } });
-        TextView tJa = UI.button(this, "🎤 测日语", false);
-        tJa.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { testAsr("ja"); } });
-        r3.addView(tEn, UI.lpw(this, 1, 3));
-        r3.addView(tJa, UI.lpw(this, 1, 3));
-        if (!gApp) {
-            TextView ig = UI.button(this, "装 Google App", false);
-            ig.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { openStore("com.google.android.googlequicksearchbox"); } });
-            r3.addView(ig, UI.lpw(this, 1.2f, 3));
-        }
-        a.addView(r3, UI.matchWrap(this, -3, 0, -3, 0));
-        asrResult = UI.text(this, "", 13, UI.SUB, false);
-        a.addView(asrResult, UI.matchWrap(this, 0, 6, 0, 0));
-        body.addView(a, UI.matchWrap(this, 0, 0, 0, 12));
+    /** Radio-style option row; the selected one is highlighted and marked ✓. descOut[0] receives the description view. */
+    private LinearLayout radio(String title, String desc, boolean on, View.OnClickListener l, TextView[] descOut) {
+        LinearLayout r = UI.hbox(this);
+        int p = UI.dp(this, 12);
+        r.setPadding(p, UI.dp(this, 10), p, UI.dp(this, 10));
+        r.setBackground(UI.ripple(this, on ? UI.roundStroke(this, 0xFFEAF7F0, 12, UI.GREEN) : UI.roundStroke(this, UI.CARD, 12, UI.BORDER)));
+        TextView mark = UI.text(this, on ? "✓" : "○", 18, on ? UI.GREEN : UI.HINT, true);
+        mark.setGravity(Gravity.CENTER);
+        r.addView(mark, new LinearLayout.LayoutParams(UI.dp(this, 28), LinearLayout.LayoutParams.WRAP_CONTENT));
+        LinearLayout t = UI.vbox(this);
+        t.addView(UI.text(this, title, 14, on ? 0xFF14794A : UI.TEXT, true));
+        TextView d = UI.text(this, desc, 12, UI.SUB, false);
+        if (desc.length() > 0) t.addView(d, UI.matchWrap(this, 0, 2, 0, 0));
+        if (descOut != null) descOut[0] = d;
+        r.addView(t, new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1));
+        if (on) r.addView(UI.text(this, "使用中", 11, UI.GREEN, true));
+        if (l != null) r.setOnClickListener(l);
+        return r;
+    }
 
-        // ---------------- cloud
-        LinearLayout c = UI.card(this);
-        c.addView(UI.text(this, "☁️ 在线语音（OpenAI 兼容 /audio 接口）", 16, UI.TEXT, true));
-        c.addView(UI.text(this, "硅基流动：CosyVoice2 合成（中英日）+ SenseVoice 识别，国内直连。API Key 留空则用「AI 接口」里的 Key。合成结果会缓存，同一句不会重复计费。", 12, UI.SUB, false),
-                UI.matchWrap(this, 0, 4, 0, 8));
-        LinearLayout pr = UI.hbox(this);
-        for (final String[] p : PRESETS) {
-            TextView chip = UI.chip(this, p[0], p[1].equals(Store.audioBase(this)));
-            chip.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    aBase.setText(p[1]); tModel.setText(p[2]); vEn.setText(p[3]); vJa.setText(p[4]); sModel.setText(p[5]);
-                }
-            });
-            pr.addView(chip, UI.lpw(this, 1, 3));
-        }
-        c.addView(pr, UI.matchWrap(this, -3, 0, -3, 6));
-        aBase = field(c, "Base URL", Store.audioBase(this));
-        aKey = field(c, "API Key（可留空）", Store.audioKeyRaw(this));
-        aKey.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-        tModel = field(c, "合成模型", Store.ttsModel(this));
-        vEn = field(c, "英语音色", Store.ttsVoice(this, "en"));
-        vJa = field(c, "日语音色", Store.ttsVoice(this, "ja"));
-        c.addView(UI.text(this, "CosyVoice2 可选音色后缀：alex / benjamin / charles / david（男）· anna / bella / claire / diana（女）", 11, UI.HINT, false));
-        sModel = field(c, "识别模型", Store.asrModel(this));
-        LinearLayout r4 = UI.hbox(this);
-        TextView save = UI.button(this, "保存", true);
-        save.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { saveCloud(); UI.toast(VoiceActivity.this, "已保存"); } });
-        TextView test = UI.button(this, "测试在线合成（日语）", false);
-        test.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { testCloudTts(); } });
-        r4.addView(test, UI.lpw(this, 1.4f, 3));
-        r4.addView(save, UI.lpw(this, 1, 3));
-        c.addView(r4, UI.matchWrap(this, -3, 8, -3, 0));
-        cloudResult = UI.text(this, "", 13, UI.SUB, false);
-        c.addView(cloudResult, UI.matchWrap(this, 0, 6, 0, 0));
-        body.addView(c, UI.matchWrap(this, 0, 0, 0, 12));
-
-        // ---------------- Azure
-        LinearLayout az = UI.card(this);
-        az.addView(UI.text(this, "🗣 微软 Azure 神经语音（最接近真人）", 16, UI.TEXT, true));
-        az.addView(UI.text(this, "免费档（F0）每月有 50 万字符免费额度，日语七海 Nanami、英语 Ava 等音色自然度很高。在 portal.azure.com 创建「语音服务（Speech）」资源"
-                + "（区域建议选 Japan East），把 Key 和区域填到这里，然后把上面的「语音合成」切到「微软 Azure」。示范音频会缓存，同一句只请求一次。", 12, UI.SUB, false),
-                UI.matchWrap(this, 0, 4, 0, 8));
-        azRegion = field(az, "区域（如 japaneast / eastasia / eastus，也可填完整 endpoint）", Store.azureRegion(this));
-        azKey = field(az, "Key", Store.azureKey(this));
-        azKey.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-        az.addView(UI.text(this, "日语音色（点一下即试听并选用）", 12, UI.SUB, false), UI.matchWrap(this, 0, 8, 0, 4));
-        az.addView(voiceGrid("ja", AZ_JA));
-        az.addView(UI.text(this, "英语音色", 12, UI.SUB, false), UI.matchWrap(this, 0, 8, 0, 4));
-        az.addView(voiceGrid("en", AZ_EN));
-        azResult = UI.text(this, "", 13, UI.SUB, false);
-        az.addView(azResult, UI.matchWrap(this, 0, 6, 0, 0));
-        body.addView(az, UI.matchWrap(this, 0, 0, 0, 12));
+    private void addRadio(LinearLayout box, String title, String desc, boolean on, View.OnClickListener l) {
+        box.addView(radio(title, desc, on, l, null), UI.matchWrap(this, 0, 4, 0, 4));
     }
 
     private EditText field(LinearLayout parent, String label, String value) {
-        parent.addView(UI.text(this, label, 12, UI.SUB, false), UI.matchWrap(this, 0, 4, 0, 2));
+        parent.addView(UI.text(this, label, 12, UI.SUB, false), UI.matchWrap(this, 0, 6, 0, 2));
         EditText e = UI.input(this, label);
         e.setSingleLine(true);
+        e.setTextSize(14);
         e.setText(value);
-        parent.addView(e, UI.matchWrap(this, 0, 0, 0, 4));
+        parent.addView(e, UI.matchWrap(this, 0, 0, 0, 2));
         return e;
     }
 
-    private View modeRow(String cur, final String[] vals, String[] labels, final boolean tts) {
-        LinearLayout r = UI.hbox(this);
-        final List<TextView> chips = new ArrayList<TextView>();
-        for (int i = 0; i < vals.length; i++) {
-            final String v = vals[i];
-            final TextView c = UI.chip(this, labels[i], v.equals(cur));
-            chips.add(c);
-            c.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View view) {
-                    if ("cloud".equals(v)) saveCloud();
-                    if ("azure".equals(v)) saveAzure();
-                    if ("cloud".equals(v) && !Store.audioReady(VoiceActivity.this))
-                        UI.toast(VoiceActivity.this, "先在下方填好在线语音接口（或 AI 接口的 Key）");
-                    if ("azure".equals(v) && Store.azureKey(VoiceActivity.this).length() == 0)
-                        UI.toast(VoiceActivity.this, "先在下方「微软 Azure」里填好 Key 和区域");
-                    if (tts) Store.setTtsMode(VoiceActivity.this, v);
-                    else { Store.setAsrMode(VoiceActivity.this, v); rec.destroy(); }
-                    for (TextView x : chips) UI.setChip(VoiceActivity.this, x, x == c);
+    private void subTitle(LinearLayout box, String s) {
+        box.addView(UI.text(this, s, 13, UI.TEXT, true), UI.matchWrap(this, 0, 12, 0, 4));
+    }
+
+    private void openSection(String key) {
+        OPEN.add(key);
+        build();
+    }
+
+    // ------------------------------------------------------------------ summaries
+
+    private static String host(String url) {
+        try { return new java.net.URL(url).getHost(); } catch (Exception e) { return url; }
+    }
+
+    private String fallbackName(String f) {
+        return "cloud".equals(f) ? "在线接口" : "azure".equals(f) ? "Azure" : "系统引擎";
+    }
+
+    private String ttsSummary() {
+        String m = Store.ttsMode(this);
+        if ("bundled".equals(m)) return "内置离线音（AI 回复等用" + fallbackName(Store.ttsFallback(this)) + "）";
+        if ("cloud".equals(m)) return "在线接口 · " + Store.ttsModel(this);
+        if ("azure".equals(m)) return "微软 Azure · " + Store.azureVoice(this, Store.lang(this));
+        String e = Speaker.engine(this);
+        return "系统引擎 · " + (e == null ? "系统默认" : e);
+    }
+
+    private String asrSummary() {
+        if ("cloud".equals(Store.asrMode(this))) return "在线识别 · " + Store.asrModel(this);
+        if (Store.asrService(this).length() > 0) {
+            ComponentName cn = ComponentName.unflattenFromString(Store.asrService(this));
+            return "系统识别 · 指定 " + (cn == null ? Store.asrService(this) : cn.getPackageName());
+        }
+        ComponentName eff = Rec.pickService(this);
+        return "系统识别 · 自动（" + (eff == null ? "系统默认" : eff.getPackageName()) + "）";
+    }
+
+    private String cloudSummary() {
+        if (Store.audioKeyRaw(this).length() > 0) return "已配置 · " + host(Store.audioBase(this));
+        return "未配置（需要时填 Key）";
+    }
+
+    private String azureSummary() {
+        if (Store.azureKey(this).length() > 0) return "已配置 · " + Store.azureRegion(this);
+        return "未配置（可选）";
+    }
+
+    // ------------------------------------------------------------------ section contents
+
+    private void fillTts(LinearLayout box) {
+        String m = Store.ttsMode(this);
+        addRadio(box, "内置离线音（推荐）", "App 自带 " + AudioBank.assetCount(this) + " 条英/日录音，覆盖内置句子、场景包、五十音、单词；免代理、免 Key、可断网",
+                "bundled".equals(m), ttsMode("bundled"));
+        String e = Speaker.engine(this);
+        addRadio(box, "系统引擎", "用手机里的语音引擎朗读 · 当前：" + (e == null ? "系统默认" : e), "system".equals(m), ttsMode("system"));
+        addRadio(box, "在线接口（硅基流动 / OpenAI）", cloudSummary(), "cloud".equals(m), ttsMode("cloud"));
+        addRadio(box, "微软 Azure", azureSummary() + " · 最接近真人", "azure".equals(m), ttsMode("azure"));
+
+        if ("bundled".equals(m)) {
+            subTitle(box, "没有内置录音的内容（AI 对话回复、AI 出题）用：");
+            String f = Store.ttsFallback(this);
+            addRadio(box, "系统引擎", "小米等国行引擎一般不会读日语", "system".equals(f), fallback("system"));
+            addRadio(box, "在线接口", cloudSummary(), "cloud".equals(f), fallback("cloud"));
+            addRadio(box, "微软 Azure", azureSummary(), "azure".equals(f), fallback("azure"));
+        } else if ("system".equals(m)) {
+            subTitle(box, "选择引擎（会检测是否支持英语 / 日语）");
+            LinearLayout engines = UI.vbox(this);
+            box.addView(engines);
+            probeEngines(engines);
+            subTitle(box, "引擎里的具体音色");
+            LinearLayout r5 = UI.hbox(this);
+            r5.addView(small("🎚 选英语音色", new View.OnClickListener() { public void onClick(View v) { pickSysVoice("en"); } }), UI.lpw(this, 1, 3));
+            r5.addView(small("🎚 选日语音色", new View.OnClickListener() { public void onClick(View v) { pickSysVoice("ja"); } }), UI.lpw(this, 1, 3));
+            box.addView(r5, UI.matchWrap(this, -3, 0, -3, 0));
+            boolean googleTts = Speaker.installed(this, Speaker.GOOGLE_TTS);
+            box.addView(small(googleTts ? "下载 Google 日语语音包（需代理）" : "安装 Google 语音服务（需代理）", new View.OnClickListener() {
+                public void onClick(View v) {
+                    if (Speaker.installed(VoiceActivity.this, Speaker.GOOGLE_TTS)) openGoogleVoiceData();
+                    else openStore(Speaker.GOOGLE_TTS);
+                }
+            }), UI.matchWrap(this, 0, 6, 0, 0));
+        } else {
+            final String k = "cloud".equals(m) ? "cloud" : "azure";
+            box.addView(small("去设置" + ("cloud".equals(m) ? "在线接口" : " Azure") + "（Key、音色）›", new View.OnClickListener() {
+                public void onClick(View v) { openSection(k); }
+            }), UI.matchWrap(this, 0, 10, 0, 0));
+        }
+    }
+
+    private View.OnClickListener ttsMode(final String v) {
+        return new View.OnClickListener() {
+            public void onClick(View view) {
+                Store.setTtsMode(VoiceActivity.this, v);
+                if ("cloud".equals(v) && Store.audioKeyRaw(VoiceActivity.this).length() == 0) {
+                    UI.toast(VoiceActivity.this, "已切换。还需要在「在线语音接口」里填 Key");
+                    OPEN.add("cloud");
+                }
+                if ("azure".equals(v) && Store.azureKey(VoiceActivity.this).length() == 0) {
+                    UI.toast(VoiceActivity.this, "已切换。还需要在「微软 Azure」里填 Key");
+                    OPEN.add("azure");
+                }
+                build();
+            }
+        };
+    }
+
+    private View.OnClickListener fallback(final String v) {
+        return new View.OnClickListener() {
+            public void onClick(View view) {
+                Store.setTtsFallback(VoiceActivity.this, v);
+                if ("cloud".equals(v) && Store.audioKeyRaw(VoiceActivity.this).length() == 0) OPEN.add("cloud");
+                if ("azure".equals(v) && Store.azureKey(VoiceActivity.this).length() == 0) OPEN.add("azure");
+                build();
+            }
+        };
+    }
+
+    private void fillAsr(LinearLayout box) {
+        final boolean cloud = "cloud".equals(Store.asrMode(this));
+        addRadio(box, "系统识别", "用手机里的识别服务，评分更细；不支持某语言时自动换服务", !cloud, asrMode("system"));
+        addRadio(box, "在线识别（硅基流动 SenseVoice 等）", cloudSummary() + " · 不需要代理", cloud, asrMode("cloud"));
+        if (!cloud) {
+            subTitle(box, "识别服务");
+            LinearLayout svc = UI.vbox(this);
+            box.addView(svc);
+            renderServices(svc);
+            if (!Speaker.installed(this, "com.google.android.googlequicksearchbox")) {
+                box.addView(small("安装 Google App（识别更准，需代理）", new View.OnClickListener() {
+                    public void onClick(View v) { openStore("com.google.android.googlequicksearchbox"); }
+                }), UI.matchWrap(this, 0, 6, 0, 0));
+            }
+        } else if (Store.audioKeyRaw(this).length() == 0) {
+            box.addView(small("去填在线接口的 Key ›", new View.OnClickListener() { public void onClick(View v) { openSection("cloud"); } }),
+                    UI.matchWrap(this, 0, 10, 0, 0));
+        }
+    }
+
+    private View.OnClickListener asrMode(final String v) {
+        return new View.OnClickListener() {
+            public void onClick(View view) {
+                Store.setAsrMode(VoiceActivity.this, v);
+                Rec.resetFallback();
+                rec.destroy();
+                if ("cloud".equals(v) && Store.audioKeyRaw(VoiceActivity.this).length() == 0) OPEN.add("cloud");
+                build();
+            }
+        };
+    }
+
+    private void fillCloud(LinearLayout box) {
+        box.addView(UI.text(this, "示范发音的「在线接口」和「在线识别」都用这里的配置。硅基流动国内直连，手机号注册送额度；合成结果会缓存，同一句不重复计费。", 12, UI.SUB, false),
+                UI.matchWrap(this, 0, 0, 0, 4));
+        subTitle(box, "服务商");
+        final String base = Store.audioBase(this);
+        for (final String[] p : PRESETS) {
+            addRadio(box, p[0], p[1], p[1].equals(base), new View.OnClickListener() {
+                public void onClick(View v) {
+                    aBase.setText(p[1]); tModel.setText(p[2]); vEn.setText(p[3]); vJa.setText(p[4]); sModel.setText(p[5]);
+                    build(); // build() saves the fields first
                 }
             });
-            r.addView(c, UI.lpw(this, 1, 3));
         }
-        return r;
+        aBase = field(box, "Base URL", base);
+        aKey = field(box, "API Key", Store.audioKeyRaw(this));
+        aKey.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        tModel = field(box, "合成模型", Store.ttsModel(this));
+        vEn = field(box, "英语音色", Store.ttsVoice(this, "en"));
+        vJa = field(box, "日语音色", Store.ttsVoice(this, "ja"));
+        sModel = field(box, "识别模型", Store.asrModel(this));
+        if (base.contains("siliconflow")) {
+            subTitle(box, "英语音色（点一下选用）");
+            box.addView(cosyGrid("en"));
+            subTitle(box, "日语音色（点一下选用）");
+            box.addView(cosyGrid("ja"));
+        }
+        LinearLayout r4 = UI.hbox(this);
+        TextView test = UI.button(this, "测试合成（日语）", false);
+        test.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { testCloudTts(); } });
+        TextView save = UI.button(this, "保存", true);
+        save.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { saveCloud(); UI.toast(VoiceActivity.this, "已保存"); build(); } });
+        r4.addView(test, UI.lpw(this, 1.4f, 3));
+        r4.addView(save, UI.lpw(this, 1, 3));
+        box.addView(r4, UI.matchWrap(this, -3, 10, -3, 0));
+        cloudResult = UI.text(this, "", 13, UI.SUB, false);
+        box.addView(cloudResult, UI.matchWrap(this, 0, 6, 0, 0));
+    }
+
+    private static final String[][] COSY = {
+            {"anna", "anna 沉稳女·英语推荐"}, {"claire", "claire 温柔女·日语推荐"}, {"alex", "alex 沉稳男"}, {"benjamin", "benjamin 低沉男"},
+            {"charles", "charles 磁性男"}, {"david", "david 欢快男"}, {"bella", "bella 激情女"}, {"diana", "diana 欢快女"}};
+
+    private View cosyGrid(final String lang) {
+        LinearLayout grid = UI.vbox(this);
+        String cur = Store.ttsVoice(this, lang);
+        LinearLayout row = null;
+        for (int i = 0; i < COSY.length; i++) {
+            if (i % 2 == 0) { row = UI.hbox(this); grid.addView(row, UI.matchWrap(this, -3, 0, -3, 0)); }
+            final String id = "FunAudioLLM/CosyVoice2-0.5B:" + COSY[i][0];
+            boolean on = id.equals(cur);
+            TextView c = UI.chip(this, (on ? "✓ " : "") + COSY[i][1], on);
+            c.setTextSize(12);
+            c.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    ("ja".equals(lang) ? vJa : vEn).setText(id);
+                    saveCloud();
+                    build();
+                    previewCloud(lang);
+                }
+            });
+            row.addView(c, UI.lpw(this, 1, 3));
+        }
+        return grid;
+    }
+
+    private void fillAzure(LinearLayout box) {
+        box.addView(UI.text(this, "免费档（F0）每月 50 万字符。在 portal.azure.com 创建「语音服务（Speech）」，区域选 Japan East，把「密钥 1」和区域填到这里。"
+                + "填好后到「示范发音用什么」选「微软 Azure」，或在内置离线音下把兜底选为 Azure。", 12, UI.SUB, false), UI.matchWrap(this, 0, 0, 0, 4));
+        azRegion = field(box, "区域（如 japaneast / eastasia / eastus）", Store.azureRegion(this));
+        azKey = field(box, "Key", Store.azureKey(this));
+        azKey.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        subTitle(box, "日语音色（点一下试听并选用）");
+        box.addView(voiceGrid("ja", AZ_JA));
+        subTitle(box, "英语音色");
+        box.addView(voiceGrid("en", AZ_EN));
+        TextView save = UI.button(this, "保存", true);
+        save.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { saveAzure(); UI.toast(VoiceActivity.this, "已保存"); build(); } });
+        box.addView(save, UI.matchWrap(this, 0, 10, 0, 0));
+        azResult = UI.text(this, "", 13, UI.SUB, false);
+        box.addView(azResult, UI.matchWrap(this, 0, 6, 0, 0));
+    }
+
+    private void fillGuide(LinearLayout box) {
+        box.addView(UI.text(this,
+                "推荐（不开代理）：\n"
+                        + "① 示范发音：内置离线音（默认就是）。\n"
+                        + "② 语音识别：在线识别 + 硅基流动 Key（手机号注册即可）。\n"
+                        + "③ AI 回复的朗读：兜底选「在线接口」或「Azure」。\n\n"
+                        + "能开代理时：安装 Google 语音服务和 Google App，系统识别会更准（多候选、置信度）；"
+                        + "在「系统引擎」里还能挑 Google 的联网高音质音色。", 13, UI.SUB, false));
     }
 
     // ------------------------------------------------------------------ TTS engines
@@ -250,7 +445,7 @@ public class VoiceActivity extends Activity {
         box.removeAllViews();
         final String chosen = Store.ttsEngine(this);
         final String effective = Speaker.engine(this);
-        addEngineRow(box, "", "自动（优先 Google）", effective == null ? "→ 当前：系统默认引擎" : "→ 当前：" + effective, chosen.length() == 0);
+        addEngineRow(box, "", "自动（优先 Google）", effective == null ? "实际使用：系统默认引擎" : "实际使用：" + effective, chosen.length() == 0);
         final int myGen = gen;
         final TextToSpeech[] holder = new TextToSpeech[1];
         holder[0] = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
@@ -275,19 +470,16 @@ public class VoiceActivity extends Activity {
         probes.add(holder[0]);
     }
 
-    private TextView addEngineRow(final LinearLayout box, final String pkg, String label, String status, boolean on) {
-        final TextView row = UI.chip(this, (on ? "◉ " : "○ ") + label + "\n" + status, on);
-        row.setGravity(Gravity.START | Gravity.CENTER_VERTICAL);
-        row.setTag(label);
-        row.setOnClickListener(new View.OnClickListener() {
+    private TextView addEngineRow(final LinearLayout box, final String pkg, final String label, String status, boolean on) {
+        TextView[] d = new TextView[1];
+        box.addView(radio(label, status, on, new View.OnClickListener() {
             public void onClick(View v) {
                 Store.setTtsEngine(VoiceActivity.this, pkg);
-                UI.toast(VoiceActivity.this, pkg.length() == 0 ? "已设为自动" : "已选用：" + row.getTag());
+                UI.toast(VoiceActivity.this, pkg.length() == 0 ? "已设为自动" : "已选用：" + label);
                 build();
             }
-        });
-        box.addView(row, UI.matchWrap(this, 0, 3, 0, 3));
-        return row;
+        }, d), UI.matchWrap(this, 0, 4, 0, 4));
+        return d[0];
     }
 
     private void probe(final List<TextToSpeech.EngineInfo> list, final List<TextView> rows, final int i, final int myGen) {
@@ -305,9 +497,7 @@ public class VoiceActivity extends Activity {
                         else st = "英语 " + mark(tt.isLanguageAvailable(Locale.US)) + "   日语 " + mark(tt.isLanguageAvailable(Locale.JAPAN));
                         try { tt.shutdown(); } catch (Exception ignored) { }
                         probes.remove(tt);
-                        TextView row = rows.get(i);
-                        boolean on = e.name.equals(Store.ttsEngine(VoiceActivity.this));
-                        row.setText((on ? "◉ " : "○ ") + e.label + "\n" + e.name + " · " + st);
+                        rows.get(i).setText(e.name + " · " + st);
                         probe(list, rows, i + 1, myGen);
                     }
                 });
@@ -369,22 +559,23 @@ public class VoiceActivity extends Activity {
         List<String[]> all = Rec.services(this);
         String chosen = Store.asrService(this);
         ComponentName eff = Rec.pickService(this);
-        addSvcRow(box, "", "自动（优先 Google）" + (eff == null ? "\n→ 当前：系统默认" : "\n→ 当前：" + eff.getPackageName()), chosen.length() == 0);
+        addSvcRow(box, "", "自动（推荐）", "实际使用：" + (eff == null ? "系统默认" : eff.getPackageName()) + "；不可用时自动换下一个", chosen.length() == 0);
         if (all.isEmpty()) box.addView(UI.text(this, "没有找到语音识别服务", 13, UI.RED, false));
-        for (String[] s : all) addSvcRow(box, s[0], s[1], s[0].equals(chosen));
+        for (String[] s : all) {
+            String[] parts = s[1].split("\n");
+            addSvcRow(box, s[0], parts[0], parts.length > 1 ? parts[1] : "", s[0].equals(chosen));
+        }
     }
 
-    private void addSvcRow(final LinearLayout box, final String id, String label, boolean on) {
-        TextView row = UI.chip(this, (on ? "◉ " : "○ ") + label, on);
-        row.setGravity(Gravity.START | Gravity.CENTER_VERTICAL);
-        row.setOnClickListener(new View.OnClickListener() {
+    private void addSvcRow(final LinearLayout box, final String id, String label, String desc, boolean on) {
+        box.addView(radio(label, desc, on, new View.OnClickListener() {
             public void onClick(View v) {
                 Store.setAsrService(VoiceActivity.this, id);
+                Rec.resetFallback();
                 rec.destroy();
-                renderServices(box);
+                build();
             }
-        });
-        box.addView(row, UI.matchWrap(this, 0, 3, 0, 3));
+        }, null), UI.matchWrap(this, 0, 4, 0, 4));
     }
 
     private void testAsr(final String lang) {
@@ -426,7 +617,7 @@ public class VoiceActivity extends Activity {
             public void run() {
                 String err = null;
                 File f = null;
-                try { f = CloudAudio.tts(VoiceActivity.this, "こんにちは。日本語の発音練習を始めましょう。", "ja", 1f); }
+                try { f = CloudAudio.openaiTts(VoiceActivity.this, "こんにちは。日本語の発音練習を始めましょう。", "ja", 1f); }
                 catch (Exception e) { err = e.getMessage() != null ? e.getMessage() : e.toString(); }
                 final String fe = err;
                 final File ff = f;
@@ -435,7 +626,33 @@ public class VoiceActivity extends Activity {
                         if (destroyed) return;
                         if (fe != null) { cloudResult.setTextColor(UI.RED); cloudResult.setText("❌ " + fe); return; }
                         cloudResult.setTextColor(UI.GREEN);
-                        cloudResult.setText("✅ 合成成功，正在播放。满意的话把上面的「语音合成」切到「在线 TTS」。");
+                        cloudResult.setText("✅ 合成成功，正在播放");
+                        playFile(ff);
+                    }
+                });
+            }
+        }).start();
+    }
+
+    private void previewCloud(final String lang) {
+        if (cloudResult == null) return;
+        cloudResult.setTextColor(UI.SUB);
+        cloudResult.setText("正在合成试听…");
+        final String text = "ja".equals(lang) ? "こんにちは。一緒に日本語の発音を練習しましょう。" : "Hi! I'm your speaking coach. Let's practice together.";
+        new Thread(new Runnable() {
+            public void run() {
+                String err = null;
+                File f = null;
+                try { f = CloudAudio.openaiTts(VoiceActivity.this, text, lang, 1f); }
+                catch (Exception e) { err = e.getMessage() != null ? e.getMessage() : e.toString(); }
+                final String fe = err;
+                final File ff = f;
+                h.post(new Runnable() {
+                    public void run() {
+                        if (destroyed || cloudResult == null) return;
+                        if (fe != null) { cloudResult.setTextColor(UI.RED); cloudResult.setText("❌ " + fe); return; }
+                        cloudResult.setTextColor(UI.GREEN);
+                        cloudResult.setText("✅ 已选用并试听：" + Store.ttsVoice(VoiceActivity.this, lang));
                         playFile(ff);
                     }
                 });
@@ -471,13 +688,18 @@ public class VoiceActivity extends Activity {
         for (int i = 0; i < voices.length; i++) {
             if (i % 2 == 0) { row = UI.hbox(this); box.addView(row, UI.matchWrap(this, -3, 0, -3, 0)); }
             final String id = voices[i][0];
-            final TextView c = UI.chip(this, voices[i][1], id.equals(cur));
-            c.setTextSize(13);
+            final String label = voices[i][1];
+            final TextView c = UI.chip(this, (id.equals(cur) ? "✓ " : "") + label, id.equals(cur));
+            c.setTag(label);
+            c.setTextSize(12);
             chips.add(c);
             c.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     Store.setAzureVoice(VoiceActivity.this, lang, id);
-                    for (TextView x : chips) UI.setChip(VoiceActivity.this, x, x == c);
+                    for (TextView x : chips) {
+                        UI.setChip(VoiceActivity.this, x, x == c);
+                        x.setText((x == c ? "✓ " : "") + x.getTag());
+                    }
                     previewAzure(lang, id);
                 }
             });
@@ -508,7 +730,7 @@ public class VoiceActivity extends Activity {
                             return;
                         }
                         azResult.setTextColor(UI.GREEN);
-                        azResult.setText("✅ " + voice + (Store.ttsMode(VoiceActivity.this).equals("azure") ? "" : "\n满意的话把上面的「语音合成」切到「微软 Azure」"));
+                        azResult.setText("✅ " + voice + ("azure".equals(Store.cloudProvider(VoiceActivity.this)) ? "" : "\n满意的话把上面的「语音合成」切到「Azure」，或在内置离线音下把兜底选为 Azure"));
                         playFile(ff);
                     }
                 });

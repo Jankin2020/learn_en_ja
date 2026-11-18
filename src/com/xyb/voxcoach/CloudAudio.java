@@ -29,7 +29,7 @@ public final class CloudAudio {
 
     /** Synthesizes text to an mp3 file with the provider chosen in settings (OpenAI-compatible or Azure). */
     public static File tts(Context c, String text, String lang, float speed) throws Exception {
-        if ("azure".equals(Store.ttsMode(c))) return azureTts(c, text, lang, speed, Store.azureVoice(c, lang));
+        if ("azure".equals(Store.cloudProvider(c))) return azureTts(c, text, lang, speed, Store.azureVoice(c, lang));
         return openaiTts(c, text, lang, speed);
     }
 

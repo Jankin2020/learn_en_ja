@@ -11,3 +11,9 @@ Thumbs.db
 desktop.ini
 .idea/
 .vscode/
+
+# temporary transfer archive
+voice_assets.zip
+
+# Claude session hand-off copies
+Claude outputs/

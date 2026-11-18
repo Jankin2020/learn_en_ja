@@ -62,7 +62,20 @@ public final class Store {
     // ------------------------------------------------------------------ voice engines
 
     /** "system" (Android TTS engine) or "cloud" (OpenAI-compatible /audio/speech). */
-    public static String ttsMode(Context c) { return sp(c).getString("tts_mode", "system"); }
+    public static String ttsMode(Context c) { return sp(c).getString("tts_mode", "bundled"); }
+    /** used in "bundled" mode for text without a built-in recording: system | cloud | azure */
+    public static String ttsFallback(Context c) { return sp(c).getString("tts_fallback", "system"); }
+    public static void setTtsFallback(Context c, String f) { sp(c).edit().putString("tts_fallback", f).apply(); }
+    /** the cloud TTS provider currently in effect ("cloud" / "azure"), or null for the system engine */
+    public static String cloudProvider(Context c) {
+        String m = ttsMode(c);
+        if ("cloud".equals(m) || "azure".equals(m)) return m;
+        if ("bundled".equals(m)) {
+            String f = ttsFallback(c);
+            if ("cloud".equals(f) || "azure".equals(f)) return f;
+        }
+        return null;
+    }
     public static void setTtsMode(Context c, String m) { sp(c).edit().putString("tts_mode", m).apply(); }
     /** preferred TTS engine package; "" = auto (prefer Google). */
     public static String ttsEngine(Context c) { return sp(c).getString("tts_engine", ""); }
@@ -73,6 +86,9 @@ public final class Store {
     /** preferred recognition service (flattened ComponentName); "" = auto (prefer Google). */
     public static String asrService(Context c) { return sp(c).getString("asr_service", ""); }
     public static void setAsrService(Context c, String s) { sp(c).edit().putString("asr_service", s).apply(); }
+    /** last recognition service that worked for a language (auto mode) */
+    public static String asrOk(Context c, String lang) { return sp(c).getString("asr_ok_" + lang, ""); }
+    public static void setAsrOk(Context c, String lang, String svc) { sp(c).edit().putString("asr_ok_" + lang, svc).apply(); }
 
     public static String audioBase(Context c) { return sp(c).getString("audio_base", "https://api.siliconflow.cn/v1"); }
     public static String audioKeyRaw(Context c) { return sp(c).getString("audio_key", ""); }
@@ -80,7 +96,7 @@ public final class Store {
     public static String audioKey(Context c) { String k = audioKeyRaw(c); return k.length() > 0 ? k : apiKey(c); }
     public static String ttsModel(Context c) { return sp(c).getString("tts_model", "FunAudioLLM/CosyVoice2-0.5B"); }
     public static String ttsVoice(Context c, String lang) {
-        return sp(c).getString("tts_voice_" + lang, "ja".equals(lang) ? "FunAudioLLM/CosyVoice2-0.5B:bella" : "FunAudioLLM/CosyVoice2-0.5B:anna");
+        return sp(c).getString("tts_voice_" + lang, "ja".equals(lang) ? "FunAudioLLM/CosyVoice2-0.5B:claire" : "FunAudioLLM/CosyVoice2-0.5B:anna");
     }
     public static String asrModel(Context c) { return sp(c).getString("asr_model", "FunAudioLLM/SenseVoiceSmall"); }
     public static void setAudio(Context c, String base, String key, String ttsModel, String voiceEn, String voiceJa, String asrModel) {

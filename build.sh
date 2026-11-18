@@ -10,7 +10,8 @@ OUT=build
 rm -rf "$OUT"; mkdir -p "$OUT/gen" "$OUT/classes" "$OUT/dex"
 
 echo "[1/6] aapt: resources + R.java"
-aapt package -f -m -J "$OUT/gen" -M AndroidManifest.xml -S res -I "$ANDROID_JAR" -F "$OUT/res.apk" --min-sdk-version 23 --target-sdk-version 34
+ASSETS=""; [ -d assets ] && ASSETS="-A assets"
+aapt package -f -m -J "$OUT/gen" -M AndroidManifest.xml -S res $ASSETS -I "$ANDROID_JAR" -F "$OUT/res.apk" --min-sdk-version 23 --target-sdk-version 34
 
 echo "[2/6] javac"
 find src "$OUT/gen" -name '*.java' > "$OUT/sources.txt"
